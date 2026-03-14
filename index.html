@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Les Nettoyeurs Bressans | Nettoyage facades, terrasses et extérieurs</title>
+    <title>Les Nettoyeurs Bressans | Nettoyage extérieur à Louhans et alentours</title>
     <meta
       name="description"
-      content="Entreprise locale de nettoyage extérieur pour particuliers et professionnels a Louhans et alentours. Facades, terrasses, allees, toitures, vitres, remise en etat et devis gratuit."
+      content="Les Nettoyeurs Bressans, entreprise locale de nettoyage extérieur à Louhans, Chalon-sur-Saône, Tournus, Mâcon, Bourg-en-Bresse et alentours. Façades, terrasses, toitures, allées, vitres, remise en état et devis gratuit à domicile."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,13 +21,10 @@
         --navy-800: #10306d;
         --navy-700: #184896;
         --sky-400: #59b8ff;
-        --sky-300: #8fd6ff;
         --gold-500: #f4bb1a;
         --gold-400: #ffd75a;
-        --snow: #f7fbff;
         --ink: #15233d;
         --muted: #60708d;
-        --line: rgba(15, 37, 78, 0.12);
         --card: rgba(255, 255, 255, 0.9);
         --shadow: 0 24px 80px rgba(8, 20, 43, 0.16);
         --radius-xl: 32px;
@@ -35,6 +32,1120 @@
         --radius-md: 18px;
         --max: 1180px;
       }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(143, 214, 255, 0.8), transparent 28%),
+          radial-gradient(circle at 85% 12%, rgba(244, 187, 26, 0.22), transparent 20%),
+          linear-gradient(180deg, #edf6ff 0%, #ffffff 38%, #eef6ff 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.24;
+        background-image:
+          linear-gradient(rgba(24, 72, 150, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(24, 72, 150, 0.06) 1px, transparent 1px);
+        background-size: 26px 26px;
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 70%);
+      }
+
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; display: block; }
+
+      .shell {
+        width: min(calc(100% - 32px), var(--max));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(20px);
+        background: rgba(247, 251, 255, 0.8);
+        border-bottom: 1px solid rgba(16, 48, 109, 0.08);
+      }
+
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 16px 0;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        min-width: 0;
+      }
+
+      .brand-logo {
+        width: 68px;
+        height: 68px;
+        object-fit: contain;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 10px 28px rgba(11, 31, 71, 0.14);
+        padding: 6px;
+      }
+
+      .brand-text small {
+        display: block;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .brand-text strong {
+        display: block;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: -0.04em;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 0.96rem;
+        color: var(--muted);
+      }
+
+      .nav a:hover { color: var(--navy-800); }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 22px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-weight: 700;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      }
+
+      .btn:hover { transform: translateY(-2px); }
+
+      .btn-primary {
+        color: #071327;
+        background: linear-gradient(135deg, var(--gold-400), var(--gold-500));
+        box-shadow: 0 16px 40px rgba(244, 187, 26, 0.3);
+      }
+
+      .btn-secondary {
+        color: white;
+        background: linear-gradient(135deg, #173f84, #0b1f47);
+        box-shadow: 0 16px 38px rgba(11, 31, 71, 0.24);
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 56px 0 36px;
+      }
+
+      .hero::before,
+      .hero::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(18px);
+        opacity: 0.65;
+      }
+
+      .hero::before {
+        width: 340px;
+        height: 340px;
+        right: -100px;
+        top: 30px;
+        background: radial-gradient(circle, rgba(89, 184, 255, 0.45), transparent 65%);
+      }
+
+      .hero::after {
+        width: 240px;
+        height: 240px;
+        left: -90px;
+        top: 140px;
+        background: radial-gradient(circle, rgba(244, 187, 26, 0.24), transparent 62%);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 32px;
+        align-items: stretch;
+      }
+
+      .hero-copy,
+      .hero-panel {
+        position: relative;
+        z-index: 1;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(8, 20, 43, 0.08);
+        color: var(--navy-800);
+        font-size: 0.83rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 18px 0;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2.8rem, 6vw, 5.4rem);
+        line-height: 0.96;
+        letter-spacing: -0.06em;
+        max-width: 9ch;
+      }
+
+      .hero-copy p {
+        margin: 0;
+        max-width: 58ch;
+        font-size: 1.08rem;
+        line-height: 1.8;
+        color: #31425f;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 30px;
+      }
+
+      .hero-points {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 32px;
+      }
+
+      .hero-point {
+        padding: 18px;
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.74);
+        border: 1px solid rgba(16, 48, 109, 0.08);
+        box-shadow: 0 12px 30px rgba(8, 20, 43, 0.06);
+        text-align: center;
+      }
+
+      .hero-point strong {
+        display: block;
+        font-size: 1.2rem;
+        color: var(--navy-900);
+      }
+
+      .hero-panel {
+        padding: 22px;
+        border-radius: var(--radius-xl);
+        background:
+          linear-gradient(180deg, rgba(9, 27, 58, 0.92), rgba(16, 48, 109, 0.97)),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent);
+        color: white;
+        box-shadow: var(--shadow);
+      }
+
+      .mini-carousel {
+        position: relative;
+        height: 180px;
+        margin-bottom: 16px;
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .mini-slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: opacity 0.8s ease, transform 4.5s ease;
+        transform: scale(1.03);
+      }
+
+      .mini-slide.active {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .mini-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mini-slide::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(7, 19, 39, 0.08), rgba(7, 19, 39, 0.5));
+      }
+
+      .mini-caption {
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
+        z-index: 2;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(8px);
+        color: white;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .offer-card {
+        padding: 22px;
+        border-radius: 24px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+          rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .offer-card + .offer-card { margin-top: 16px; }
+
+      .hero-panel h3 {
+        margin: 0 0 12px;
+        font-size: 1.35rem;
+        text-align: center;
+      }
+
+      .panel-list {
+        display: grid;
+        gap: 14px;
+        margin: 18px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .panel-list li {
+        display: grid;
+        grid-template-columns: 24px 150px 1fr;
+        gap: 12px;
+        align-items: start;
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .panel-list li::before {
+        content: "✓";
+        display: inline-grid;
+        place-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 999px;
+        color: var(--navy-900);
+        background: linear-gradient(135deg, var(--gold-400), #fff1ab);
+        font-weight: 900;
+      }
+
+      .panel-list b { display: block; }
+
+      .contact-band {
+        margin-top: 16px;
+        padding: 24px;
+        border-radius: 24px;
+        background:
+          radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.2), transparent 20%),
+          linear-gradient(135deg, rgba(244, 187, 26, 0.25), rgba(89, 184, 255, 0.18));
+        border: 1px solid rgba(255, 255, 255, 0.22);
+      }
+
+      .contact-band b {
+        display: block;
+        margin-top: 8px;
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        line-height: 1;
+        color: #fff9df;
+      }
+
+      .contact-band .mini {
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.86);
+        font-weight: 600;
+      }
+
+      section { padding: 42px 0; }
+
+      .section-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+      }
+
+      .section-head--narrow h2 {
+        max-width: 19ch;
+        margin: 0 auto;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .service-card {
+        padding: 24px;
+        min-height: 220px;
+        border-radius: var(--radius-lg);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78)),
+          linear-gradient(140deg, rgba(143, 214, 255, 0.32), rgba(244, 187, 26, 0.14));
+        border: 1px solid rgba(16, 48, 109, 0.08);
+        box-shadow: 0 18px 44px rgba(8, 20, 43, 0.08);
+      }
+
+      .service-tag {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(16, 48, 109, 0.07);
+        color: var(--navy-800);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .service-card h3 {
+        margin: 0 0 10px;
+        font-size: 1.35rem;
+        line-height: 1.2;
+      }
+
+      .service-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .showcase {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 22px;
+        align-items: stretch;
+      }
+
+      .carousel-card,
+      .trust-card {
+        border-radius: var(--radius-xl);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+
+      .carousel-card {
+        background: linear-gradient(180deg, #0a1d42, #123a78);
+        color: white;
+        padding: 26px;
+      }
+
+      .carousel-shell {
+        position: relative;
+        margin-top: 22px;
+        border-radius: 24px;
+        overflow: hidden;
+        min-height: 430px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transform: scale(1.03);
+        transition: opacity 0.8s ease, transform 5s ease;
+      }
+
+      .slide.active {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .slide::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(7, 19, 39, 0.18), rgba(7, 19, 39, 0.72));
+      }
+
+      .slide-copy {
+        position: absolute;
+        left: 22px;
+        right: 22px;
+        bottom: 20px;
+        z-index: 2;
+      }
+
+      .slide-copy span {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(8px);
+        font-size: 0.76rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .slide-copy h3 {
+        margin: 0 0 8px;
+        font-size: 1.45rem;
+      }
+
+      .slide-copy p {
+        margin: 0;
+        max-width: 50ch;
+        color: rgba(255, 255, 255, 0.88);
+        line-height: 1.7;
+      }
+
+      .carousel-dots {
+        display: flex;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.28);
+      }
+
+      .dot.active { background: var(--gold-400); }
+
+      .trust-card {
+        padding: 28px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(239, 247, 255, 0.9)),
+          white;
+        border: 1px solid rgba(16, 48, 109, 0.08);
+      }
+
+      .trust-card h3 {
+        margin: 0 0 14px;
+        font-size: 1.8rem;
+      }
+
+      .trust-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .trust-stack {
+        display: grid;
+        gap: 14px;
+        margin-top: 24px;
+      }
+
+      .trust-item {
+        padding: 18px;
+        border-radius: 22px;
+        background: linear-gradient(135deg, rgba(24, 72, 150, 0.07), rgba(244, 187, 26, 0.1));
+      }
+
+      .trust-item strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--navy-900);
+      }
+
+      .benefits {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .benefit {
+        padding: 22px;
+        border-radius: var(--radius-lg);
+        background: var(--card);
+        border: 1px solid rgba(16, 48, 109, 0.08);
+        box-shadow: 0 16px 38px rgba(8, 20, 43, 0.06);
+      }
+
+      .benefit .icon {
+        width: 52px;
+        height: 52px;
+        display: grid;
+        place-items: center;
+        border-radius: 16px;
+        margin-bottom: 16px;
+        font-size: 1.35rem;
+        background: linear-gradient(135deg, rgba(89, 184, 255, 0.24), rgba(244, 187, 26, 0.24));
+      }
+
+      .benefit h3 {
+        margin: 0 0 10px;
+        font-size: 1.1rem;
+      }
+
+      .benefit p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .zones {
+        padding: 32px;
+        border-radius: var(--radius-xl);
+        background:
+          linear-gradient(180deg, rgba(9, 27, 58, 0.94), rgba(15, 51, 110, 0.94)),
+          #0b1f47;
+        color: white;
+        box-shadow: var(--shadow);
+      }
+
+      .zone-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .zone-tags span {
+        padding: 11px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .cta { padding-bottom: 72px; }
+
+      .cta-panel {
+        padding: 34px;
+        border-radius: 36px;
+        background:
+          radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.16), transparent 22%),
+          radial-gradient(circle at 88% 82%, rgba(255, 255, 255, 0.14), transparent 18%),
+          linear-gradient(135deg, #0a1d42, #123a78 54%, #1f5cb6);
+        color: white;
+        box-shadow: var(--shadow);
+      }
+
+      .cta-grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .cta-panel h2 {
+        margin: 0 0 12px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1;
+        letter-spacing: -0.05em;
+      }
+
+      .cta-panel p {
+        margin: 0;
+        max-width: 60ch;
+        line-height: 1.75;
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .cta-stack {
+        display: grid;
+        gap: 12px;
+        justify-items: end;
+      }
+
+      .footer {
+        padding: 0 0 34px;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .footer-line {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(16, 48, 109, 0.08);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 1040px) {
+        .hero-grid,
+        .showcase,
+        .cta-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .services-grid,
+        .benefits {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .cta-stack { justify-items: start; }
+      }
+
+      @media (max-width: 760px) {
+        .nav { display: none; }
+        h1 { max-width: none; }
+        .hero-points,
+        .services-grid,
+        .benefits {
+          grid-template-columns: 1fr;
+        }
+        .section-head,
+        .footer-line {
+          flex-direction: column;
+          align-items: start;
+          text-align: left;
+        }
+        .panel-list li {
+          grid-template-columns: 24px 1fr;
+        }
+        .panel-list li b {
+          grid-column: 2;
+        }
+        .panel-list li span {
+          grid-column: 2;
+        }
+        .carousel-shell { min-height: 360px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="#accueil" aria-label="Les Nettoyeurs Bressans">
+          <img class="brand-logo" src="./logo.png" alt="Logo Les Nettoyeurs Bressans" />
+          <span class="brand-text">
+            <small>Entreprise locale</small>
+            <strong>Les Nettoyeurs Bressans</strong>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="#services">Services</a>
+          <a href="#realisations">Réalisations</a>
+          <a href="#zone">Zone d'intervention</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="accueil">
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Nettoyage façades, toitures, terrasses et extérieurs</span>
+            <h1>Redonnez de l'allure à votre bien.</h1>
+            <p>
+              Façade noircie, toiture envahie par la mousse ou intérieur insalubre : Les Nettoyeurs
+              Bressans redonnent immédiatement de la valeur, de la propreté et de la fraîcheur à
+              votre bien avec une intervention rapide, professionnelle et locale.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:0668739456">Appeler le 06 68 73 94 56</a>
+              <a class="btn btn-secondary" href="https://wa.me/33668739456">Demander un devis WhatsApp</a>
+            </div>
+
+            <div class="hero-points">
+              <div class="hero-point"><strong>À partir de 10EUR/m2</strong></div>
+              <div class="hero-point"><strong>Avant / après visible</strong></div>
+              <div class="hero-point"><strong>Devis gratuit</strong></div>
+            </div>
+          </div>
+
+          <aside class="hero-panel reveal">
+            <div class="mini-carousel">
+              <article class="mini-slide active">
+                <img src="./hero-avant-apres-1.jpg" alt="Avant après nettoyage de façade" />
+                <div class="mini-caption">Avant / après façade</div>
+              </article>
+              <article class="mini-slide">
+                <img src="./hero-avant-apres-2.jpg" alt="Avant après nettoyage de toiture" />
+                <div class="mini-caption">Avant / après toiture</div>
+              </article>
+              <article class="mini-slide">
+                <img src="./hero-avant-apres-3.jpg" alt="Avant après nettoyage de surfaces" />
+                <div class="mini-caption">Avant / après surfaces</div>
+              </article>
+            </div>
+
+            <div class="offer-card">
+              <h3>Pourquoi les clients nous choisissent</h3>
+              <ul class="panel-list">
+                <li><b>Local :</b><span>une entreprise de proximité, réactive et disponible autour de Louhans.</span></li>
+                <li><b>Professionnel :</b><span>matériel adapté, méthodes sérieuses et respect des surfaces.</span></li>
+                <li><b>Satisfaction garantie :</b><span>un résultat propre, soigné et pensé pour durer.</span></li>
+              </ul>
+            </div>
+
+            <div class="contact-band">
+              <div style="font-size: 0.84rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.78);">
+                Devis gratuit à domicile
+              </div>
+              <b>06 68 73 94 56</b>
+              <div class="mini">WhatsApp disponible pour une réponse rapide</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="shell">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">Nos prestations</span>
+              <h2>Une offre complète pour l'entretien<br />et la remise en état</h2>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <span class="service-tag">Extérieur</span>
+              <h3>Façades, murs et terrasses</h3>
+              <p>Nettoyage des façades, murs, terrasses et allées pour supprimer les traces noires, mousses, salissures et raviver immédiatement l'aspect de votre bien.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-tag">Toitures</span>
+              <h3>Démoussage et hydrofuge</h3>
+              <p>Nettoyage de toitures, gouttières et traitement hydrofuge pour protéger les surfaces, retarder la repousse et prolonger la durée de vie de votre toiture.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-tag">Vitrage</span>
+              <h3>Vitres et vitrines commerciales</h3>
+              <p>Nettoyage intérieur et extérieur de vitres pour les maisons, bureaux, commerces et devantures avec une finition nette et lumineuse.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-tag">Immobilier</span>
+              <h3>Avant location ou vente</h3>
+              <p>Nettoyage avant mise en location, avant vente immobilière, entretien de biens et remise au propre pour valoriser rapidement votre logement.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-tag">Professionnels</span>
+              <h3>Bureaux, parties communes et locaux</h3>
+              <p>Entretien de bureaux, lieux de travail, parties communes, bâtiments agricoles et bâtiments industriels selon les besoins du site.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-tag">Spécifique</span>
+              <h3>Nettoyage extrême et décontamination</h3>
+              <p>Assainissement de logements, décontamination des lieux, nettoyage de fin de chantier et interventions techniques sur situations exigeantes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="realisations">
+        <div class="shell showcase">
+          <div class="carousel-card reveal">
+            <span class="eyebrow" style="background: rgba(255,255,255,0.1); color: white;">Résultats visibles</span>
+            <h2 style="margin: 18px 0 0; font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1; font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.05em;">
+              Façades, vitres, toitures, terrasses : vos surfaces retrouvent éclat et propreté
+            </h2>
+
+            <div class="carousel-shell">
+              <article class="slide active">
+                <img src="./carousel-facade.jpg" alt="Nettoyage de façade" />
+                <div class="slide-copy">
+                  <span>Façades</span>
+                  <h3>Nettoyage de façade</h3>
+                  <p>Élimination des salissures, traces noires et mousses pour redonner une vraie valeur visuelle à votre bien.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="./carousel-toiture.jpg" alt="Nettoyage de toiture" />
+                <div class="slide-copy">
+                  <span>Toitures</span>
+                  <h3>Démoussage et entretien de toiture</h3>
+                  <p>Une toiture plus propre, mieux entretenue et durablement protégée contre la repousse.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="./carousel-vitres.jpg" alt="Nettoyage de vitres" />
+                <div class="slide-copy">
+                  <span>Vitres</span>
+                  <h3>Vitres et surfaces vitrées impeccables</h3>
+                  <p>Pour plus de luminosité et une finition nette, aussi bien chez les particuliers que les pros.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="./carousel-mur.jpg" alt="Nettoyage de mur extérieur" />
+                <div class="slide-copy">
+                  <span>Murs</span>
+                  <h3>Nettoyage des murs extérieurs</h3>
+                  <p>Une remise au propre efficace qui améliore immédiatement l'apparence générale de la maison.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="./carousel-facade-2.jpg" alt="Avant après façade" />
+                <div class="slide-copy">
+                  <span>Avant / après</span>
+                  <h3>Résultat visible dès la première intervention</h3>
+                  <p>Un nettoyage soigné pour révéler toute la propreté de vos surfaces extérieures.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="./carousel-toiture-2.jpg" alt="Avant après toiture" />
+                <div class="slide-copy">
+                  <span>Avant / après</span>
+                  <h3>Toiture propre et valorisée</h3>
+                  <p>Le bon réflexe pour prolonger la durée de vie de votre toiture et améliorer l'esthétique du bien.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="./carousel-terrasse.jpg" alt="Nettoyage de terrasse" />
+                <div class="slide-copy">
+                  <span>Terrasses</span>
+                  <h3>Terrasses et allées remises à neuf</h3>
+                  <p>Suppression des salissures et des traces pour retrouver une surface propre et agréable au quotidien.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img src="./carousel-interieur.jpg" alt="Nettoyage intérieur" />
+                <div class="slide-copy">
+                  <span>Remise en état</span>
+                  <h3>Intérieurs et logements remis au propre</h3>
+                  <p>Une solution utile pour les logements dégradés, les remises en état et les situations exigeantes.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="trust-card reveal">
+            <span class="eyebrow">Notre engagement</span>
+            <h3>Une entreprise locale qui inspire confiance par son sérieux</h3>
+            <p>
+              Les Nettoyeurs Bressans accompagnent les particuliers et les professionnels avec une approche simple :
+              être réactifs, soignés et efficaces. Chaque intervention est pensée pour améliorer immédiatement
+              l'apparence du bien tout en respectant les surfaces.
+            </p>
+
+            <div class="trust-stack">
+              <div class="trust-item">
+                <strong>Du matériel professionnel et des méthodes adaptées</strong>
+                <span>Chaque surface demande le bon traitement pour obtenir un résultat propre et durable.</span>
+              </div>
+              <div class="trust-item">
+                <strong>Une intervention rapide autour de Louhans</strong>
+                <span>Maison, immeuble, local commercial ou bâtiment professionnel : vous gagnez en réactivité.</span>
+              </div>
+              <div class="trust-item">
+                <strong>Un objectif clair : un résultat visible et satisfaisant</strong>
+                <span>Nous mettons l'accent sur la qualité de finition et la satisfaction du client à chaque chantier.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="shell">
+          <div class="section-head section-head--narrow reveal">
+            <div>
+              <span class="eyebrow">Nos atouts</span>
+              <h2>Des points forts concrets pour vous accompagner au quotidien</h2>
+            </div>
+          </div>
+
+          <div class="benefits">
+            <article class="benefit reveal">
+              <div class="icon">⚡</div>
+              <h3>Intervention rapide</h3>
+              <p>Devis gratuits et déplacements sur Louhans et les environs.</p>
+            </article>
+
+            <article class="benefit reveal">
+              <div class="icon">🛡</div>
+              <h3>Satisfaction garantie</h3>
+              <p>Des méthodes pensées pour nettoyer efficacement sans agresser les matériaux.</p>
+            </article>
+
+            <article class="benefit reveal">
+              <div class="icon">🏠</div>
+              <h3>Particuliers et pros</h3>
+              <p>Maisons, immeubles, commerces, bureaux, locations saisonnières et bâtiments techniques.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="zone">
+        <div class="shell">
+          <div class="zones reveal">
+            <span class="eyebrow" style="background: rgba(255,255,255,0.1); color: white;">Zone d'intervention</span>
+            <h2 style="margin: 18px 0 0; font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1; font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.05em;">
+              Nettoyage extérieur à Louhans et dans les communes alentours
+            </h2>
+            <p style="margin: 16px 0 0; max-width: 72ch; line-height: 1.8; color: rgba(255,255,255,0.82);">
+              Nous intervenons à Louhans, Châteaurenaud, Branges, Sornay, Ratte, Saint-Usuge,
+              Montpont-en-Bresse, Cuisery, Cuiseaux, Tournus, Mâcon, Chalon-sur-Saône,
+              Lons-le-Saunier, Beaune, Bourg-en-Bresse et dans les villages alentours pour le
+              nettoyage de façades, toitures, terrasses, allées, murs, vitres et remises en état.
+            </p>
+
+            <div class="zone-tags">
+              <span>Louhans</span><span>Châteaurenaud</span><span>Branges</span><span>Sornay</span>
+              <span>Ratte</span><span>Saint-Usuge</span><span>Montpont-en-Bresse</span><span>Cuisery</span>
+              <span>Cuiseaux</span><span>Tournus</span><span>Mâcon</span><span>Chalon-sur-Saône</span>
+              <span>Lons-le-Saunier</span><span>Beaune</span><span>Bourg-en-Bresse</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="shell">
+          <div class="cta-panel reveal">
+            <div class="cta-grid">
+              <div>
+                <span class="eyebrow" style="background: rgba(255,255,255,0.1); color: white;">Devis gratuit</span>
+                <h2>Besoin d'un nettoyage rapide et efficace ?</h2>
+                <p>Appelez maintenant ou envoyez un message WhatsApp pour demander un devis gratuit à domicile.</p>
+              </div>
+
+              <div class="cta-stack">
+                <a class="btn btn-primary" href="tel:0668739456">06 68 73 94 56</a>
+                <a class="btn btn-secondary" href="https://wa.me/33668739456">WhatsApp disponible</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-line">
+        <span>Les Nettoyeurs Bressans • Entreprise locale de nettoyage</span>
+        <span>Page vitrine one-page • HTML autonome</span>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+
+      document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+
+      const slides = Array.from(document.querySelectorAll(".slide"));
+      const dots = Array.from(document.querySelectorAll(".dot"));
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, slideIndex) => {
+          slide.classList.toggle("active", slideIndex === index);
+        });
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle("active", dotIndex === index);
+        });
+      }
+
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }, 5000);
+
+      const miniSlides = Array.from(document.querySelectorAll(".mini-slide"));
+      let currentMiniSlide = 0;
+
+      function showMiniSlide(index) {
+        miniSlides.forEach((slide, slideIndex) => {
+          slide.classList.toggle("active", slideIndex === index);
+        });
+      }
+
+      if (miniSlides.length > 1) {
+        setInterval(() => {
+          currentMiniSlide = (currentMiniSlide + 1) % miniSlides.length;
+          showMiniSlide(currentMiniSlide);
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>      }
 
       * {
         box-sizing: border-box;
