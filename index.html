@@ -25,10 +25,10 @@
       }
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Les Nettoyeurs Bressans | Nettoyage extérieur à Louhans et alentours</title>
+    <title>Nettoyage façade & terrasse à Louhans | Les Nettoyeurs Bressans</title>
     <meta
       name="description"
-      content="Les Nettoyeurs Bressans, entreprise locale de nettoyage extérieur à Louhans, Chalon-sur-Saône, Tournus, Mâcon, Bourg-en-Bresse et alentours. Façades, terrasses, toitures, allées, vitres, remise en état et devis gratuit à domicile."
+      content="Nettoyage façade maison, nettoyage terrasse pierre, nettoyage allée et murets à Louhans et alentours. Devis gratuit sous 24h. Intervention rapide pour particuliers, avant vente immobilière et déménagement léger."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,7 +42,6 @@
         --navy-900: #0b1f47;
         --navy-800: #10306d;
         --navy-700: #184896;
-        --sky-400: #59b8ff;
         --gold-500: #f4bb1a;
         --gold-400: #ffd75a;
         --ink: #15233d;
@@ -69,7 +68,7 @@
         color: var(--ink);
         background:
           radial-gradient(circle at top left, rgba(143, 214, 255, 0.8), transparent 28%),
-          radial-gradient(circle at 85% 12%, rgba(244, 187, 26, 0.22), transparent 20%),
+          radial-gradient(circle at 85% 12%, rgba(244, 187, 26, 0.18), transparent 20%),
           linear-gradient(180deg, #edf6ff 0%, #ffffff 38%, #eef6ff 100%);
       }
 
@@ -78,10 +77,10 @@
         position: fixed;
         inset: 0;
         pointer-events: none;
-        opacity: 0.24;
+        opacity: 0.2;
         background-image:
-          linear-gradient(rgba(24, 72, 150, 0.06) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(24, 72, 150, 0.06) 1px, transparent 1px);
+          linear-gradient(rgba(24, 72, 150, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(24, 72, 150, 0.05) 1px, transparent 1px);
         background-size: 26px 26px;
         mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 70%);
       }
@@ -106,7 +105,7 @@
         top: 0;
         z-index: 20;
         backdrop-filter: blur(20px);
-        background: rgba(247, 251, 255, 0.8);
+        background: rgba(247, 251, 255, 0.82);
         border-bottom: 1px solid rgba(16, 48, 109, 0.08);
       }
 
@@ -218,7 +217,7 @@
         height: 240px;
         left: -90px;
         top: 140px;
-        background: radial-gradient(circle, rgba(244, 187, 26, 0.24), transparent 62%);
+        background: radial-gradient(circle, rgba(244, 187, 26, 0.2), transparent 62%);
       }
 
       .hero-grid {
@@ -251,18 +250,33 @@
       h1 {
         margin: 18px 0;
         font-family: "Space Grotesk", sans-serif;
-        font-size: clamp(2.8rem, 6vw, 5.4rem);
-        line-height: 0.96;
+        font-size: clamp(2.5rem, 6vw, 4.9rem);
+        line-height: 0.98;
         letter-spacing: -0.06em;
-        max-width: 9ch;
+        max-width: 11ch;
       }
 
       .hero-copy p {
         margin: 0;
         max-width: 58ch;
-        font-size: 1.08rem;
+        font-size: 1.06rem;
         line-height: 1.8;
         color: #31425f;
+      }
+
+      .hero-list {
+        display: grid;
+        gap: 8px;
+        margin: 20px 0 0;
+        padding: 0;
+        list-style: none;
+        color: #31425f;
+        font-weight: 600;
+      }
+
+      .hero-list li::before {
+        content: "• ";
+        color: var(--navy-800);
       }
 
       .hero-actions {
@@ -270,6 +284,12 @@
         flex-wrap: wrap;
         gap: 14px;
         margin-top: 30px;
+      }
+
+      .hero-note {
+        margin-top: 16px;
+        font-weight: 700;
+        color: var(--navy-900);
       }
 
       .hero-points {
@@ -290,7 +310,7 @@
 
       .hero-point strong {
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: var(--navy-900);
       }
 
@@ -298,7 +318,7 @@
         padding: 22px;
         border-radius: var(--radius-xl);
         background:
-          linear-gradient(180deg, rgba(9, 27, 58, 0.92), rgba(16, 48, 109, 0.97)),
+          linear-gradient(180deg, rgba(9, 27, 58, 0.94), rgba(16, 48, 109, 0.98)),
           linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent);
         color: white;
         box-shadow: var(--shadow);
@@ -306,7 +326,7 @@
 
       .mini-carousel {
         position: relative;
-        height: 180px;
+        height: 190px;
         margin-bottom: 16px;
         border-radius: 22px;
         overflow: hidden;
@@ -385,7 +405,7 @@
 
       .panel-list li {
         display: grid;
-        grid-template-columns: 24px 150px 1fr;
+        grid-template-columns: 24px 145px 1fr;
         gap: 12px;
         align-items: start;
         color: rgba(255, 255, 255, 0.92);
@@ -432,7 +452,7 @@
       }
 
       section {
-        padding: 42px 0;
+        padding: 44px 0;
       }
 
       .section-head {
@@ -448,18 +468,20 @@
         margin: 0;
         font-family: "Space Grotesk", sans-serif;
         font-size: clamp(2rem, 4vw, 3.2rem);
-        line-height: 1.1;
+        line-height: 1.08;
         letter-spacing: -0.05em;
       }
 
-      .section-head--narrow h2 {
-        max-width: 19ch;
-        margin: 0 auto;
+      .section-head p {
+        margin: 12px auto 0;
+        max-width: 60ch;
+        color: var(--muted);
+        line-height: 1.75;
       }
 
       .services-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
         gap: 18px;
       }
 
@@ -489,7 +511,7 @@
 
       .service-card h3 {
         margin: 0 0 10px;
-        font-size: 1.35rem;
+        font-size: 1.2rem;
         line-height: 1.2;
       }
 
@@ -507,7 +529,9 @@
       }
 
       .carousel-card,
-      .trust-card {
+      .trust-card,
+      .seo-card,
+      .proof-card {
         border-radius: var(--radius-xl);
         overflow: hidden;
         box-shadow: var(--shadow);
@@ -604,7 +628,9 @@
         background: var(--gold-400);
       }
 
-      .trust-card {
+      .trust-card,
+      .seo-card,
+      .proof-card {
         padding: 28px;
         background:
           linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(239, 247, 255, 0.9)),
@@ -612,30 +638,37 @@
         border: 1px solid rgba(16, 48, 109, 0.08);
       }
 
-      .trust-card h3 {
+      .trust-card h3,
+      .seo-card h3,
+      .proof-card h3 {
         margin: 0 0 14px;
         font-size: 1.8rem;
       }
 
-      .trust-card p {
+      .trust-card p,
+      .seo-card p,
+      .proof-card p {
         margin: 0;
         color: var(--muted);
         line-height: 1.8;
       }
 
-      .trust-stack {
+      .trust-stack,
+      .proof-stack {
         display: grid;
         gap: 14px;
         margin-top: 24px;
       }
 
-      .trust-item {
+      .trust-item,
+      .proof-item {
         padding: 18px;
         border-radius: 22px;
         background: linear-gradient(135deg, rgba(24, 72, 150, 0.07), rgba(244, 187, 26, 0.1));
       }
 
-      .trust-item strong {
+      .trust-item strong,
+      .proof-item strong {
         display: block;
         margin-bottom: 8px;
         color: var(--navy-900);
@@ -699,6 +732,12 @@
         border-radius: 999px;
         background: rgba(255, 255, 255, 0.08);
         border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .grid-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
       }
 
       .cta {
@@ -772,13 +811,17 @@
       @media (max-width: 1040px) {
         .hero-grid,
         .showcase,
+        .grid-two,
         .cta-grid {
           grid-template-columns: 1fr;
         }
 
-        .services-grid,
-        .benefits {
+        .services-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .benefits {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
         }
 
         .cta-stack {
@@ -836,7 +879,7 @@
 
         <nav class="nav" aria-label="Navigation principale">
           <a href="#services">Services</a>
-          <a href="#realisations">Réalisations</a>
+          <a href="#avant-vente">Avant vente</a>
           <a href="#zone">Zone d'intervention</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -847,13 +890,17 @@
       <section class="hero">
         <div class="shell hero-grid">
           <div class="hero-copy reveal">
-            <span class="eyebrow">Nettoyage façades, toitures, terrasses et extérieurs</span>
-            <h1>Redonnez de l'allure à votre bien.</h1>
+            <span class="eyebrow">Nettoyage façade maison à Louhans</span>
+            <h1>Nettoyage façade & terrasse à Louhans – Devis gratuit sous 24h</h1>
             <p>
-              Façade noircie, toiture envahie par la mousse ou intérieur insalubre : Les Nettoyeurs
-              Bressans redonnent immédiatement de la valeur, de la propreté et de la fraîcheur à
-              votre bien avec une intervention rapide, professionnelle et locale.
+              Façade noircie, terrasse encrassée, allée envahie par les mousses : Les Nettoyeurs
+              Bressans interviennent rapidement pour redonner de la propreté et de la valeur à votre bien.
             </p>
+
+            <ul class="hero-list">
+              <li>Façade, terrasse, allée, murets</li>
+              <li>Intervention rapide pour particuliers & vente immobilière</li>
+            </ul>
 
             <div class="hero-actions">
               <a
@@ -872,17 +919,19 @@
               </a>
             </div>
 
+            <div class="hero-note">Recevez un devis en envoyant une photo</div>
+
             <div class="hero-points">
-              <div class="hero-point"><strong>À partir de 10EUR/m2</strong></div>
-              <div class="hero-point"><strong>Avant / après visible</strong></div>
-              <div class="hero-point"><strong>Devis gratuit</strong></div>
+              <div class="hero-point"><strong>Nettoyage façade maison</strong></div>
+              <div class="hero-point"><strong>Nettoyage terrasse pierre</strong></div>
+              <div class="hero-point"><strong>Devis gratuit sous 24h</strong></div>
             </div>
           </div>
 
           <aside class="hero-panel reveal">
             <div class="mini-carousel">
               <article class="mini-slide active">
-                <img src="./hero-avant-apres-1.jpg" alt="Avant après nettoyage de façade" />
+                <img src="./hero-avant-apres-1.jpg" alt="Avant après nettoyage de façade maison" />
                 <div class="mini-caption">Avant / après façade</div>
               </article>
               <article class="mini-slide">
@@ -890,8 +939,8 @@
                 <div class="mini-caption">Avant / après toiture</div>
               </article>
               <article class="mini-slide">
-                <img src="./hero-avant-apres-3.jpg" alt="Avant après nettoyage de surfaces" />
-                <div class="mini-caption">Avant / après surfaces</div>
+                <img src="./hero-avant-apres-3.jpg" alt="Avant après nettoyage de terrasse ou allée" />
+                <div class="mini-caption">Avant / après terrasse</div>
               </article>
             </div>
 
@@ -900,7 +949,7 @@
               <ul class="panel-list">
                 <li><b>Local :</b><span>une entreprise de proximité, réactive et disponible autour de Louhans.</span></li>
                 <li><b>Professionnel :</b><span>matériel adapté, méthodes sérieuses et respect des surfaces.</span></li>
-                <li><b>Satisfaction garantie :</b><span>un résultat propre, soigné et pensé pour durer.</span></li>
+                <li><b>Résultat :</b><span>un nettoyage propre, visible et rassurant avant visites ou revente.</span></li>
               </ul>
             </div>
 
@@ -919,46 +968,43 @@
         <div class="shell">
           <div class="section-head reveal">
             <div>
-              <span class="eyebrow">Nos prestations</span>
-              <h2>Une offre complète pour l'entretien<br />et la remise en état</h2>
+              <span class="eyebrow">Nos services de nettoyage extérieur</span>
+              <h2>Une landing page pensée pour convertir sur vos vraies demandes</h2>
+              <p>
+                Nettoyage façade maison, nettoyage terrasse, allée, pavés, murets et nettoyage extérieur avant vente.
+              </p>
             </div>
           </div>
 
           <div class="services-grid">
             <article class="service-card reveal">
-              <span class="service-tag">Extérieur</span>
-              <h3>Façades, murs et terrasses</h3>
-              <p>Nettoyage des façades, murs, terrasses et allées pour supprimer les traces noires, mousses, salissures et raviver immédiatement l'aspect de votre bien.</p>
+              <span class="service-tag">Façade</span>
+              <h3>Nettoyage façade maison</h3>
+              <p>Suppression des traces noires, mousses et salissures pour redonner une façade nette et plus valorisante.</p>
             </article>
 
             <article class="service-card reveal">
-              <span class="service-tag">Toitures</span>
-              <h3>Démoussage et hydrofuge</h3>
-              <p>Nettoyage de toitures, gouttières et traitement hydrofuge pour protéger les surfaces, retarder la repousse et prolonger la durée de vie de votre toiture.</p>
+              <span class="service-tag">Terrasse</span>
+              <h3>Nettoyage terrasse pierre</h3>
+              <p>Nettoyage de terrasse en pierre, dalle ou béton pour retrouver une surface propre et agréable.</p>
             </article>
 
             <article class="service-card reveal">
-              <span class="service-tag">Vitrage</span>
-              <h3>Vitres et vitrines commerciales</h3>
-              <p>Nettoyage intérieur et extérieur de vitres pour les maisons, bureaux, commerces et devantures avec une finition nette et lumineuse.</p>
+              <span class="service-tag">Allée</span>
+              <h3>Nettoyage allée & pavés</h3>
+              <p>Élimination des mousses et salissures sur les allées, pavés et zones de circulation extérieures.</p>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-tag">Murets</span>
+              <h3>Nettoyage murets</h3>
+              <p>Remise au propre des murets, bordures et petits ouvrages extérieurs pour un rendu homogène.</p>
             </article>
 
             <article class="service-card reveal">
               <span class="service-tag">Immobilier</span>
-              <h3>Avant location ou vente</h3>
-              <p>Nettoyage avant mise en location, avant vente immobilière, entretien de biens et remise au propre pour valoriser rapidement votre logement.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <span class="service-tag">Professionnels</span>
-              <h3>Bureaux, parties communes et locaux</h3>
-              <p>Entretien de bureaux, lieux de travail, parties communes, bâtiments agricoles et bâtiments industriels selon les besoins du site.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <span class="service-tag">Spécifique</span>
-              <h3>Nettoyage extrême et décontamination</h3>
-              <p>Assainissement de logements, décontamination des lieux, nettoyage de fin de chantier et interventions techniques sur situations exigeantes.</p>
+              <h3>Nettoyage extérieur avant vente</h3>
+              <p>Une solution simple pour améliorer l'image du bien avant photos, visites et mise sur le marché.</p>
             </article>
           </div>
         </div>
@@ -967,45 +1013,45 @@
       <section id="realisations">
         <div class="shell showcase">
           <div class="carousel-card reveal">
-            <span class="eyebrow" style="background:rgba(255,255,255,0.1);color:white;">Résultats visibles</span>
+            <span class="eyebrow" style="background:rgba(255,255,255,0.1);color:white;">Photos avant / après</span>
             <h2 style="margin:18px 0 0;font-size:clamp(1.8rem,3vw,2.7rem);line-height:1;font-family:'Space Grotesk',sans-serif;letter-spacing:-0.05em;">
-              Façades, vitres, toitures, terrasses : vos surfaces retrouvent éclat et propreté
+              La preuve visuelle qui rassure avant même le premier appel
             </h2>
 
             <div class="carousel-shell">
               <article class="slide active">
-                <img src="./carousel-facade.jpg" alt="Nettoyage de façade" />
+                <img src="./carousel-facade.jpg" alt="Nettoyage façade maison" />
                 <div class="slide-copy">
-                  <span>Façades</span>
-                  <h3>Nettoyage de façade</h3>
-                  <p>Élimination des salissures, traces noires et mousses pour redonner une vraie valeur visuelle à votre bien.</p>
+                  <span>Façade</span>
+                  <h3>Nettoyage façade maison</h3>
+                  <p>Un rendu plus propre, plus net et immédiatement plus valorisant pour le bien.</p>
                 </div>
               </article>
 
               <article class="slide">
-                <img src="./carousel-toiture.jpg" alt="Nettoyage de toiture" />
+                <img src="./carousel-toiture.jpg" alt="Nettoyage toiture" />
                 <div class="slide-copy">
-                  <span>Toitures</span>
-                  <h3>Démoussage et entretien de toiture</h3>
-                  <p>Une toiture plus propre, mieux entretenue et durablement protégée contre la repousse.</p>
+                  <span>Toiture</span>
+                  <h3>Entretien des surfaces extérieures</h3>
+                  <p>Un extérieur plus propre améliore l'image générale de la maison dès le premier regard.</p>
                 </div>
               </article>
 
               <article class="slide">
-                <img src="./carousel-vitres.jpg" alt="Nettoyage de vitres" />
+                <img src="./carousel-vitres.jpg" alt="Nettoyage vitres" />
                 <div class="slide-copy">
                   <span>Vitres</span>
-                  <h3>Vitres et surfaces vitrées impeccables</h3>
-                  <p>Pour plus de luminosité et une finition nette, aussi bien chez les particuliers que les pros.</p>
+                  <h3>Vitres nettes et lumineuses</h3>
+                  <p>Un nettoyage soigné qui améliore la perception du bien, notamment avant visite.</p>
                 </div>
               </article>
 
               <article class="slide">
-                <img src="./carousel-mur.jpg" alt="Nettoyage de mur extérieur" />
+                <img src="./carousel-mur.jpg" alt="Nettoyage mur extérieur" />
                 <div class="slide-copy">
-                  <span>Murs</span>
-                  <h3>Nettoyage des murs extérieurs</h3>
-                  <p>Une remise au propre efficace qui améliore immédiatement l'apparence générale de la maison.</p>
+                  <span>Murets</span>
+                  <h3>Nettoyage murets et abords</h3>
+                  <p>Pour un extérieur homogène, propre et plus engageant visuellement.</p>
                 </div>
               </article>
 
@@ -1013,8 +1059,8 @@
                 <img src="./carousel-facade-2.jpg" alt="Avant après façade" />
                 <div class="slide-copy">
                   <span>Avant / après</span>
-                  <h3>Résultat visible dès la première intervention</h3>
-                  <p>Un nettoyage soigné pour révéler toute la propreté de vos surfaces extérieures.</p>
+                  <h3>Résultat visible rapidement</h3>
+                  <p>Des photos avant / après qui créent immédiatement la confiance chez vos futurs clients.</p>
                 </div>
               </article>
 
@@ -1022,26 +1068,26 @@
                 <img src="./carousel-toiture-2.jpg" alt="Avant après toiture" />
                 <div class="slide-copy">
                   <span>Avant / après</span>
-                  <h3>Toiture propre et valorisée</h3>
-                  <p>Le bon réflexe pour prolonger la durée de vie de votre toiture et améliorer l'esthétique du bien.</p>
+                  <h3>Extérieur plus valorisé</h3>
+                  <p>Un bien mieux entretenu se vend mieux, se visite mieux et se présente mieux.</p>
                 </div>
               </article>
 
               <article class="slide">
-                <img src="./carousel-terrasse.jpg" alt="Nettoyage de terrasse" />
+                <img src="./carousel-terrasse.jpg" alt="Nettoyage terrasse" />
                 <div class="slide-copy">
-                  <span>Terrasses</span>
-                  <h3>Terrasses et allées remises à neuf</h3>
-                  <p>Suppression des salissures et des traces pour retrouver une surface propre et agréable au quotidien.</p>
+                  <span>Terrasse</span>
+                  <h3>Nettoyage terrasse pierre</h3>
+                  <p>Idéal avant saison, avant vente ou simplement pour retrouver une terrasse propre.</p>
                 </div>
               </article>
 
               <article class="slide">
-                <img src="./carousel-interieur.jpg" alt="Nettoyage intérieur" />
+                <img src="./carousel-interieur.jpg" alt="Remise au propre légère" />
                 <div class="slide-copy">
-                  <span>Remise en état</span>
-                  <h3>Intérieurs et logements remis au propre</h3>
-                  <p>Une solution utile pour les logements dégradés, les remises en état et les situations exigeantes.</p>
+                  <span>Déménagement léger</span>
+                  <h3>Remise au propre avant départ ou vente</h3>
+                  <p>Pour présenter un logement plus net sans sortir du positionnement principal du site.</p>
                 </div>
               </article>
             </div>
@@ -1059,35 +1105,70 @@
           </div>
 
           <div class="trust-card reveal">
-            <span class="eyebrow">Notre engagement</span>
-            <h3>Une entreprise locale qui inspire confiance par son sérieux</h3>
+            <span class="eyebrow">Preuve & réassurance</span>
+            <h3>Une offre claire, locale et cohérente avec votre campagne Google Ads</h3>
             <p>
-              Les Nettoyeurs Bressans accompagnent les particuliers et les professionnels avec une approche simple :
-              être réactifs, soignés et efficaces. Chaque intervention est pensée pour améliorer immédiatement
-              l'apparence du bien tout en respectant les surfaces.
+              Ce site est volontairement centré sur le nettoyage extérieur, la valorisation du bien et les demandes les plus qualifiées :
+              façade, terrasse, allée, murets et avant vente immobilière.
             </p>
 
             <div class="trust-stack">
               <div class="trust-item">
-                <strong>Du matériel professionnel et des méthodes adaptées</strong>
-                <span>Chaque surface demande le bon traitement pour obtenir un résultat propre et durable.</span>
+                <strong>Intervention rapide</strong>
+                <span>Vous captez des demandes chaudes sur Louhans et alentours.</span>
               </div>
               <div class="trust-item">
-                <strong>Une intervention rapide autour de Louhans</strong>
-                <span>Maison, immeuble, local commercial ou bâtiment professionnel : vous gagnez en réactivité.</span>
+                <strong>Devis gratuit</strong>
+                <span>Le visiteur sait exactement quoi faire : appeler ou envoyer une photo sur WhatsApp.</span>
               </div>
               <div class="trust-item">
-                <strong>Un objectif clair : un résultat visible et satisfaisant</strong>
-                <span>Nous mettons l'accent sur la qualité de finition et la satisfaction du client à chaque chantier.</span>
+                <strong>Positionnement simple</strong>
+                <span>Un seul univers, une seule promesse, une seule intention : plus de leads qualifiés.</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <section id="avant-vente">
+        <div class="shell grid-two">
+          <div class="proof-card reveal">
+            <span class="eyebrow">Avant vente immobilier</span>
+            <h3>Valorisez votre bien avant la vente</h3>
+            <p>
+              Un nettoyage extérieur avant vente améliore immédiatement la présentation du bien.
+            </p>
+
+            <div class="proof-stack">
+              <div class="proof-item">
+                <strong>Améliore les photos</strong>
+                <span>Une façade plus propre et des extérieurs nets rendent l'annonce plus attractive.</span>
+              </div>
+              <div class="proof-item">
+                <strong>Facilite les visites</strong>
+                <span>Le visiteur projette davantage dans un bien entretenu dès l'arrivée.</span>
+              </div>
+              <div class="proof-item">
+                <strong>Augmente la perception du prix</strong>
+                <span>Un extérieur propre renforce la valeur perçue du logement.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="seo-card reveal">
+            <span class="eyebrow">Mots-clés stratégiques</span>
+            <h3>Un contenu qui colle à votre campagne</h3>
+            <p>
+              Cette page met en avant les expressions les plus utiles pour Google Ads et le référencement local :
+              nettoyage façade maison, nettoyage terrasse pierre, nettoyage allée, nettoyage murets, nettoyage extérieur avant vente.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section>
         <div class="shell">
-          <div class="section-head section-head--narrow reveal">
+          <div class="section-head reveal">
             <div>
               <span class="eyebrow">Nos atouts</span>
               <h2>Des points forts concrets pour vous accompagner au quotidien</h2>
@@ -1103,14 +1184,14 @@
 
             <article class="benefit reveal">
               <div class="icon">🛡</div>
-              <h3>Satisfaction garantie</h3>
+              <h3>Résultat visible</h3>
               <p>Des méthodes pensées pour nettoyer efficacement sans agresser les matériaux.</p>
             </article>
 
             <article class="benefit reveal">
               <div class="icon">🏠</div>
-              <h3>Particuliers et pros</h3>
-              <p>Maisons, immeubles, commerces, bureaux, locations saisonnières et bâtiments techniques.</p>
+              <h3>Particuliers & immobilier</h3>
+              <p>Maisons, biens avant vente, remises au propre légères et extérieurs à valoriser rapidement.</p>
             </article>
           </div>
         </div>
@@ -1121,31 +1202,28 @@
           <div class="zones reveal">
             <span class="eyebrow" style="background:rgba(255,255,255,0.1);color:white;">Zone d'intervention</span>
             <h2 style="margin:18px 0 0;font-size:clamp(2rem,4vw,3.1rem);line-height:1;font-family:'Space Grotesk',sans-serif;letter-spacing:-0.05em;">
-              Nettoyage extérieur à Louhans et dans les communes alentours
+              Intervention à Louhans, Chalon-sur-Saône, Lons-le-Saunier, Tournus, Bresse et Mâcon
             </h2>
             <p style="margin:16px 0 0;max-width:72ch;line-height:1.8;color:rgba(255,255,255,0.82);">
-              Nous intervenons à Louhans, Châteaurenaud, Branges, Sornay, Ratte, Saint-Usuge,
-              Montpont-en-Bresse, Cuisery, Cuiseaux, Tournus, Mâcon, Chalon-sur-Saône,
-              Lons-le-Saunier, Beaune, Bourg-en-Bresse et dans les villages alentours pour le
-              nettoyage de façades, toitures, terrasses, allées, murs, vitres et remises en état.
+              Nous intervenons pour le nettoyage façade maison, le nettoyage terrasse pierre, le nettoyage allée,
+              le nettoyage murets et le nettoyage extérieur avant vente à Louhans et dans les communes alentours.
             </p>
 
             <div class="zone-tags">
               <span>Louhans</span>
-              <span>Châteaurenaud</span>
+              <span>Chalon-sur-Saône</span>
+              <span>Lons-le-Saunier</span>
+              <span>Tournus</span>
+              <span>Bresse</span>
+              <span>Mâcon</span>
               <span>Branges</span>
               <span>Sornay</span>
               <span>Ratte</span>
               <span>Saint-Usuge</span>
-              <span>Montpont-en-Bresse</span>
               <span>Cuisery</span>
               <span>Cuiseaux</span>
-              <span>Tournus</span>
-              <span>Mâcon</span>
-              <span>Chalon-sur-Saône</span>
-              <span>Lons-le-Saunier</span>
-              <span>Beaune</span>
               <span>Bourg-en-Bresse</span>
+              <span>Montpont-en-Bresse</span>
             </div>
           </div>
         </div>
@@ -1157,8 +1235,8 @@
             <div class="cta-grid">
               <div>
                 <span class="eyebrow" style="background:rgba(255,255,255,0.1);color:white;">Devis gratuit</span>
-                <h2>Besoin d'un nettoyage rapide et efficace ?</h2>
-                <p>Appelez maintenant ou envoyez un message WhatsApp pour demander un devis gratuit à domicile.</p>
+                <h2>Besoin d'un nettoyage façade ou terrasse à Louhans ?</h2>
+                <p>Appelez maintenant ou envoyez une photo sur WhatsApp pour recevoir votre devis gratuit sous 24h.</p>
               </div>
 
               <div class="cta-stack">
@@ -1174,7 +1252,7 @@
                   href="https://wa.me/33668739456"
                   onclick="return gtag_report_conversion('https://wa.me/33668739456');"
                 >
-                  WhatsApp disponible
+                  Envoyer une photo sur WhatsApp
                 </a>
               </div>
             </div>
@@ -1185,8 +1263,8 @@
 
     <footer class="footer">
       <div class="shell footer-line">
-        <span>Les Nettoyeurs Bressans • Entreprise locale de nettoyage</span>
-        <span>Page vitrine one-page • HTML autonome</span>
+        <span>Les Nettoyeurs Bressans • Nettoyage façade maison & terrasse à Louhans</span>
+        <span>Page vitrine one-page • Google Ads ready</span>
       </div>
     </footer>
 
