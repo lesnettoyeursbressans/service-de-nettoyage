@@ -641,7 +641,7 @@
       .trust-card h3,
       .seo-card h3,
       .proof-card h3 {
-        margin: 0 28px 14px;
+        margin: 0 0 14px;
         font-size: 1.8rem;
       }
 
@@ -740,6 +740,10 @@
         gap: 22px;
       }
 
+      .seo-card h3 {
+        margin-top: 26px;
+      }
+
       .seo-person {
         margin-top: 30px;
         display: flex;
@@ -765,26 +769,27 @@
       }
 
       .seo-person-badge {
-        margin-top: 14px;
+        margin-top: 12px;
         display: inline-flex;
         align-items: center;
-        gap: 8px;
-        padding: 9px 14px;
+        gap: 6px;
+        padding: 6px 10px;
         border-radius: 999px;
-        background: linear-gradient(135deg, rgba(24, 72, 150, 0.08), rgba(89, 184, 255, 0.14));
+        background: linear-gradient(135deg, rgba(24, 72, 150, 0.08), rgba(89, 184, 255, 0.12));
         color: var(--navy-900);
-        font-size: 0.82rem;
+        font-size: 0.7rem;
         font-weight: 800;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.02em;
+        line-height: 1;
       }
 
       .seo-person-badge::before {
         content: "";
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
         border-radius: 999px;
         background: #1fc16b;
-        box-shadow: 0 0 0 6px rgba(31, 193, 107, 0.14);
+        box-shadow: 0 0 0 4px rgba(31, 193, 107, 0.12);
       }
 
       .seo-person-btn {
@@ -792,7 +797,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 14px 22px;
+        padding: 12px 24px;
         border-radius: 999px;
         background: linear-gradient(135deg, #ffe27e, #f4bb1a);
         color: #071327;
@@ -1191,7 +1196,7 @@
 
           <div class="trust-card reveal">
             <span class="eyebrow">Notre engagement</span>
-            <h3>Une entreprise locale spécialisée dans le nettoyage extérieur</h3>
+            <h3>Une entreprise locale qui inspire confiance par son sérieux</h3>
             <p>
               Les Nettoyeurs Bressans accompagnent les particuliers et les professionnels avec une approche simple :
               être réactifs, soignés et efficaces. Chaque intervention est pensée pour améliorer immédiatement
@@ -1241,39 +1246,36 @@
             </div>
           </div>
 
-        <div class="seo-card reveal">
-  <span class="eyebrow">Entreprise locale</span>
+          <div class="seo-card reveal">
+            <span class="eyebrow">Entreprise locale</span>
 
-  <div class="seo-person">
-    <div class="seo-person-photo-wrap">
-      <img
-        class="seo-person-photo"
-        src="./kevin.jpg"
-        alt="Photo de Kévin, votre interlocuteur local"
-      />
-    </div>
+            <div class="seo-person">
+              <div class="seo-person-photo-wrap">
+                <img
+                  class="seo-person-photo"
+                  src="./kevin.jpg"
+                  alt="Photo de Kévin, votre interlocuteur local"
+                />
+              </div>
 
-    <div class="seo-person-badge">Réponse rapide</div>
+              <div class="seo-person-badge">Disponible</div>
 
-    <div class="seo-person-name">Kévin, votre interlocuteur local</div>
+              <div class="seo-person-name">Kévin, votre interlocuteur local</div>
 
-    <a
-      class="seo-person-btn"
-      href="https://wa.me/33668739456"
-      onclick="return gtag_report_conversion('https://wa.me/33668739456');"
-    >
-      Me contacter
-    </a>
-  </div>
-
-  <h3>Nettoyage extérieur à Louhans et alentours</h3>
-  <p>
-    Spécialiste du nettoyage façade, terrasse et extérieurs, nous intervenons rapidement pour redonner de la valeur à votre bien.
-    Façade maison, terrasse en pierre ou béton, allée, murets : bénéficiez d’un service professionnel, local et efficace, idéal avant une mise en vente ou un entretien régulier.
-  </p>
-</div>
-
+              <a
+                class="seo-person-btn"
+                href="https://wa.me/33668739456"
+                onclick="return gtag_report_conversion('https://wa.me/33668739456');"
+              >
+                Me contacter
+              </a>
             </div>
+
+            <h3>Nettoyage extérieur à Louhans et alentours</h3>
+            <p>
+              Spécialiste du nettoyage façade, terrasse et extérieurs, nous intervenons rapidement pour redonner de la valeur à votre bien.
+              Façade maison, terrasse en pierre ou béton, allée, murets : bénéficiez d’un service professionnel, local et efficace, idéal avant une mise en vente ou un entretien régulier.
+            </p>
           </div>
         </div>
       </section>
