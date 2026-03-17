@@ -3,14 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020213630"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020213630"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'AW-18020213630');
-</script>
+      gtag('config', 'AW-18020213630');
+
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18020213630/ZmygCJGKhIocEP7G2pBD',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les Nettoyeurs Bressans | Nettoyage extérieur à Louhans et alentours</title>
     <meta
@@ -843,8 +856,20 @@
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="tel:0668739456">Appeler le 06 68 73 94 56</a>
-              <a class="btn btn-secondary" href="https://wa.me/33668739456">Demander un devis WhatsApp</a>
+              <a
+                class="btn btn-primary"
+                href="tel:0668739456"
+                onclick="return gtag_report_conversion('tel:0668739456');"
+              >
+                Appeler le 06 68 73 94 56
+              </a>
+              <a
+                class="btn btn-secondary"
+                href="https://wa.me/33668739456"
+                onclick="return gtag_report_conversion('https://wa.me/33668739456');"
+              >
+                Demander un devis WhatsApp
+              </a>
             </div>
 
             <div class="hero-points">
@@ -1137,8 +1162,20 @@
               </div>
 
               <div class="cta-stack">
-                <a class="btn btn-primary" href="tel:0668739456">06 68 73 94 56</a>
-                <a class="btn btn-secondary" href="https://wa.me/33668739456">WhatsApp disponible</a>
+                <a
+                  class="btn btn-primary"
+                  href="tel:0668739456"
+                  onclick="return gtag_report_conversion('tel:0668739456');"
+                >
+                  06 68 73 94 56
+                </a>
+                <a
+                  class="btn btn-secondary"
+                  href="https://wa.me/33668739456"
+                  onclick="return gtag_report_conversion('https://wa.me/33668739456');"
+                >
+                  WhatsApp disponible
+                </a>
               </div>
             </div>
           </div>
