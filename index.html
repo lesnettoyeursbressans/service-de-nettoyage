@@ -71,6 +71,8 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
     <meta name="description" content="Nettoyage toiture et façade à Louhans et en Bresse. Techniques douces, produits éco-responsables, résultat durable. Démoussage toit dès 8€/m². Devis gratuit sous 24h." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload hero image for faster LCP -->
+    <link rel="preload" as="image" href="./hero-avant-apres-2.jpg" />
     <link rel="canonical" href="https://lesnettoyeursbressans.fr/" />
     <meta property="og:title" content="Nettoyage toiture & façade en Bresse | Les Nettoyeurs Bressans" />
     <meta property="og:description" content="Démoussage toiture, nettoyage façade à Louhans. Techniques douces, produits éco-responsables, dès 8€/m². Devis gratuit sous 24h." />
@@ -197,7 +199,9 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
       ]
     }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
     <style>
       :root {
         --stone-950: #0c0a09;
@@ -236,7 +240,7 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
       }
 
       * { box-sizing: border-box; margin: 0; padding: 0; }
-      html { scroll-behavior: smooth; }
+      html { scroll-behavior: smooth; overflow-x: hidden; }
 
       body {
         font-family: "Outfit", sans-serif;
@@ -389,6 +393,7 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
       .hero {
         padding: 44px 0 48px;
         position: relative;
+        overflow: hidden;
       }
 
       .hero::after {
@@ -1645,7 +1650,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#zone">Zone</a>
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
-          <a class="nav-cta" href="tel:0668739456" onclick="trackCTA('appel','nav'); return gtag_report_conversion('tel:0668739456');">Appeler Kévin</a>
+          <a class="nav-cta" href="tel:0668739456" onclick="trackCTA('appel','nav'); gtag_report_conversion();">Appeler Kévin</a>
         </nav>
       </div>
     </header>
@@ -1686,7 +1691,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ═══ NOUVEAU HERO CTA : Appeler principal → Rappel + WhatsApp secondaires ═══ -->
             <div class="hero-ctas reveal rd3">
               <!-- CTA PRINCIPAL — Appeler (vert, pleine largeur) -->
-              <a class="btn btn-call-primary" href="tel:0668739456" onclick="trackCTA('appel','hero'); return gtag_report_conversion('tel:0668739456');">
+              <a class="btn btn-call-primary" href="tel:0668739456" onclick="trackCTA('appel','hero'); gtag_report_conversion();">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                 Appeler Kévin — Devis gratuit
               </a>
@@ -1724,12 +1729,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <span class="p-label">Toiture nettoyée</span>
                 </article>
                 <article class="p-slide">
-                  <img src="./hero-avant-apres-1.jpg" alt="Avant après nettoyage de façade" />
+                  <img src="./hero-avant-apres-1.jpg" alt="Avant après nettoyage de façade" loading="lazy" />
                   <span class="p-badge">Avant / Après</span>
                   <span class="p-label">Façade nettoyée</span>
                 </article>
                 <article class="p-slide">
-                  <img src="./hero-avant-apres-3.jpg" alt="Avant après nettoyage de terrasse" />
+                  <img src="./hero-avant-apres-3.jpg" alt="Avant après nettoyage de terrasse" loading="lazy" />
                   <span class="p-badge">Avant / Après</span>
                   <span class="p-label">Terrasse nettoyée</span>
                 </article>
@@ -1784,7 +1789,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p>Appelez directement ou envoyez une photo — Kévin vous chiffre sous 24h.</p>
             </div>
             <div class="mid-cta-actions">
-              <a class="btn btn-call" href="tel:0668739456" onclick="trackCTA('appel','mid'); return gtag_report_conversion('tel:0668739456');">
+              <a class="btn btn-call" href="tel:0668739456" onclick="trackCTA('appel','mid'); gtag_report_conversion();">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                 Appeler Kévin
               </a>
@@ -1809,14 +1814,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="sdesc reveal">Chaque intervention transforme l'apparence du bien. Jugez par vous-même.</p>
           <div class="gal-grid">
             <div class="gal-card big reveal">
-              <div class="gal-img"><img src="./carousel-toiture.jpg" alt="Nettoyage toiture avant après" /><div class="gal-lbl"><span>Toiture</span><h3>Démoussage &amp; nettoyage toiture</h3></div></div>
+              <div class="gal-img"><img src="./carousel-toiture.jpg" alt="Nettoyage toiture avant après" loading="lazy" /><div class="gal-lbl"><span>Toiture</span><h3>Démoussage &amp; nettoyage toiture</h3></div></div>
             </div>
             <div class="gal-card reveal rd1">
-              <div class="gal-img"><img src="./carousel-facade.jpg" alt="Nettoyage façade" /><div class="gal-lbl"><span>Façade</span><h3>Nettoyage façade maison</h3></div></div>
+              <div class="gal-img"><img src="./carousel-facade.jpg" alt="Nettoyage façade" loading="lazy" /><div class="gal-lbl"><span>Façade</span><h3>Nettoyage façade maison</h3></div></div>
               <div class="gal-info">Un rendu propre et valorisant en quelques heures.</div>
             </div>
             <div class="gal-card reveal rd2">
-              <div class="gal-img"><img src="./carousel-terrasse.jpg" alt="Nettoyage terrasse" /><div class="gal-lbl"><span>Terrasse</span><h3>Terrasse pierre nettoyée</h3></div></div>
+              <div class="gal-img"><img src="./carousel-terrasse.jpg" alt="Nettoyage terrasse" loading="lazy" /><div class="gal-lbl"><span>Terrasse</span><h3>Terrasse pierre nettoyée</h3></div></div>
               <div class="gal-info">Idéal avant saison ou avant vente.</div>
             </div>
           </div>
@@ -1839,12 +1844,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
             <div class="cc reveal rd1">
-              <img class="cc-photo" src="./kevin.jpg" alt="Kévin, nettoyage toiture et façade à Louhans" />
+              <img class="cc-photo" src="./kevin.jpg" alt="Kévin, nettoyage toiture et façade à Louhans" loading="lazy" />
               <span class="cc-status"><span class="pulse"></span> Disponible</span>
               <div class="cc-name">Kévin</div>
               <div class="cc-role">Spécialiste toiture &amp; façade à Louhans</div>
               <div class="cc-actions">
-                <a class="cc-btn-call" href="tel:0668739456" onclick="trackCTA('appel','cc'); return gtag_report_conversion('tel:0668739456');">
+                <a class="cc-btn-call" href="tel:0668739456" onclick="trackCTA('appel','cc'); gtag_report_conversion();">
                   <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                   06 68 73 94 56
                 </a>
@@ -1914,7 +1919,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h2 class="stitle">Besoin d'un nettoyage toiture ou façade ?</h2>
             <p>Choisissez le moyen qui vous convient — Kévin vous répond rapidement.</p>
             <div class="final-btns">
-              <a class="btn btn-call-primary" href="tel:0668739456" onclick="trackCTA('appel','footer'); return gtag_report_conversion('tel:0668739456');">
+              <a class="btn btn-call-primary" href="tel:0668739456" onclick="trackCTA('appel','footer'); gtag_report_conversion();">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                 Appeler Kévin — Devis gratuit
               </a>
@@ -1937,7 +1942,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ═══ STICKY MOBILE — Appeler (vert, plus gros) + Rappeler ═══ -->
     <div class="sticky-mob" id="stickyCta">
       <div class="sticky-mob-inner">
-        <a class="sticky-call-btn" href="tel:0668739456" onclick="trackCTA('appel','sticky'); return gtag_report_conversion('tel:0668739456');">
+        <a class="sticky-call-btn" href="tel:0668739456" onclick="trackCTA('appel','sticky'); gtag_report_conversion();">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           Appeler
         </a>
