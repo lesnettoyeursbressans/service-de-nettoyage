@@ -669,53 +669,6 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
         line-height: 1.7;
       }
 
-      /* ─── SERVICES ─── */
-      .svc-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-        margin-top: 28px;
-        max-width: 100%;
-      }
-
-      .svc {
-        padding: 26px;
-        border-radius: var(--r-lg);
-        background: white;
-        border: 1px solid var(--border);
-        box-shadow: var(--shadow-sm);
-        transition: all 0.25s;
-      }
-
-      .svc:hover {
-        box-shadow: var(--shadow-md);
-        transform: translateY(-3px);
-        border-color: var(--amber-300);
-      }
-
-      .svc-emoji {
-        width: 44px;
-        height: 44px;
-        border-radius: 12px;
-        display: grid;
-        place-items: center;
-        font-size: 1.2rem;
-        margin-bottom: 16px;
-        background: var(--stone-100);
-      }
-
-      .svc h3 {
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 1.06rem;
-        font-weight: 700;
-        margin-bottom: 6px;
-      }
-
-      .svc p {
-        color: var(--stone-500);
-        line-height: 1.6;
-        font-size: 0.9rem;
-      }
 
       /* ─── GALLERY ─── */
       .gallery-sec {
@@ -1369,13 +1322,11 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
         .gal-grid { grid-template-columns: 1fr; }
         .gal-card.big { grid-row: auto; }
         .gal-card.big .gal-img { min-height: 260px; }
-        .svc-grid { grid-template-columns: repeat(2, 1fr) !important; }
       }
 
       @media (max-width: 760px) {
         .nav { display: none; }
         h1 { font-size: 1.8rem; }
-        .svc-grid { grid-template-columns: 1fr !important; }
         .footer-line { flex-direction: column; }
         .zone-box { padding: 24px; }
         .final-cta-box { padding: 28px 20px; }
@@ -1436,7 +1387,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
         <nav class="nav" aria-label="Navigation principale">
           <a href="#services">Services</a>
-          <a href="#realisations">Réalisations</a>
           <a href="#zone">Zone</a>
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
@@ -1501,25 +1451,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </section>
 
 
-      <!-- SERVICES -->
-      <section id="services" style="padding-top:28px;">
+      <!-- GALLERY = NOS SERVICES -->
+      <section id="services" class="gallery-sec">
         <div class="wrap">
-          <h2 class="stitle reveal">Nos services</h2>
-          <div class="svc-grid" style="grid-template-columns: 1fr 1fr; margin-top: 16px;">
-            <article class="svc reveal"><div class="svc-emoji">🏠</div><h3>Toiture &amp; démoussage</h3><p>Démoussage, nettoyage et traitement anti-mousse longue durée. Dès 8 €/m².</p></article>
-            <article class="svc reveal rd1"><div class="svc-emoji">🧱</div><h3>Façade maison</h3><p>Nettoyage basse pression adapté crépi et pierre. Dès 8 €/m².</p></article>
-            <article class="svc reveal"><div class="svc-emoji">🪨</div><h3>Terrasse &amp; allée</h3><p>Pierre, béton, pavés — résultat visible immédiatement.</p></article>
-            <article class="svc reveal rd1"><div class="svc-emoji">💰</div><h3>Forfait toiture + façade</h3><p>Tout en une intervention, tarif avantageux.</p></article>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- GALLERY -->
-      <section id="realisations" class="gallery-sec">
-        <div class="wrap">
-          <span class="stag reveal">Nos réalisations</span>
-          <h2 class="stitle reveal">Avant / Après</h2>
+          <h2 class="stitle reveal" style="color:white;">Nos services</h2>
           <p class="sdesc reveal">Chaque intervention transforme l'apparence du bien.</p>
           <div class="gal-grid">
             <div class="gal-card big reveal">
@@ -1768,7 +1703,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="footer-links">
             <a href="#services">Services</a>
-            <a href="#realisations">Réalisations</a>
             <a href="#zone">Zone</a>
             <a href="#faq">FAQ</a>
             <a href="#confidentialite">Confidentialité</a>
