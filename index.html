@@ -1097,6 +1097,12 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
         background: var(--green-600);
         text-decoration: none;
         border: none;
+        animation: sticky-glow 2.5s ease-in-out infinite;
+      }
+
+      @keyframes sticky-glow {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4); }
+        50% { box-shadow: 0 0 0 8px rgba(22, 163, 74, 0); }
       }
 
       .sticky-rappel-btn {
@@ -1339,38 +1345,7 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
       .footer-contact span { display: block; font-size: 0.8rem; }
       .footer-line { display: flex; justify-content: space-between; gap: 16px; }
 
-      /* ─── TRUST BADGES BAR ─── */
-      .trust-bar { padding: 32px 0; }
-      .trust-badges {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-      }
-      .trust-badge {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 14px 18px;
-        border-radius: var(--r);
-        background: white;
-        border: 1px solid var(--border);
-        box-shadow: var(--shadow-sm);
-        flex: 1;
-        min-width: 180px;
-      }
-      .trust-ico {
-        width: 38px;
-        height: 38px;
-        border-radius: 10px;
-        background: var(--stone-100);
-        display: grid;
-        place-items: center;
-        font-size: 1.1rem;
-        flex-shrink: 0;
-      }
-      .trust-badge strong { display: block; font-size: 0.84rem; color: var(--stone-800); }
-      .trust-badge span { display: block; font-size: 0.74rem; color: var(--stone-400); margin-top: 1px; }
+
 
       /* ─── PRIVACY ─── */
       .privacy-box {
@@ -1417,8 +1392,6 @@ src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
         .reviews-grid { grid-template-columns: 1fr; }
         .practical-grid { grid-template-columns: 1fr; }
         .practical-card { padding: 22px; }
-        .trust-badges { gap: 8px; }
-        .trust-badge { min-width: 140px; padding: 10px 14px; }
         .footer-top { grid-template-columns: 1fr; gap: 16px; }
         .footer-contact { text-align: left; }
         .footer-line { flex-direction: column; }
@@ -1527,17 +1500,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </section>
 
-      <!-- BADGES DE RÉASSURANCE -->
-      <div class="trust-bar">
-        <div class="wrap">
-          <div class="trust-badges reveal">
-            <div class="trust-badge"><div class="trust-ico">🏗️</div><div><strong>Ex-maçon charpentier</strong></div></div>
-            <div class="trust-badge"><div class="trust-ico">📋</div><div><strong>Devis gratuit, sans engagement</strong></div></div>
-            <div class="trust-badge"><div class="trust-ico">📍</div><div><strong>Entreprise locale · Louhans</strong></div></div>
-            <div class="trust-badge"><div class="trust-ico">⏱️</div><div><strong>Réponse sous 24h</strong></div></div>
-          </div>
-        </div>
-      </div>
 
       <!-- SERVICES -->
       <section id="services" style="padding-top:28px;">
@@ -1558,7 +1520,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="wrap">
           <span class="stag reveal">Nos réalisations</span>
           <h2 class="stitle reveal">Avant / Après</h2>
-          <p class="sdesc reveal">Chaque intervention transforme l'apparence du bien. Jugez par vous-même.</p>
+          <p class="sdesc reveal">Chaque intervention transforme l'apparence du bien.</p>
           <div class="gal-grid">
             <div class="gal-card big reveal">
               <div class="gal-img"><img src="./carousel-toiture.jpg" alt="Nettoyage toiture avant après" loading="lazy" /><div class="gal-lbl"><span>Toiture</span><h3>Démoussage &amp; nettoyage toiture</h3></div></div>
@@ -1588,7 +1550,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2 class="stitle" style="margin-top:10px;">Ex-maçon charpentier, reconverti dans le nettoyage extérieur</h2>
                 <p style="color:var(--stone-600);line-height:1.7;font-size:0.95rem;margin-top:8px;">Kévin, 27 ans, basé à Louhans. Après plusieurs années sur les chantiers comme ouvrier maçon et charpentier, il connaît le bâtiment de l'intérieur. Aujourd'hui il met cette expérience au service de l'entretien de votre toiture et de vos façades — avec le souci du travail bien fait et un vrai respect du support.</p>
                 <div class="about-badges">
-                  <span class="pro-badge">Ex-maçon charpentier</span>
+                  <span class="pro-badge">Connaissance du bâtiment</span>
                   <span class="pro-badge">Louhans &amp; 60 km</span>
                 </div>
               </div>
