@@ -62,389 +62,490 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"/></noscript>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
   :root {
-    --green: #1a7a3a;
-    --green-dark: #145e2c;
-    --green-light: #e8f5ec;
-    --orange: #e86b20;
-    --orange-light: #fff4eb;
-    --dark: #1a1a1a;
-    --gray: #555;
-    --gray-light: #f7f7f5;
+    --stone-950: #0c0a09;
+    --stone-900: #1c1917;
+    --stone-700: #44403c;
+    --stone-600: #57534e;
+    --stone-500: #78716c;
+    --stone-400: #a8a29e;
+    --stone-200: #e7e5e4;
+    --stone-100: #f5f5f4;
+    --stone-50: #fafaf9;
+    --amber-600: #d97706;
+    --amber-500: #f59e0b;
+    --amber-400: #fbbf24;
+    --amber-300: #fcd34d;
+    --amber-200: #fde68a;
+    --amber-100: #fef3c7;
+    --green-600: #16a34a;
+    --green-400: #4ade80;
     --white: #ffffff;
-    --radius: 12px;
-    --shadow: 0 2px 12px rgba(0,0,0,.08);
+    --border: rgba(28,25,23,.08);
+    --border-strong: rgba(28,25,23,.14);
+    --shadow-sm: 0 1px 2px rgba(28,25,23,.05);
+    --shadow-md: 0 6px 24px rgba(28,25,23,.07);
+    --r: 14px;
+    --r-lg: 20px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { overflow-x: hidden; }
 
   body {
-    font-family: 'DM Sans', sans-serif;
-    color: var(--dark);
-    background: var(--white);
+    font-family: 'Outfit', sans-serif;
+    color: var(--stone-900);
+    background: var(--stone-50);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 
-  /* ========== STICKY CTA BAR ========== */
-  .sticky-cta {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background: var(--green);
-    padding: 12px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    box-shadow: 0 -4px 20px rgba(0,0,0,.15);
-  }
-  .sticky-cta a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.15rem;
-    letter-spacing: .01em;
-    width: 100%;
-  }
-  .sticky-cta svg { flex-shrink: 0; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
 
-  .sticky-cta .pulse {
-    width: 10px; height: 10px;
-    background: #4ade80;
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: .5; transform: scale(1.4); }
+  .wrap {
+    width: min(calc(100% - 40px), 540px);
+    margin: 0 auto;
   }
 
-  /* ========== TOP URGENCY BAR ========== */
+  /* ═══ URGENCY BAR ═══ */
   .urgency-bar {
-    background: var(--orange);
+    background: var(--stone-900);
     color: var(--white);
     text-align: center;
     padding: 10px 16px;
-    font-size: .85rem;
+    font-size: .82rem;
     font-weight: 600;
     letter-spacing: .02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .pulse {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--green-400);
+    box-shadow: 0 0 0 3px rgba(74,222,128,.2);
+    animation: pulse 2s ease infinite;
+    flex-shrink: 0;
+    display: inline-block;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(74,222,128,.2); }
+    50% { box-shadow: 0 0 0 8px rgba(74,222,128,0); }
   }
 
-  /* ========== HERO ========== */
+  /* ═══ HERO ═══ */
   .hero {
-    padding: 28px 20px 32px;
+    padding: 28px 0 32px;
     text-align: center;
   }
 
-  .hero-badge {
-    display: inline-flex;
+  .hero-identity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .hero-photo {
+    width: 52px; height: 52px;
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: center 15%;
+    border: 2px solid var(--amber-300);
+    box-shadow: var(--shadow-md);
+  }
+  .hero-name {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: .95rem;
+    font-weight: 700;
+    display: block;
+  }
+  .hero-loc {
+    display: flex;
     align-items: center;
     gap: 6px;
-    background: var(--green-light);
-    color: var(--green);
     font-size: .8rem;
     font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 50px;
-    margin-bottom: 16px;
-  }
-  .hero-badge .dot {
-    width: 8px; height: 8px;
-    background: var(--green);
-    border-radius: 50%;
+    color: var(--green-600);
   }
 
   .hero h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.75rem;
-    line-height: 1.2;
-    color: var(--dark);
-    margin-bottom: 12px;
-    font-weight: 400;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    color: var(--stone-950);
+    margin-bottom: 10px;
   }
-  .hero h1 strong {
-    color: var(--green);
-    font-weight: 400;
-  }
+  .hero h1 strong { color: var(--amber-600); }
 
   .hero-sub {
-    font-size: 1rem;
-    color: var(--gray);
-    line-height: 1.5;
+    font-size: .95rem;
+    color: var(--stone-500);
+    line-height: 1.55;
     margin-bottom: 20px;
   }
 
+  /* ═══ PRICE BOX ═══ */
   .hero-price {
-    background: var(--gray-light);
-    border-radius: var(--radius);
+    background: var(--white);
+    border-radius: var(--r);
     padding: 16px 20px;
     margin-bottom: 20px;
-    border: 1px solid #e5e5e3;
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
   }
   .hero-price .label {
-    font-size: .78rem;
+    font-size: .72rem;
     text-transform: uppercase;
     letter-spacing: .08em;
-    color: var(--gray);
+    color: var(--stone-500);
     margin-bottom: 4px;
+    font-weight: 600;
   }
   .hero-price .price {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 1.6rem;
-    color: var(--dark);
+    font-weight: 800;
+    color: var(--stone-950);
   }
   .hero-price .price span {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: .85rem;
-    color: var(--gray);
+    color: var(--stone-500);
     font-weight: 400;
   }
   .hero-price .detail {
-    font-size: .82rem;
-    color: var(--gray);
-    margin-top: 4px;
+    font-size: .8rem;
+    color: var(--stone-500);
+    margin-top: 3px;
+  }
+  .hero-price .promo {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: var(--amber-100);
+    color: var(--amber-600);
+    font-size: .78rem;
+    font-weight: 700;
   }
 
+  /* ═══ CTA PRINCIPAL ═══ */
   .cta-main {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     width: 100%;
-    padding: 16px 24px;
-    background: var(--green);
+    padding: 17px 24px;
+    background: var(--green-600);
     color: var(--white);
     border: none;
-    border-radius: var(--radius);
-    font-size: 1.1rem;
+    border-radius: var(--r);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
     font-weight: 700;
-    text-decoration: none;
     cursor: pointer;
-    transition: background .2s;
-    box-shadow: 0 4px 16px rgba(26,122,58,.3);
+    transition: all .2s;
+    box-shadow: 0 4px 18px rgba(22,163,74,.3);
   }
-  .cta-main:hover { background: var(--green-dark); }
+  .cta-main:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 26px rgba(22,163,74,.38);
+  }
 
   .cta-sub {
-    margin-top: 10px;
-    font-size: .82rem;
-    color: var(--gray);
-  }
-
-  /* ========== TRUST BADGES ========== */
-  .trust {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding: 20px 20px 8px;
-    flex-wrap: wrap;
-  }
-  .trust-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    font-size: .78rem;
-    color: var(--gray);
-    font-weight: 600;
-  }
-  .trust-item .icon {
-    width: 36px; height: 36px;
-    background: var(--green-light);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* ========== AVANT/APRÈS ========== */
-  .before-after {
-    padding: 28px 20px;
-  }
-  .section-label {
-    font-size: .75rem;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    color: var(--green);
-    font-weight: 700;
-    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: .8rem;
+    color: var(--stone-400);
     text-align: center;
   }
+
+  /* ═══ BADGES PRO ═══ */
+  .pro-badges {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 0 0;
+    flex-wrap: wrap;
+  }
+  .pro-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 13px;
+    border-radius: 8px;
+    font-size: .78rem;
+    font-weight: 700;
+    background: var(--stone-950);
+    color: var(--white);
+    letter-spacing: .01em;
+  }
+
+  /* ═══ AVANT/APRÈS ═══ */
+  .ba-section { padding: 32px 0 0; }
+  .section-label {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--amber-600);
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .ba-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
   .ba-card {
-    border-radius: var(--radius);
+    border-radius: var(--r);
     overflow: hidden;
-    box-shadow: var(--shadow);
-    border: 1px solid #e5e5e3;
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow-sm);
+    background: var(--white);
   }
   .ba-card img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 160px;
+    object-fit: cover;
   }
-  .ba-card .ba-label {
+  .ba-card-footer {
+    padding: 10px 12px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 16px;
-    background: var(--gray-light);
-    font-size: .8rem;
+    align-items: center;
+    font-size: .72rem;
+    font-weight: 700;
+  }
+  .ba-card-footer .before { color: #c44; }
+  .ba-card-footer .after { color: var(--green-600); }
+  .ba-card-footer .type {
     font-weight: 600;
-    color: var(--gray);
+    color: var(--stone-500);
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
   }
-  .ba-card .ba-label span:first-child { color: #c44; }
-  .ba-card .ba-label span:last-child { color: var(--green); }
 
-  /* ========== AVIS ========== */
-  .review {
-    padding: 24px 20px;
-    background: var(--gray-light);
+  /* ═══ 3 RAISONS ═══ */
+  .reasons { padding: 36px 0; }
+  .reasons-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--stone-950);
+    margin-bottom: 20px;
   }
+  .reasons-grid { display: grid; gap: 12px; }
+  .reason-card {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 18px;
+    border-radius: var(--r);
+    background: var(--white);
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow-sm);
+  }
+  .reason-icon {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+  .reason-icon.amber { background: var(--amber-100); color: var(--amber-600); }
+  .reason-icon.green { background: rgba(22,163,74,.08); color: var(--green-600); }
+  .reason-icon.dark { background: var(--stone-100); color: var(--stone-700); }
+  .reason-card h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: .92rem;
+    font-weight: 800;
+    color: var(--stone-950);
+    margin-bottom: 3px;
+  }
+  .reason-card p {
+    font-size: .84rem;
+    color: var(--stone-500);
+    line-height: 1.5;
+  }
+
+  /* ═══ AVIS ═══ */
+  .review { padding: 0 0 32px; }
   .review-card {
     background: var(--white);
-    border-radius: var(--radius);
+    border-radius: var(--r);
     padding: 20px;
-    box-shadow: var(--shadow);
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow-sm);
   }
   .review-stars {
-    color: #f5a623;
-    font-size: 1.1rem;
+    color: var(--amber-500);
+    font-size: 1rem;
     letter-spacing: 2px;
     margin-bottom: 10px;
   }
   .review-text {
-    font-size: .92rem;
-    color: var(--dark);
-    line-height: 1.55;
+    font-size: .9rem;
+    color: var(--stone-600);
+    line-height: 1.6;
     margin-bottom: 12px;
     font-style: italic;
   }
   .review-author {
-    font-size: .82rem;
-    font-weight: 700;
-    color: var(--gray);
-  }
-
-  /* ========== ARTISAN ========== */
-  .artisan {
-    padding: 28px 20px;
     display: flex;
-    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .review-author strong { font-size: .85rem; color: var(--stone-700); }
+  .review-author span { font-size: .78rem; color: var(--stone-400); }
+
+  /* ═══ ARTISAN ═══ */
+  .artisan { padding: 0 0 28px; }
+  .artisan-inner {
+    display: flex;
+    gap: 14px;
     align-items: center;
   }
-  .artisan img {
-    width: 72px;
-    height: 72px;
+  .artisan-inner img {
+    width: 64px; height: 64px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--green-light);
+    object-position: center 15%;
+    border: 2px solid var(--amber-300);
     flex-shrink: 0;
   }
   .artisan-info h3 {
-    font-size: .95rem;
-    font-weight: 700;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: .9rem;
+    font-weight: 800;
     margin-bottom: 2px;
   }
   .artisan-info p {
     font-size: .82rem;
-    color: var(--gray);
-    line-height: 1.4;
+    color: var(--stone-500);
+    line-height: 1.45;
   }
 
-  /* ========== GUARANTEES ========== */
-  .guarantees {
-    padding: 0 20px 28px;
+  /* ═══ ZONE ═══ */
+  .zone { padding: 0 0 24px; }
+  .zone-box {
+    padding: 22px;
+    border-radius: var(--r-lg);
+    background: var(--stone-950);
+    color: var(--white);
+    text-align: center;
   }
-  .guarantee-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .zone-box h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin-bottom: 6px;
   }
-  .guarantee-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: .88rem;
-    color: var(--dark);
-    line-height: 1.4;
+  .zone-box p {
+    font-size: .84rem;
+    color: rgba(255,255,255,.6);
+    line-height: 1.5;
   }
-  .guarantee-list .check {
-    flex-shrink: 0;
-    width: 22px; height: 22px;
-    background: var(--green-light);
+
+  /* ═══ FINAL CTA ═══ */
+  .final-cta { padding: 8px 0 100px; text-align: center; }
+  .final-cta-box {
+    padding: 32px 24px;
+    border-radius: var(--r-lg);
+    background: var(--stone-950);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta-box::before {
+    content: "";
+    position: absolute;
+    top: -60px; left: 50%;
+    transform: translateX(-50%);
+    width: 300px; height: 300px;
     border-radius: 50%;
+    background: radial-gradient(circle, rgba(251,191,36,.1), transparent 60%);
+    pointer-events: none;
+  }
+  .final-cta-box h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    position: relative; z-index: 1;
+  }
+  .final-cta-box p {
+    font-size: .88rem;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 20px;
+    position: relative; z-index: 1;
+  }
+  .final-cta-box .cta-main {
+    color: var(--stone-950);
+    background: var(--amber-400);
+    box-shadow: 0 4px 18px rgba(245,158,11,.3);
+    position: relative; z-index: 1;
+  }
+  .final-cta-box .cta-main:hover {
+    background: var(--amber-300);
+    box-shadow: 0 8px 26px rgba(245,158,11,.4);
+  }
+
+  /* ═══ STICKY BAR ═══ */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 10px 14px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -2px 14px rgba(0,0,0,.06);
+  }
+  .sticky-cta a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1px;
+    gap: 8px;
+    padding: 14px 12px;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: .95rem;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--green-600);
+    text-decoration: none;
+    animation: sticky-glow 2.5s ease-in-out infinite;
   }
-  .guarantee-list .check svg {
-    width: 12px; height: 12px;
-  }
-
-  /* ========== ZONE ========== */
-  .zone {
-    padding: 24px 20px;
-    background: var(--gray-light);
-    text-align: center;
-  }
-  .zone h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.15rem;
-    margin-bottom: 8px;
-    font-weight: 400;
-  }
-  .zone p {
-    font-size: .85rem;
-    color: var(--gray);
-    line-height: 1.5;
-  }
-  .zone-cities {
-    margin-top: 10px;
-    font-size: .8rem;
-    color: var(--gray);
-    line-height: 1.6;
+  @keyframes sticky-glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(22,163,74,.4); }
+    50% { box-shadow: 0 0 0 8px rgba(22,163,74,0); }
   }
 
-  /* ========== FINAL CTA ========== */
-  .final-cta {
-    padding: 32px 20px 100px;
-    text-align: center;
-  }
-  .final-cta h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-    font-weight: 400;
-  }
-  .final-cta p {
-    font-size: .88rem;
-    color: var(--gray);
-    margin-bottom: 20px;
-  }
-
-  /* ========== DESKTOP ========== */
+  /* ═══ RESPONSIVE ═══ */
   @media (min-width: 640px) {
-    .hero { padding: 40px 40px 36px; max-width: 560px; margin: 0 auto; }
-    .hero h1 { font-size: 2.2rem; }
-    .trust { gap: 40px; }
-    .before-after { max-width: 500px; margin: 0 auto; }
-    .review { padding: 28px 40px; }
-    .review-card { max-width: 500px; margin: 0 auto; }
-    .artisan { max-width: 500px; margin: 0 auto; padding: 32px 20px; }
-    .guarantees { max-width: 500px; margin: 0 auto; }
-    .zone { padding: 32px 40px; }
-    .final-cta { max-width: 500px; margin: 0 auto; }
-    .sticky-cta { max-width: 500px; left: 50%; transform: translateX(-50%); border-radius: 16px 16px 0 0; }
+    .sticky-cta { max-width: 500px; left: 50%; right: auto; transform: translateX(-50%); border-radius: 16px 16px 0 0; }
+  }
+  @media (max-width: 400px) {
+    .ba-grid { grid-template-columns: 1fr; }
+    .ba-card img { height: 180px; }
   }
 </style>
 </head>
@@ -455,130 +556,166 @@ fbq('track', 'PageView');
 
 <!-- URGENCY BAR -->
 <div class="urgency-bar">
-  🌿 Offre de printemps | <strong>-10% sur toute intervention</strong> jusqu'à fin avril
+  <span class="pulse"></span>
+  🌿 Offre de printemps | <strong>-10% sur tout devis signé</strong> en avril
 </div>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-badge">
-    <span class="dot"></span>
-    Kévin · Disponible aujourd'hui
+  <div class="wrap">
+
+    <div class="hero-identity">
+      <img class="hero-photo" src="../kevin.jpg" alt="Kévin" width="52" height="52">
+      <div>
+        <strong class="hero-name">Kévin · Les Nettoyeurs Bressans</strong>
+        <span class="hero-loc"><span class="pulse"></span> Disponible · Louhans &amp; 60 km</span>
+      </div>
+    </div>
+
+    <h1>Votre toiture ou façade a besoin d'un <strong>coup de propre</strong> ?</h1>
+
+    <p class="hero-sub">Démoussage, nettoyage, traitement longue durée.<br>Devis gratuit sous 24h — déplacement offert.</p>
+
+    <div class="hero-price">
+      <div class="label">Exemple de prix</div>
+      <div class="price">800 € <span>/ toiture 100 m²</span></div>
+      <div class="detail">Démoussage + traitement préventif 3-5 ans inclus</div>
+      <span class="promo">-10% en avril</span>
+    </div>
+
+    <a href="tel:0668739456" class="cta-main" onclick="trackCTA('appel','lp-hero'); gtag_report_conversion();">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Appeler Kévin — 06 68 73 94 56
+    </a>
+    <p class="cta-sub">Devis gratuit, réponse sous 24h</p>
+
+    <div class="pro-badges">
+      <span class="pro-badge">Résultat garanti 3-5 ans</span>
+      <span class="pro-badge">Entreprise locale</span>
+      <span class="pro-badge">SIRET vérifié</span>
+    </div>
   </div>
-
-  <h1>Nettoyage <strong>toiture & façade</strong> en Bresse</h1>
-
-  <p class="hero-sub">Démoussage, nettoyage, traitement longue durée.<br>Devis gratuit sous 24h — déplacement offert.</p>
-
-  <div class="hero-price">
-    <div class="label">Exemple de prix</div>
-    <div class="price">800 € <span>/ toiture 100 m²</span></div>
-    <div class="detail">Démoussage + traitement préventif 3-5 ans inclus</div>
-  </div>
-
-  <a href="tel:0668739456" class="cta-main" onclick="trackCTA('appel','lp-hero'); gtag_report_conversion();">
-    <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" fill="currentColor"/></svg>
-    Appeler Kévin — 06 68 73 94 56
-  </a>
-  <p class="cta-sub">Devis gratuit, réponse sous 24h</p>
 </section>
 
-<!-- TRUST -->
-<div class="trust">
-  <div class="trust-item">
-    <div class="icon">
-      <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" stroke="#1a7a3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#1a7a3a" stroke-width="2"/></svg>
+<!-- AVANT/APRÈS × 2 -->
+<section class="ba-section">
+  <div class="wrap">
+    <p class="section-label">Résultats concrets</p>
+    <div class="ba-grid">
+      <div class="ba-card">
+        <img src="../hero-avant-apres-2.jpg" alt="Avant après nettoyage toiture" loading="lazy" width="400" height="260">
+        <div class="ba-card-footer">
+          <div><span class="before">Avant</span> → <span class="after">Après</span></div>
+          <span class="type">Toiture</span>
+        </div>
+      </div>
+      <div class="ba-card">
+        <img src="../hero-avant-apres-1.jpg" alt="Avant après nettoyage façade" loading="lazy" width="400" height="260">
+        <div class="ba-card-footer">
+          <div><span class="before">Avant</span> → <span class="after">Après</span></div>
+          <span class="type">Façade</span>
+        </div>
+      </div>
     </div>
-    Devis gratuit
   </div>
-  <div class="trust-item">
-    <div class="icon">
-      <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="#1a7a3a" stroke-width="2"/></svg>
-    </div>
-    Garanti 3-5 ans
-  </div>
-  <div class="trust-item">
-    <div class="icon">
-      <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#1a7a3a" stroke-width="2"/><circle cx="12" cy="9" r="2" stroke="#1a7a3a" stroke-width="2"/></svg>
-    </div>
-    Louhans & 60 km
-  </div>
-</div>
+</section>
 
-<!-- AVANT/APRÈS -->
-<section class="before-after">
-  <p class="section-label">Résultat concret</p>
-  <div class="ba-card">
-    <img src="../hero-avant-apres-2.jpg" alt="Avant après nettoyage toiture en Bresse" loading="lazy" width="600" height="300">
-    <div class="ba-label">
-      <span>← Avant</span>
-      <span>Après →</span>
+<!-- 3 RAISONS -->
+<section class="reasons">
+  <div class="wrap">
+    <h2 class="reasons-title">Pourquoi nous choisir ?</h2>
+    <div class="reasons-grid">
+
+      <div class="reason-card">
+        <div class="reason-icon amber">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <h3>Techniques douces, résultat durable</h3>
+          <p>Basse pression et brossage manuel adaptés à votre support. Pas de Kärcher agressif. Traitement anti-mousse écologique garanti 3 à 5 ans.</p>
+        </div>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon green">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <div>
+          <h3>Kévin intervient lui-même</h3>
+          <p>Ex-maçon charpentier, il connaît le bâtiment de l'intérieur. Pas de sous-traitant, pas de surprise : c'est lui sur votre chantier.</p>
+        </div>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon dark">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <div>
+          <h3>Devis en 24h, intervention rapide</h3>
+          <p>Envoyez une photo, recevez un chiffrage sous 24h. Déplacement gratuit dans un rayon de 60 km autour de Louhans.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- AVIS -->
 <section class="review">
-  <p class="section-label">Avis client</p>
-  <div class="review-card">
-    <div class="review-stars">★★★★★</div>
-    <p class="review-text">"On avait de la mousse sur toute la toiture depuis des années. Kévin est venu rapidement, le travail a été fait en une journée. Le toit est nickel. Très bon rapport qualité-prix."</p>
-    <p class="review-author">Michel R. — Branges (71)</p>
+  <div class="wrap">
+    <p class="section-label">Avis client</p>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"On avait de la mousse sur toute la toiture depuis des années. Kévin est venu rapidement, le travail a été fait en une journée. Le toit est nickel. Très bon rapport qualité-prix."</p>
+      <div class="review-author">
+        <strong>Michel R.</strong>
+        <span>Branges (71)</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ARTISAN -->
 <section class="artisan">
-  <img src="../kevin.jpg" alt="Kévin Autin, Les Nettoyeurs Bressans" width="72" height="72" loading="lazy">
-  <div class="artisan-info">
-    <h3>Kévin · Ex-maçon charpentier</h3>
-    <p>27 ans, basé à Louhans. Connaissance du bâtiment, respect du support. C'est lui qui intervient, pas un sous-traitant.</p>
+  <div class="wrap">
+    <div class="artisan-inner">
+      <img src="../kevin.jpg" alt="Kévin Autin" width="64" height="64" loading="lazy">
+      <div class="artisan-info">
+        <h3>Kévin · Ex-maçon charpentier</h3>
+        <p>Basé à Louhans. Connaissance du bâtiment, respect du support. C'est lui qui intervient, pas un sous-traitant.</p>
+      </div>
+    </div>
   </div>
-</section>
-
-<!-- GUARANTEES -->
-<section class="guarantees">
-  <ul class="guarantee-list">
-    <li>
-      <span class="check"><svg fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#1a7a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <span><strong>Devis gratuit sous 24h</strong> — envoyez une photo, recevez un chiffrage</span>
-    </li>
-    <li>
-      <span class="check"><svg fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#1a7a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <span><strong>Traitement préventif inclus</strong> — produit écologique, résultat garanti 3-5 ans</span>
-    </li>
-    <li>
-      <span class="check"><svg fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#1a7a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <span><strong>Pas de haute pression agressive</strong> — basse pression et brossage adapté au support</span>
-    </li>
-    <li>
-      <span class="check"><svg fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#1a7a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <span><strong>Entreprise locale enregistrée</strong> — SIRET 887 754 927, assurance RC Pro</span>
-    </li>
-  </ul>
 </section>
 
 <!-- ZONE -->
 <section class="zone">
-  <h2>Intervention à Louhans et 60 km</h2>
-  <p>Chalon-sur-Saône · Mâcon · Bourg-en-Bresse · Tournus · Lons-le-Saunier · et toutes communes alentour</p>
-  <p class="zone-cities">Déplacement et devis gratuits dans toute la zone.</p>
+  <div class="wrap">
+    <div class="zone-box">
+      <h2>Intervention à Louhans et 60 km</h2>
+      <p>Chalon-sur-Saône · Mâcon · Bourg-en-Bresse · Tournus · Lons-le-Saunier · et toutes communes alentour</p>
+    </div>
+  </div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="final-cta">
-  <h2>Un toit ou une façade à nettoyer ?</h2>
-  <p>Appelez Kévin directement. Devis gratuit sous 24h, déplacement offert.</p>
-  <a href="tel:0668739456" class="cta-main" onclick="trackCTA('appel','lp-footer'); gtag_report_conversion();">
-    <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" fill="currentColor"/></svg>
-    06 68 73 94 56
-  </a>
+  <div class="wrap">
+    <div class="final-cta-box">
+      <h2>Un toit ou une façade à nettoyer ?</h2>
+      <p>Appelez Kévin directement. Devis gratuit sous 24h, déplacement offert.</p>
+      <a href="tel:0668739456" class="cta-main" onclick="trackCTA('appel','lp-footer'); gtag_report_conversion();">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        06 68 73 94 56
+      </a>
+    </div>
+  </div>
 </section>
 
-<!-- STICKY CTA -->
+<!-- STICKY BAR -->
 <div class="sticky-cta">
   <a href="tel:0668739456" onclick="trackCTA('appel','lp-sticky'); gtag_report_conversion();">
-    <span class="pulse"></span>
-    <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" fill="currentColor"/></svg>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
     Appeler Kévin — Devis gratuit
   </a>
 </div>
