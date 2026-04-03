@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- CTA button tracking ---
-  document.querySelectorAll('a[href="devis.html"]').forEach(link => {
+  document.querySelectorAll('a[href="devis"]').forEach(link => {
     link.addEventListener('click', () => {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ 'event': 'cta_devis_click' });
