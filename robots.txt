@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://lesnettoyeursbressans.netlify.app/sitemap.xml
+Sitemap: https://lesnettoyeursbressans.fr/sitemap.xml
