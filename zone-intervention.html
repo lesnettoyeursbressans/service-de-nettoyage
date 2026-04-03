@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5T7GTMLB');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zone d'Intervention — Nettoyage Extérieur Louhans, Chalon, Bourg-en-Bresse</title>
+  <meta name="description" content="Les Nettoyeurs Bressans interviennent dans un rayon de 70 km autour de Louhans : Chalon-sur-Saône, Bourg-en-Bresse, Lons-le-Saunier, Tournus, Mâcon. Devis gratuit.">
+  <link rel="canonical" href="https://lesnettoyeursbressans.fr/zone-intervention.html">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Ads Global Site Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020213630"></script>
+  <script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());
+  gtag('config','AW-18020213630');
+  </script>
+  <!-- End Google Ads -->
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','2024211461476880');
+  fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.net/tr?id=2024211461476880&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T7GTMLB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="header scrolled" id="header">
+  <nav class="nav container">
+    <a href="index.html" class="nav__logo"><img src="logo.png" alt="Les Nettoyeurs Bressans" class="nav__logo-img"><div class="nav__logo-text" style="color:var(--color-primary-dark);">Les Nettoyeurs Bressans<span>Artisan · Louhans &amp; environs</span></div></a>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link">Accueil</a><a href="nettoyage-toiture.html" class="nav__link">Toiture</a><a href="nettoyage-facade.html" class="nav__link">Façade</a><a href="nettoyage-terrasse.html" class="nav__link">Terrasse</a><a href="panneaux-solaires.html" class="nav__link">Solaire</a><a href="zone-intervention.html" class="nav__link active">Zone</a><a href="devis.html" class="nav__link nav__cta">Devis gratuit</a>
+    </div>
+    <div class="nav__burger" id="navBurger"><span></span><span></span><span></span></div>
+  </nav>
+  <div class="nav__overlay" id="navOverlay"></div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <span>Zone d'intervention</span></div>
+    <h1>Notre zone d'intervention</h1>
+    <p>Basés à Louhans (71500), nous intervenons dans un rayon de 70 km pour tous vos travaux de nettoyage extérieur : toiture, façade, terrasse et panneaux solaires.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div id="zone-map" class="fade-up" style="width:100%;height:500px;border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-md);"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var map = L.map('zone-map', { center: [46.6333, 5.2250], zoom: 9, scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
+      L.circle([46.6333, 5.2250], { radius: 70000, color: '#1B5E20', weight: 2, fillColor: '#1B5E20', fillOpacity: 0.12, dashArray: '8 6' }).addTo(map);
+      var icon = L.divIcon({ className: '', html: '<div style="background:#FF6F00;width:14px;height:14px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3);"></div>', iconSize: [14,14], iconAnchor: [7,7] });
+      L.marker([46.6333, 5.2250], {icon: icon}).addTo(map).bindPopup('<strong>Les Nettoyeurs Bressans</strong><br>Louhans · 71500<br><a href="tel:+33668739456">06 68 73 94 56</a>').openPopup();
+      var cities = [[46.7806,4.8544,'Chalon-sur-Saône'],[46.6745,5.5514,'Lons-le-Saunier'],[46.2056,5.2253,'Bourg-en-Bresse'],[46.5694,4.9084,'Tournus'],[46.3069,4.8317,'Mâcon'],[47.0931,5.4907,'Dole'],[46.8892,5.2562,'Pierre-de-Bresse'],[46.4926,5.3906,'Cuiseaux'],[46.6822,5.2369,'Saint-Germain-du-Bois'],[46.6424,4.8717,'Sennecey-le-Grand'],[46.6161,5.1795,'Branges'],[46.5641,5.2219,'Cuisery'],[46.4049,5.1286,'Montrevel-en-Bresse'],[46.9694,4.8217,'Beaune'],[46.5316,4.9526,'Pont-de-Vaux'],[46.8319,5.4198,'Beaurepaire-en-Bresse'],[46.7541,5.0783,'Verdun-sur-le-Doubs'],[46.7168,4.7039,'Givry'],[46.7131,4.7089,'Buxy'],[46.3753,5.3458,'Coligny']];
+      var ci = L.divIcon({ className: '', html: '<div style="background:#1B5E20;width:8px;height:8px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);"></div>', iconSize: [8,8], iconAnchor: [4,4] });
+      cities.forEach(function(c) { L.marker([c[0],c[1]], {icon:ci}).addTo(map).bindTooltip(c[2], {permanent:false, direction:'top', offset:[0,-8]}); });
+    });
+    </script>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="tag">Communes desservies</span>
+      <h2>Nous intervenons notamment dans ces secteurs</h2>
+      <p class="lead lead--center">Cette liste n'est pas exhaustive. Si votre commune n'y figure pas, contactez-nous — il y a de grandes chances qu'on puisse intervenir chez vous.</p>
+    </div>
+
+    <div style="margin-top:40px;" class="fade-up">
+      <h3 style="margin-bottom:16px;">Saône-et-Loire (71)</h3>
+      <div class="zone-cities" style="justify-content:flex-start;">
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Louhans</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Chalon-sur-Saône</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Tournus</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Mâcon</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Sennecey-le-Grand</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Pierre-de-Bresse</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Saint-Germain-du-Bois</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Branges</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Cuiseaux</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Cuisery</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Beaurepaire-en-Bresse</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Montpont-en-Bresse</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Montret</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Simard</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Verdun-sur-le-Doubs</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Givry</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Buxy</span>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;" class="fade-up">
+      <h3 style="margin-bottom:16px;">Jura (39)</h3>
+      <div class="zone-cities" style="justify-content:flex-start;">
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Lons-le-Saunier</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Dole</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Bletterans</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Arlay</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Sellières</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Orgelet</span>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;" class="fade-up">
+      <h3 style="margin-bottom:16px;">Ain (01)</h3>
+      <div class="zone-cities" style="justify-content:flex-start;">
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Bourg-en-Bresse</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Montrevel-en-Bresse</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Pont-de-Vaux</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Coligny</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Viriat</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Saint-Trivier-de-Courtes</span>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;" class="fade-up">
+      <h3 style="margin-bottom:16px;">Côte-d'Or (21)</h3>
+      <div class="zone-cities" style="justify-content:flex-start;">
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Beaune</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Nuits-Saint-Georges</span>
+        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Chagny</span>
+      </div>
+    </div>
+
+    <p class="text-center fade-up" style="margin-top:40px;font-size:.95rem;">
+      Votre commune n'est pas dans la liste ? <strong>Appelez-nous au <a href="tel:+33668739456" style="color:var(--color-primary);font-weight:700;">06 68 73 94 56</a></strong> — on vous dira rapidement si on peut intervenir chez vous.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="cta-banner fade-up">
+    <h2>Besoin d'un nettoyage extérieur en Bresse ?</h2>
+    <p>Toiture, façade, terrasse, panneaux solaires — devis gratuit sous 24h.</p>
+    <a href="tel:+33668739456" class="cta-banner__phone">06 68 73 94 56</a>
+    <div class="cta-banner__buttons">
+      <a href="devis.html" class="btn btn--primary btn--lg">Demander un devis</a>
+      <a href="tel:+33668739456" class="btn btn--white btn--lg">Appeler</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><div class="nav__logo"><img src="logo.png" alt="Les Nettoyeurs Bressans" class="nav__logo-img"><div class="nav__logo-text" style="color:#fff;">Les Nettoyeurs Bressans<span>Artisan · Louhans</span></div></div><p>Votre artisan local pour le nettoyage extérieur en Bresse.</p><p style="font-size:.8rem;margin-top:8px;">SIRET 887 754 927 00010<br>4 Allée des Ormes, 71500 Louhans</p></div>
+      <div><h4>Prestations</h4><a href="nettoyage-toiture.html" class="footer__link">Nettoyage toiture</a><a href="nettoyage-facade.html" class="footer__link">Nettoyage façade</a><a href="nettoyage-terrasse.html" class="footer__link">Nettoyage terrasse</a><a href="panneaux-solaires.html" class="footer__link">Panneaux solaires</a></div>
+      <div><h4>Informations</h4><a href="zone-intervention.html" class="footer__link">Zone d'intervention</a><a href="a-propos.html" class="footer__link">À propos</a><a href="devis.html" class="footer__link">Devis gratuit</a></div>
+      <div><h4>Contact</h4><a href="tel:+33668739456" class="footer__link">06 68 73 94 56</a><a href="mailto:lesnettoyeursbressans@gmail.com" class="footer__link">lesnettoyeursbressans@gmail.com</a><p style="font-size:.85rem;margin-top:8px;">Lun – Sam : 8h – 19h</p></div>
+    </div>
+    <div class="footer__bottom"><span>© 2026 Les Nettoyeurs Bressans.</span><div class="footer__legal"><a href="mentions-legales.html">Mentions légales</a><a href="mentions-legales.html#confidentialite">Confidentialité</a></div></div>
+  </div>
+</footer>
+<a href="tel:+33668739456" class="phone-float" aria-label="Appeler">📞</a>
+<script src="main.js"></script>
+</body>
+</html>
