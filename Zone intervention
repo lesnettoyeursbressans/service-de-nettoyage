@@ -10,10 +10,10 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zone d'Intervention — Nettoyage Extérieur Louhans, Chalon, Bourg-en-Bresse</title>
-  <meta name="description" content="Les Nettoyeurs Bressans interviennent dans un rayon de 60 km autour de Louhans : Chalon-sur-Saône, Bourg-en-Bresse, Lons-le-Saunier, Tournus, Mâcon. Devis gratuit.">
-  <link rel="canonical" href="https://lesnettoyeursbressans.fr/zone-intervention.html">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Nettoyage de Panneaux Solaires en Bresse — Les Nettoyeurs Bressans</title>
+  <meta name="description" content="Nettoyage de panneaux solaires à l'eau purifiée déminéralisée. Retrouvez un rendement optimal. Intervention à Louhans et 60 km autour. Devis gratuit.">
+  <link rel="canonical" href="https://lesnettoyeursbressans.fr/panneaux-solaires.html">
+  <link rel="stylesheet" href="style">
   <!-- Google Ads Global Site Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020213630"></script>
   <script>
@@ -48,9 +48,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header class="header scrolled" id="header">
   <nav class="nav container">
-    <a href="index.html" class="nav__logo"><div class="nav__logo-icon">NB</div><div class="nav__logo-text" style="color:var(--color-primary-dark);">Les Nettoyeurs Bressans<span>Artisan · Louhans &amp; environs</span></div></a>
+    <a href="index" class="nav__logo"><div class="nav__logo-icon">NB</div><div class="nav__logo-text" style="color:var(--color-primary-dark);">Les Nettoyeurs Bressans<span>Artisan · Louhans &amp; environs</span></div></a>
     <div class="nav__links" id="navLinks">
-      <a href="index.html" class="nav__link">Accueil</a><a href="nettoyage-toiture.html" class="nav__link">Toiture</a><a href="nettoyage-facade.html" class="nav__link">Façade</a><a href="nettoyage-terrasse.html" class="nav__link">Terrasse</a><a href="panneaux-solaires.html" class="nav__link">Solaire</a><a href="zone-intervention.html" class="nav__link active">Zone</a><a href="devis.html" class="nav__link nav__cta">Devis gratuit</a>
+      <a href="index" class="nav__link">Accueil</a><a href="nettoyage toiture" class="nav__link">Toiture</a><a href="nettoyage facade" class="nav__link">Façade</a><a href="nettoyage terrasse" class="nav__link">Terrasse</a><a href="Panneaux solaires" class="nav__link active">Solaire</a><a href="Zone intervention" class="nav__link">Zone</a><a href="devis" class="nav__link nav__cta">Devis gratuit</a>
     </div>
     <div class="nav__burger" id="navBurger"><span></span><span></span><span></span></div>
   </nav>
@@ -59,22 +59,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <span>Zone d'intervention</span></div>
-    <h1>Notre zone d'intervention</h1>
-    <p>Basés à Louhans (71500), nous intervenons dans un rayon de 60 km pour tous vos travaux de nettoyage extérieur : toiture, façade, terrasse et panneaux solaires.</p>
+    <div class="breadcrumb"><a href="index">Accueil</a> <span>/</span> <span>Panneaux solaires</span></div>
+    <h1>Nettoyage de panneaux solaires</h1>
+    <p>Des panneaux propres produisent plus. On nettoie vos panneaux photovoltaïques à l'eau purifiée déminéralisée, sans produit chimique, pour un rendement optimal.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="zone-visual fade-up">
-      <div style="position:relative;z-index:1;">
-        <div class="zone-radius">
-          <div class="zone-radius__center"></div>
-          <span class="zone-radius__label">Rayon 60 km</span>
-        </div>
-        <p style="color:rgba(255,255,255,.9);font-weight:600;font-size:1.3rem;margin-top:20px;">Louhans — 71500</p>
-        <p style="color:rgba(255,255,255,.6);font-size:.9rem;">4 Allée des Ormes</p>
+    <div class="about-row">
+      <div class="fade-up">
+        <span class="tag">Le problème</span>
+        <h2>Des panneaux sales = jusqu'à 30 % de rendement en moins</h2>
+        <p>Poussière, pollen, fientes d'oiseaux, résidus de pollution — même si vos panneaux sont inclinés, la pluie ne suffit pas à les nettoyer correctement.</p>
+        <p>Les dépôts qui s'accumulent réduisent la capacité des cellules à capter la lumière. Résultat : votre production d'énergie baisse progressivement, parfois jusqu'à 30 % de perte selon l'encrassement. Un nettoyage régulier permet de maintenir un rendement optimal et d'amortir votre investissement plus rapidement.</p>
+      </div>
+      <div class="about-visual about-visual--placeholder fade-up">
+        <span>📷 Photo panneaux solaires</span>
       </div>
     </div>
   </div>
@@ -83,80 +84,81 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section section--soft">
   <div class="container">
     <div class="text-center fade-up">
-      <span class="tag">Communes desservies</span>
-      <h2>Nous intervenons notamment dans ces secteurs</h2>
-      <p class="lead lead--center">Cette liste n'est pas exhaustive. Si votre commune n'y figure pas, contactez-nous — il y a de grandes chances qu'on puisse intervenir chez vous.</p>
+      <span class="tag">Notre méthode</span>
+      <h2>Eau purifiée uniquement — zéro produit chimique</h2>
+      <p class="lead lead--center">Pas de détergent, pas d'additif. Juste de l'eau déminéralisée et un nettoyage en douceur pour préserver vos panneaux.</p>
     </div>
-
-    <div style="margin-top:40px;" class="fade-up">
-      <h3 style="margin-bottom:16px;">Saône-et-Loire (71)</h3>
-      <div class="zone-cities" style="justify-content:flex-start;">
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Louhans</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Chalon-sur-Saône</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Tournus</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Mâcon</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Sennecey-le-Grand</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Pierre-de-Bresse</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Saint-Germain-du-Bois</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Branges</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Cuiseaux</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Cuisery</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Beaurepaire-en-Bresse</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Montpont-en-Bresse</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Montret</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Simard</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Verdun-sur-le-Doubs</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Givry</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Buxy</span>
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <h3>Inspection visuelle</h3>
+        <p>Vérification de l'état des panneaux, des fixations et du câblage visible. Identification des zones les plus encrassées.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h3>Nettoyage à l'eau purifiée</h3>
+        <p>Utilisation d'eau déminéralisée (purifiée) avec des brosses souples ou perches télescopiques. Aucun résidu, aucune trace. Les panneaux sèchent parfaitement propres.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h3>Contrôle &amp; rapport</h3>
+        <p>Vérification du résultat et signalement de tout problème constaté sur l'installation (fissures, décollement, câblage apparent…).</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div style="margin-top:32px;" class="fade-up">
-      <h3 style="margin-bottom:16px;">Jura (39)</h3>
-      <div class="zone-cities" style="justify-content:flex-start;">
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Lons-le-Saunier</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Dole</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Bletterans</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Arlay</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Sellières</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Orgelet</span>
+<section class="section section--dark">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="tag">Pourquoi l'eau déminéralisée ?</span>
+      <h2>La seule méthode qui ne laisse aucune trace</h2>
+    </div>
+    <div class="services-grid" style="margin-top:40px;">
+      <div class="service-card fade-up" style="background:var(--color-dark-soft);border-color:rgba(255,255,255,.1);">
+        <div class="service-card__icon" style="background:rgba(165,214,167,.15);">💧</div>
+        <h3 style="color:#fff;">Zéro résidu calcaire</h3>
+        <p style="color:rgba(255,255,255,.7);">L'eau du robinet laisse des traces de calcaire qui réduisent la transparence du vitrage. L'eau purifiée sèche sans laisser la moindre marque.</p>
+      </div>
+      <div class="service-card fade-up" style="background:var(--color-dark-soft);border-color:rgba(255,255,255,.1);">
+        <div class="service-card__icon" style="background:rgba(165,214,167,.15);">🌿</div>
+        <h3 style="color:#fff;">100 % écologique</h3>
+        <p style="color:rgba(255,255,255,.7);">Pas de détergent, pas de produit chimique. L'eau purifiée fait tout le travail. Aucun impact sur l'environnement ni sur votre toiture.</p>
+      </div>
+      <div class="service-card fade-up" style="background:var(--color-dark-soft);border-color:rgba(255,255,255,.1);">
+        <div class="service-card__icon" style="background:rgba(165,214,167,.15);">🔒</div>
+        <h3 style="color:#fff;">Garantie fabricant préservée</h3>
+        <p style="color:rgba(255,255,255,.7);">L'utilisation de produits chimiques peut annuler la garantie de vos panneaux. Notre méthode à l'eau pure respecte toutes les préconisations fabricant.</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div style="margin-top:32px;" class="fade-up">
-      <h3 style="margin-bottom:16px;">Ain (01)</h3>
-      <div class="zone-cities" style="justify-content:flex-start;">
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Bourg-en-Bresse</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Montrevel-en-Bresse</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Pont-de-Vaux</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Coligny</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Viriat</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Saint-Trivier-de-Courtes</span>
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-up"><span class="tag">FAQ</span><h2>Questions fréquentes — Panneaux solaires</h2></div>
+    <div class="faq-list fade-up">
+      <div class="faq-item">
+        <div class="faq-item__q">À quelle fréquence nettoyer mes panneaux solaires ?</div>
+        <div class="faq-item__a"><div class="faq-item__a-inner">En général, un nettoyage par an suffit. Si votre installation est proche d'arbres, en zone agricole ou très exposée à la poussière, deux nettoyages par an sont recommandés (printemps et automne).</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__q">Pourquoi ne pas nettoyer soi-même ?</div>
+        <div class="faq-item__a"><div class="faq-item__a-inner">Monter sur un toit comporte des risques. Au-delà de la sécurité, un nettoyage avec de l'eau du robinet ou un produit ménager peut laisser des traces de calcaire ou endommager le revêtement anti-reflet des panneaux. L'eau purifiée est la seule méthode recommandée par les fabricants.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__q">Le nettoyage améliore-t-il vraiment le rendement ?</div>
+        <div class="faq-item__a"><div class="faq-item__a-inner">Oui, c'est mesurable. Selon l'encrassement, un nettoyage peut récupérer entre 5 et 30 % de production. Vous pouvez comparer vos relevés de production avant et après pour constater la différence.</div></div>
       </div>
     </div>
-
-    <div style="margin-top:32px;" class="fade-up">
-      <h3 style="margin-bottom:16px;">Côte-d'Or (21)</h3>
-      <div class="zone-cities" style="justify-content:flex-start;">
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Beaune</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Nuits-Saint-Georges</span>
-        <span class="zone-city" style="background:var(--color-accent-warm);border-color:var(--color-accent);color:var(--color-primary-dark);">Chagny</span>
-      </div>
-    </div>
-
-    <p class="text-center fade-up" style="margin-top:40px;font-size:.95rem;">
-      Votre commune n'est pas dans la liste ? <strong>Appelez-nous au <a href="tel:+33668739456" style="color:var(--color-primary);font-weight:700;">06 68 73 94 56</a></strong> — on vous dira rapidement si on peut intervenir chez vous.
-    </p>
   </div>
 </section>
 
 <section class="section">
   <div class="cta-banner fade-up">
-    <h2>Besoin d'un nettoyage extérieur en Bresse ?</h2>
-    <p>Toiture, façade, terrasse, panneaux solaires — devis gratuit sous 24h.</p>
+    <h2>Optimisez le rendement de vos panneaux</h2>
+    <p>Un nettoyage pro à l'eau purifiée, sans risque pour votre installation. Devis gratuit.</p>
     <a href="tel:+33668739456" class="cta-banner__phone">06 68 73 94 56</a>
     <div class="cta-banner__buttons">
-      <a href="devis.html" class="btn btn--primary btn--lg">Demander un devis</a>
+      <a href="devis" class="btn btn--primary btn--lg">Demander un devis</a>
       <a href="tel:+33668739456" class="btn btn--white btn--lg">Appeler</a>
     </div>
   </div>
@@ -166,14 +168,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand"><div class="nav__logo"><div class="nav__logo-icon">NB</div><div class="nav__logo-text" style="color:#fff;">Les Nettoyeurs Bressans<span>Artisan · Louhans</span></div></div><p>Votre artisan local pour le nettoyage extérieur en Bresse.</p><p style="font-size:.8rem;margin-top:8px;">SIRET 887 754 927 00010<br>4 Allée des Ormes, 71500 Louhans</p></div>
-      <div><h4>Prestations</h4><a href="nettoyage-toiture.html" class="footer__link">Nettoyage toiture</a><a href="nettoyage-facade.html" class="footer__link">Nettoyage façade</a><a href="nettoyage-terrasse.html" class="footer__link">Nettoyage terrasse</a><a href="panneaux-solaires.html" class="footer__link">Panneaux solaires</a></div>
-      <div><h4>Informations</h4><a href="zone-intervention.html" class="footer__link">Zone d'intervention</a><a href="a-propos.html" class="footer__link">À propos</a><a href="devis.html" class="footer__link">Devis gratuit</a></div>
+      <div><h4>Prestations</h4><a href="nettoyage toiture" class="footer__link">Nettoyage toiture</a><a href="nettoyage facade" class="footer__link">Nettoyage façade</a><a href="nettoyage terrasse" class="footer__link">Nettoyage terrasse</a><a href="Panneaux solaires" class="footer__link">Panneaux solaires</a></div>
+      <div><h4>Informations</h4><a href="Zone intervention" class="footer__link">Zone d'intervention</a><a href="A propos" class="footer__link">À propos</a><a href="devis" class="footer__link">Devis gratuit</a></div>
       <div><h4>Contact</h4><a href="tel:+33668739456" class="footer__link">06 68 73 94 56</a><a href="mailto:lesnettoyeursbressans@gmail.com" class="footer__link">lesnettoyeursbressans@gmail.com</a><p style="font-size:.85rem;margin-top:8px;">Lun – Sam : 8h – 19h</p></div>
     </div>
-    <div class="footer__bottom"><span>© 2026 Les Nettoyeurs Bressans.</span><div class="footer__legal"><a href="mentions-legales.html">Mentions légales</a><a href="mentions-legales.html#confidentialite">Confidentialité</a></div></div>
+    <div class="footer__bottom"><span>© 2026 Les Nettoyeurs Bressans.</span><div class="footer__legal"><a href="Mention legales">Mentions légales</a><a href="Mention legales#confidentialite">Confidentialité</a></div></div>
   </div>
 </footer>
 <a href="tel:+33668739456" class="phone-float" aria-label="Appeler">📞</a>
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
