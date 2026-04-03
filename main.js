@@ -1,0 +1,131 @@
+/* ============================================
+   LES NETTOYEURS BRESSANS — Main JS
+   ============================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // --- Header scroll effect ---
+  const header = document.querySelector('.header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+  }
+
+  // --- Mobile menu ---
+  const burger = document.querySelector('.nav__burger');
+  const navLinks = document.querySelector('.nav__links');
+  const overlay = document.querySelector('.nav__overlay');
+  if (burger) {
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      if (overlay) overlay.classList.toggle('open');
+    });
+    if (overlay) {
+      overlay.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        overlay.classList.remove('open');
+      });
+    }
+    // Close on link click
+    document.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        if (overlay) overlay.classList.remove('open');
+      });
+    });
+  }
+
+  // --- FAQ Accordion ---
+  document.querySelectorAll('.faq-item__q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const answer = item.querySelector('.faq-item__a');
+      const inner = answer.querySelector('.faq-item__a-inner');
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-item__a').style.maxHeight = '0';
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = inner.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // --- Before/After Slider ---
+  document.querySelectorAll('.ba-slider').forEach(slider => {
+    const overlayEl = slider.querySelector('.ba-slider__overlay');
+    const handle = slider.querySelector('.ba-slider__handle');
+    let isDragging = false;
+
+    function move(x) {
+      const rect = slider.getBoundingClientRect();
+      let pos = (x - rect.left) / rect.width;
+      pos = Math.max(0.05, Math.min(0.95, pos));
+      overlayEl.style.width = (pos * 100) + '%';
+      handle.style.left = (pos * 100) + '%';
+    }
+
+    slider.addEventListener('mousedown', (e) => { isDragging = true; move(e.clientX); });
+    window.addEventListener('mousemove', (e) => { if (isDragging) move(e.clientX); });
+    window.addEventListener('mouseup', () => { isDragging = false; });
+
+    slider.addEventListener('touchstart', (e) => { isDragging = true; move(e.touches[0].clientX); }, { passive: true });
+    slider.addEventListener('touchmove', (e) => { if (isDragging) move(e.touches[0].clientX); }, { passive: true });
+    slider.addEventListener('touchend', () => { isDragging = false; });
+  });
+
+  // --- Scroll reveal (fade-up) ---
+  const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // --- Phone click tracking ---
+  document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', () => {
+      // Google Ads conversion — Lead Téléphone
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18020213630/4AlkCN3js5EcEP7G2pBD',
+          'value': 50.0,
+          'currency': 'EUR'
+        });
+      }
+      // GTM dataLayer
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'phone_click',
+        'click_url': link.href
+      });
+      // Meta Pixel
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Contact', { content_name: 'phone_click' });
+      }
+    });
+  });
+
+  // --- CTA button tracking ---
+  document.querySelectorAll('a[href="devis.html"]').forEach(link => {
+    link.addEventListener('click', () => {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ 'event': 'cta_devis_click' });
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'InitiateCheckout', { content_name: 'devis_cta' });
+      }
+    });
+  });
+
+});
