@@ -1,1813 +1,434 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5T7GTMLB');</script>
-<!-- End Google Tag Manager -->
-    <meta name="google-site-verification" content="u8w0Gj2JKgVCmadroBeiVjOVHGG2bDs9Abeav0qEbtk" />
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2024211461476880');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2024211461476880&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    <meta charset="UTF-8" />
-    <!-- Google Ads gtag + Phone Conversion Tracking -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020213630"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-18020213630', {
-        'phone_conversion_number': '06 68 73 94 56'
-      });
-
-      // Conversion Google Ads — Lead par téléphone (appels site web)
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-          'send_to': 'AW-18020213630/4AlkCN3js5EcEP7G2pBD',
-          'value': 50.0,
-          'currency': 'EUR',
-          'event_callback': callback
-        });
-        return false;
-      }
-
-      // Tracking GA4 granulaire — chaque CTA est traqué
-      function trackCTA(label, location) {
-        gtag('event', 'generate_lead', {
-          'event_category': 'cta',
-          'event_label': label,
-          'event_location': location
-        });
-        // Meta Pixel Lead event
-        if (typeof fbq === 'function') {
-          fbq('track', 'Lead', { content_name: label, content_category: location });
-        }
-      }
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettoyage toiture & façade en Bresse | Les Nettoyeurs Bressans</title>
-    <meta name="description" content="Nettoyage toiture et façade à Louhans et en Bresse. Techniques douces, produits éco-responsables, résultat durable. Démoussage toit dès 8€/m². Devis gratuit sous 24h." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Preload hero image for faster LCP -->
-    <link rel="preload" as="image" href="./hero-avant-apres-2.jpg" />
-    <link rel="canonical" href="https://lesnettoyeursbressans.fr/" />
-    <meta property="og:title" content="Nettoyage toiture & façade en Bresse | Les Nettoyeurs Bressans" />
-    <meta property="og:description" content="Démoussage toiture, nettoyage façade à Louhans. Techniques douces, produits éco-responsables, dès 8€/m². Devis gratuit sous 24h." />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:url" content="https://lesnettoyeursbressans.fr/" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Les Nettoyeurs Bressans",
-      "description": "Nettoyage toiture et façade à Louhans et en Bresse. Techniques douces (basse pression, brossage manuel), produits éco-responsables, résultat durable. Devis gratuit sous 24h pour particuliers.",
-      "url": "https://lesnettoyeursbressans.fr",
-      "telephone": "+33668739456",
-      "image": "https://lesnettoyeursbressans.fr/logo.png",
-      "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Louhans",
-        "addressRegion": "Bourgogne-Franche-Comté",
-        "postalCode": "71500",
-        "addressCountry": "FR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 46.6264,
-        "longitude": 5.2244
-      },
-      "areaServed": [
-        {"@type": "City", "name": "Louhans"},
-        {"@type": "City", "name": "Chalon-sur-Saône"},
-        {"@type": "City", "name": "Lons-le-Saunier"},
-        {"@type": "City", "name": "Tournus"},
-        {"@type": "City", "name": "Mâcon"},
-        {"@type": "City", "name": "Bourg-en-Bresse"}
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Services de nettoyage extérieur",
-        "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage et démoussage toiture"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage façade maison"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage terrasse pierre"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage allée et murets"}}
-        ]
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "08:00",
-        "closes": "19:00"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Combien coûte un nettoyage de toiture en Bresse ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Le prix d'un nettoyage de toiture en Bresse se situe entre 8 et 15 € du m² pour un démoussage complet avec traitement anti-mousse écologique. Pour une maison individuelle classique (80 à 120 m²), comptez entre 640 et 1 800 €. Un forfait toiture + façade permet de bénéficier d'une remise. Devis gratuit et sans engagement."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "À quelle fréquence faut-il démousser sa toiture ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "En Bresse, il est recommandé de faire démousser sa toiture tous les 3 à 5 ans selon l'exposition et l'environnement. Un démoussage régulier évite que les mousses ne soulèvent les tuiles et accélèrent le vieillissement de la couverture."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Nettoyage façade maison : quel prix et quel résultat attendre ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Le nettoyage d'une façade de maison coûte en moyenne entre 8 et 15 € du m² selon le revêtement. Pour une façade standard d'environ 80 m², comptez entre 640 et 1 200 €. Techniques douces et produits écologiques. Forfait toiture + façade disponible."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Peut-on nettoyer sa toiture soi-même au Kärcher ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "C'est fortement déconseillé. Un nettoyeur haute pression grand public risque de casser ou déplacer les tuiles. Les Nettoyeurs Bressans privilégient les techniques douces : basse pression, brossage manuel sur supports délicats, et produits biodégradables (pas de javel). Le traitement anti-mousse écologique prolonge le résultat durablement."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quelle est la meilleure période pour nettoyer sa toiture à Louhans ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Les meilleures périodes sont le printemps (mars-mai) et l'automne (septembre-novembre). Les températures modérées permettent au traitement anti-mousse de bien agir. Évitez le plein été et les périodes de gel."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Nettoyage toiture à Chalon-sur-Saône : intervenez-vous ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui, nous intervenons régulièrement à Chalon-sur-Saône et dans toute l'agglomération chalonnaise pour le nettoyage et le démoussage de toiture. Le devis et le déplacement sont gratuits."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Combien de temps dure un nettoyage de toiture ou de façade ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Comptez une demi-journée à une journée pour un nettoyage complet de toiture, et entre 3 et 6 heures pour une façade. Si vous combinez les deux, le chantier se boucle en une journée dans la plupart des cas."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Nettoyage toiture et façade à Lons-le-Saunier : vous déplacez-vous dans le Jura ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui, nous couvrons Lons-le-Saunier et la Bresse comtoise. Nous intervenons aussi dans les communes environnantes. Le devis et le déplacement sont gratuits."
-          }
-        }
-      ]
-    }
-    </script>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
-    <style>
-      :root {
-        --stone-950: #0c0a09;
-        --stone-900: #1c1917;
-        --stone-800: #292524;
-        --stone-700: #44403c;
-        --stone-600: #57534e;
-        --stone-500: #78716c;
-        --stone-400: #a8a29e;
-        --stone-300: #d6d3d1;
-        --stone-200: #e7e5e4;
-        --stone-100: #f5f5f4;
-        --stone-50: #fafaf9;
-        --amber-600: #d97706;
-        --amber-500: #f59e0b;
-        --amber-400: #fbbf24;
-        --amber-300: #fcd34d;
-        --amber-200: #fde68a;
-        --amber-100: #fef3c7;
-        --green-600: #16a34a;
-        --green-500: #22c55e;
-        --green-400: #4ade80;
-        --ink: var(--stone-900);
-        --muted: var(--stone-500);
-        --surface: #ffffff;
-        --border: rgba(28, 25, 23, 0.08);
-        --border-strong: rgba(28, 25, 23, 0.14);
-        --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.05);
-        --shadow-md: 0 6px 24px rgba(28, 25, 23, 0.07);
-        --shadow-lg: 0 16px 48px rgba(28, 25, 23, 0.1);
-        --shadow-xl: 0 24px 64px rgba(28, 25, 23, 0.14);
-        --r: 14px;
-        --r-lg: 20px;
-        --r-xl: 28px;
-        --max: 1120px;
-      }
-
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      html { scroll-behavior: smooth; overflow-x: hidden; }
-
-      body {
-        font-family: "Outfit", sans-serif;
-        color: var(--ink);
-        background: var(--stone-50);
-        -webkit-font-smoothing: antialiased;
-        overflow-x: hidden;
-      }
-
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        opacity: 0.35;
-        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.75' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-        z-index: 0;
-      }
-
-      a { color: inherit; text-decoration: none; }
-      img { max-width: 100%; display: block; }
-      ul { list-style: none; }
-
-      .wrap {
-        position: relative;
-        z-index: 1;
-        width: min(calc(100% - 32px), var(--max));
-        margin: 0 auto;
-        overflow: hidden;
-      }
-
-      /* ─── TOPBAR ─── */
-      .topbar {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background: rgba(250, 250, 249, 0.88);
-        backdrop-filter: blur(14px) saturate(1.6);
-        border-bottom: 1px solid var(--border);
-      }
-
-      .topbar.scrolled { box-shadow: 0 2px 12px rgba(28, 25, 23, 0.06); }
-
-      .topbar-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 0;
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .brand-logo {
-        width: 48px;
-        height: 48px;
-        object-fit: contain;
-        border-radius: 12px;
-        background: white;
-        box-shadow: var(--shadow-sm);
-        border: 1px solid var(--border);
-        padding: 3px;
-      }
-
-      .brand-text small {
-        display: block;
-        font-size: 0.65rem;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--amber-600);
-      }
-
-      .brand-text strong {
-        display: block;
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 1rem;
-        font-weight: 800;
-      }
-
-      .nav {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-      }
-
-      .nav a {
-        padding: 7px 13px;
-        border-radius: 10px;
-        font-size: 0.86rem;
-        font-weight: 500;
-        color: var(--stone-600);
-        transition: all 0.2s;
-      }
-
-      .nav a:hover { color: var(--ink); background: var(--stone-100); }
-
-      .nav-cta {
-        margin-left: 6px;
-        padding: 9px 18px !important;
-        border-radius: 999px !important;
-        font-weight: 700 !important;
-        color: var(--stone-950) !important;
-        background: var(--amber-400) !important;
-        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
-        transition: all 0.2s !important;
-      }
-
-      .nav-cta:hover {
-        background: var(--amber-300) !important;
-        transform: translateY(-1px);
-        box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3) !important;
-      }
-
-      /* ─── URGENCY BAR ─── */
-      .urgency-bar {
-        background: var(--stone-900);
-        color: white;
-        padding: 9px 0;
-        font-size: 0.8rem;
-        font-weight: 600;
-        text-align: center;
-        letter-spacing: 0.02em;
-      }
-
-      .urgency-bar span {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      .pulse {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--green-400);
-        box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2);
-        animation: pulse 2s ease infinite;
-      }
-
-      @keyframes pulse {
-        0%, 100% { box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2); }
-        50% { box-shadow: 0 0 0 8px rgba(74, 222, 128, 0); }
-      }
-
-      /* ─── HERO V2 — simplifié ─── */
-      .hero {
-        padding: 32px 0 40px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .hero-identity {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 20px;
-      }
-
-      .hero-photo {
-        width: 52px;
-        height: 52px;
-        border-radius: 999px;
-        object-fit: cover;
-        object-position: center 15%;
-        border: 2px solid var(--amber-300);
-        box-shadow: var(--shadow-md);
-      }
-
-      .hero-name {
-        display: block;
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 1rem;
-        font-weight: 700;
-      }
-
-      .hero-loc {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        font-size: 0.82rem;
-        font-weight: 700;
-        color: var(--green-600);
-      }
-
-      h1 {
-        margin: 0 0 8px;
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-size: clamp(2rem, 5vw, 3rem);
-        font-weight: 800;
-        line-height: 1.08;
-        letter-spacing: -0.03em;
-        color: var(--stone-950);
-      }
-
-      .hero-price {
-        font-size: 1.05rem;
-        color: var(--stone-600);
-        line-height: 1.6;
-        margin-bottom: 22px;
-      }
-
-      /* Avant/Après en grand dans le hero */
-      .hero-gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        margin-bottom: 24px;
-      }
-
-      .hero-ba {
-        position: relative;
-        border-radius: var(--r-lg);
-        overflow: hidden;
-        aspect-ratio: 4/3;
-      }
-
-      .hero-ba img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .hero-ba::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(180deg, transparent 40%, rgba(28, 25, 23, 0.6));
-      }
-
-      .ba-label {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        z-index: 2;
-        color: white;
-        font-size: 0.78rem;
-        font-weight: 700;
-      }
-
-      /* Hero CTA */
-      .hero-ctas {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        max-width: 440px;
-      }
-
-      /* Hero badges pro */
-      .hero-badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 22px;
-      }
-
-      .pro-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-        padding: 6px 13px;
-        border-radius: 8px;
-        font-size: 0.82rem;
-        font-weight: 700;
-        background: var(--stone-950);
-        color: white;
-        letter-spacing: 0.01em;
-      }
-
-      /* Urgence naturelle */
-      .hero-urgency {
-        padding: 12px 16px;
-        border-radius: 10px;
-        background: var(--amber-100);
-        border: 1px solid var(--amber-200);
-        color: var(--amber-600);
-        font-size: 0.88rem;
-        font-weight: 600;
-        margin-bottom: 20px;
-        line-height: 1.5;
-      }
-
-
-
-      /* ─── CTA STRATEGY: Appeler > Rappel > WhatsApp ─── */
-      .hero-ctas {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 26px;
-        max-width: 440px;
-      }
-
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 9px;
-        padding: 14px 24px;
-        border-radius: 12px;
-        border: none;
-        font-family: inherit;
-        font-size: 0.95rem;
-        font-weight: 700;
-        cursor: pointer;
-        transition: all 0.22s;
-        white-space: nowrap;
-      }
-
-      .btn:hover { transform: translateY(-2px); }
-
-      /* CTA PRINCIPAL — Appeler (gros, pleine largeur, vert) */
-      .btn-call-primary {
-        width: 100%;
-        padding: 18px 24px;
-        font-size: 1.05rem;
-        color: #fff;
-        background: var(--green-600);
-        box-shadow: 0 4px 18px rgba(22, 163, 74, 0.3);
-        border-radius: 14px;
-      }
-
-      .btn-call-primary:hover {
-        background: #15803d;
-        box-shadow: 0 8px 26px rgba(22, 163, 74, 0.38);
-      }
-
-
-      .hero-ctas-secondary {
-        display: flex;
-        gap: 10px;
-        width: 100%;
-      }
-
-      .btn-secondary {
-        flex: 1;
-        padding: 13px 16px;
-        font-size: 0.88rem;
-        font-weight: 600;
-        color: var(--stone-700);
-        background: white;
-        border: 1.5px solid var(--border-strong);
-        box-shadow: var(--shadow-sm);
-        border-radius: 12px;
-      }
-
-      .btn-secondary:hover {
-        border-color: var(--amber-400);
-        color: var(--stone-900);
-        box-shadow: 0 4px 16px rgba(245, 158, 11, 0.12);
-      }
-
-      .btn-secondary-wa:hover {
-        border-color: #25D366;
-        color: #1a9e48;
-      }
-
-      /* Ancien btn-call (pour nav, cc, mid-cta, final) */
-      .btn-call {
-        color: var(--stone-950);
-        background: var(--amber-400);
-        box-shadow: 0 4px 18px rgba(245, 158, 11, 0.25);
-      }
-
-      .btn-call:hover {
-        background: var(--amber-300);
-        box-shadow: 0 8px 26px rgba(245, 158, 11, 0.35);
-      }
-
-      .btn-wa {
-        color: white;
-        background: #25D366;
-        box-shadow: 0 4px 18px rgba(37, 211, 102, 0.2);
-      }
-
-      .btn-wa:hover {
-        background: #1fbd5c;
-        box-shadow: 0 8px 26px rgba(37, 211, 102, 0.3);
-      }
-
-      .btn-callback {
-        color: var(--stone-800);
-        background: white;
-        border: 1.5px solid var(--border-strong);
-        box-shadow: var(--shadow-sm);
-      }
-
-      .btn-callback:hover {
-        border-color: var(--amber-400);
-        box-shadow: 0 4px 16px rgba(245, 158, 11, 0.12);
-      }
-
-
-
-      /* ─── SECTIONS ─── */
-      section { padding: 52px 0; }
-
-      .stag {
-        display: inline-block;
-        padding: 5px 12px;
-        border-radius: 8px;
-        background: var(--amber-100);
-        color: var(--amber-600);
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-      }
-
-      .stitle {
-        margin: 14px 0 10px;
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-size: clamp(1.8rem, 3.8vw, 2.6rem);
-        font-weight: 800;
-        line-height: 1.08;
-        letter-spacing: -0.02em;
-        color: var(--stone-950);
-      }
-
-      .sdesc {
-        max-width: 54ch;
-        color: var(--stone-500);
-        line-height: 1.7;
-      }
-
-
-      /* ─── GALLERY ─── */
-      .gallery-sec {
-        background: var(--stone-900);
-        color: white;
-        padding: 52px 0;
-      }
-
-      .gallery-sec .stag { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7); }
-      .gallery-sec .stitle { color: white; }
-      .gallery-sec .sdesc { color: rgba(255,255,255,0.55); }
-
-      .gal-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-        margin-top: 28px;
-      }
-
-      .gal-card {
-        border-radius: var(--r-lg);
-        overflow: hidden;
-        background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,255,255,0.06);
-        transition: all 0.3s;
-      }
-
-      .gal-card:hover { border-color: rgba(251, 191, 36, 0.2); }
-
-      .gal-card.big { grid-row: span 2; }
-
-      .gal-img {
-        position: relative;
-        height: 220px;
-        overflow: hidden;
-      }
-
-      .gal-card.big .gal-img { height: 100%; min-height: 460px; }
-
-      .gal-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 5s ease;
-      }
-
-      .gal-card:hover .gal-img img { transform: scale(1.04); }
-
-      .gal-img::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(180deg, transparent 40%, rgba(28, 25, 23, 0.65));
-      }
-
-      .gal-lbl {
-        position: absolute;
-        bottom: 14px;
-        left: 14px;
-        z-index: 2;
-      }
-
-      .gal-lbl span {
-        display: inline-block;
-        padding: 4px 9px;
-        border-radius: 6px;
-        background: rgba(255,255,255,0.12);
-        backdrop-filter: blur(6px);
-        font-size: 0.68rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-        margin-bottom: 5px;
-      }
-
-      .gal-lbl h3 {
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 1.05rem;
-        font-weight: 700;
-      }
-
-      .gal-info {
-        padding: 14px 18px;
-        font-size: 0.86rem;
-        color: rgba(255,255,255,0.6);
-        line-height: 1.55;
-      }
-
-
-
-      /* ─── ABOUT CARD ─── */
-      .about-card {
-        padding: 36px;
-        border-radius: var(--r-xl);
-        background: white;
-        border: 1px solid var(--border);
-        box-shadow: var(--shadow-md);
-        margin-bottom: 28px;
-      }
-
-      .about-inner {
-        display: flex;
-        gap: 28px;
-        align-items: flex-start;
-      }
-
-      .about-photo {
-        width: 120px;
-        height: 120px;
-        border-radius: 16px;
-        object-fit: cover;
-        object-position: center 15%;
-        border: 3px solid var(--amber-300);
-        box-shadow: var(--shadow-md);
-        flex-shrink: 0;
-      }
-
-      .about-badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 14px;
-      }
-
-      /* ─── REVIEWS ─── */
-      .reviews-section {
-        margin-bottom: 28px;
-      }
-
-      .reviews-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-        margin-top: 20px;
-      }
-
-      .review-card {
-        padding: 22px;
-        border-radius: var(--r-lg);
-        background: white;
-        border: 1px solid var(--border);
-        box-shadow: var(--shadow-sm);
-      }
-
-      .review-stars {
-        color: var(--amber-500);
-        font-size: 0.9rem;
-        letter-spacing: 2px;
-        margin-bottom: 10px;
-      }
-
-      .review-text {
-        color: var(--stone-600);
-        font-size: 0.9rem;
-        line-height: 1.65;
-        font-style: italic;
-      }
-
-      .review-author {
-        margin-top: 14px;
-        padding-top: 12px;
-        border-top: 1px solid var(--border);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .review-author strong {
-        font-size: 0.88rem;
-        color: var(--stone-800);
-      }
-
-      .review-author span {
-        font-size: 0.78rem;
-        color: var(--stone-400);
-      }
-
-      /* ─── PRACTICAL INFO ─── */
-      .practical-card {
-        padding: 28px 32px;
-        border-radius: var(--r-xl);
-        background: var(--stone-950);
-        color: white;
-        box-shadow: var(--shadow-xl);
-      }
-
-      .practical-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-      }
-
-      .practical-item {
-        display: flex;
-        gap: 12px;
-        align-items: flex-start;
-      }
-
-      .practical-ico {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-        background: rgba(255,255,255,0.06);
-        display: grid;
-        place-items: center;
-        font-size: 1.1rem;
-        flex-shrink: 0;
-      }
-
-      .practical-item strong {
-        display: block;
-        font-size: 0.88rem;
-        font-weight: 700;
-        margin-bottom: 2px;
-      }
-
-      .practical-item span {
-        display: block;
-        font-size: 0.84rem;
-        color: rgba(255,255,255,0.6);
-        line-height: 1.45;
-      }
-
-
-      /* ─── ZONE ─── */
-      .zone-box {
-        padding: 36px;
-        border-radius: var(--r-xl);
-        background: var(--stone-950);
-        color: white;
-        box-shadow: var(--shadow-xl);
-      }
-
-      .zone-box .stag { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.6); }
-      .zone-box .stitle { color: white; }
-      .zone-box .sdesc { color: rgba(255,255,255,0.55); }
-
-      .ztags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 7px;
-        margin-top: 22px;
-      }
-
-      .ztags span {
-        padding: 8px 14px;
-        border-radius: 10px;
-        background: rgba(255,255,255,0.05);
-        border: 1px solid rgba(255,255,255,0.08);
-        font-size: 0.86rem;
-        font-weight: 500;
-        transition: all 0.2s;
-      }
-
-      .ztags span:hover {
-        background: rgba(251, 191, 36, 0.1);
-        border-color: rgba(251, 191, 36, 0.2);
-        color: var(--amber-300);
-      }
-
-      /* ─── CTA FINAL ─── */
-      .final-cta { padding: 48px 0 72px; }
-
-      .final-cta-box {
-        padding: 44px;
-        border-radius: var(--r-xl);
-        background: var(--stone-950);
-        color: white;
-        box-shadow: var(--shadow-xl);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .final-cta-box::before {
-        content: "";
-        position: absolute;
-        top: -60px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(251, 191, 36, 0.1), transparent 60%);
-        pointer-events: none;
-      }
-
-      .final-cta-box .stitle { color: white; }
-      .final-cta-box p { margin: 10px auto 0; max-width: 50ch; color: rgba(255,255,255,0.6); line-height: 1.65; }
-
-      .final-btns {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 26px;
-        position: relative;
-        z-index: 1;
-        max-width: 380px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .final-btns .btn-call-primary {
-        color: var(--stone-950);
-        background: var(--amber-400);
-        box-shadow: 0 4px 18px rgba(245, 158, 11, 0.3);
-      }
-
-      .final-btns .btn-call-primary:hover {
-        background: var(--amber-300);
-        box-shadow: 0 8px 26px rgba(245, 158, 11, 0.4);
-      }
-
-      .final-btns-row {
-        display: flex;
-        gap: 10px;
-        width: 100%;
-      }
-
-      .final-btn-secondary {
-        flex: 1;
-        padding: 13px 16px;
-        border-radius: 12px;
-        font-size: 0.88rem;
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        background: rgba(255,255,255,0.06);
-        border: 1px solid rgba(255,255,255,0.12);
-        color: rgba(255,255,255,0.85);
-        cursor: pointer;
-        transition: all 0.2s;
-        font-family: inherit;
-        text-decoration: none;
-      }
-
-      .final-btn-secondary:hover {
-        background: rgba(255,255,255,0.1);
-        border-color: var(--amber-400);
-        color: var(--amber-300);
-      }
-
-      /* ─── STICKY MOBILE ─── */
-      .sticky-mob {
-        display: none;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 200;
-        padding: 10px 14px;
-        padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
-        background: rgba(255,255,255,0.95);
-        backdrop-filter: blur(12px);
-        border-top: 1px solid var(--border);
-        box-shadow: 0 -2px 14px rgba(0,0,0,0.06);
-      }
-
-      .sticky-mob-inner {
-        display: grid;
-        grid-template-columns: 1.3fr 1fr;
-        gap: 8px;
-      }
-
-      .sticky-call-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        padding: 14px 12px;
-        border-radius: 10px;
-        font-family: inherit;
-        font-size: 0.92rem;
-        font-weight: 700;
-        color: #fff;
-        background: var(--green-600);
-        text-decoration: none;
-        border: none;
-        animation: sticky-glow 2.5s ease-in-out infinite;
-      }
-
-      @keyframes sticky-glow {
-        0%, 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4); }
-        50% { box-shadow: 0 0 0 8px rgba(22, 163, 74, 0); }
-      }
-
-      .sticky-rappel-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        padding: 14px 12px;
-        border-radius: 10px;
-        font-family: inherit;
-        font-size: 0.86rem;
-        font-weight: 600;
-        color: var(--stone-800);
-        background: var(--stone-50);
-        border: 1.5px solid var(--stone-200);
-        cursor: pointer;
-      }
-
-      .sticky-rappel-btn:hover {
-        border-color: var(--amber-400);
-      }
-
-      /* ─── CALLBACK MODAL ─── */
-      .modal-overlay {
-        display: none;
-        position: fixed;
-        inset: 0;
-        z-index: 1000;
-        background: rgba(28, 25, 23, 0.55);
-        backdrop-filter: blur(6px);
-        place-items: center;
-        padding: 20px;
-      }
-
-      .modal-overlay.open { display: grid; }
-
-      .modal {
-        width: 100%;
-        max-width: 440px;
-        border-radius: var(--r-xl);
-        background: white;
-        box-shadow: 0 32px 80px rgba(28, 25, 23, 0.25);
-        overflow: hidden;
-        animation: modalIn 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-      }
-
-      @keyframes modalIn {
-        from { opacity: 0; transform: translateY(16px) scale(0.97); }
-        to { opacity: 1; transform: translateY(0) scale(1); }
-      }
-
-      .modal-header {
-        padding: 24px 24px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-      }
-
-      .modal-header h3 {
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 1.3rem;
-        font-weight: 800;
-        color: var(--stone-950);
-      }
-
-      .modal-header p {
-        margin-top: 4px;
-        color: var(--stone-500);
-        font-size: 0.88rem;
-        line-height: 1.5;
-      }
-
-      .modal-close {
-        width: 36px;
-        height: 36px;
-        border-radius: 10px;
-        border: 1px solid var(--border);
-        background: var(--stone-50);
-        display: grid;
-        place-items: center;
-        cursor: pointer;
-        font-size: 1.1rem;
-        color: var(--stone-500);
-        transition: all 0.2s;
-        flex-shrink: 0;
-        margin-left: 16px;
-      }
-
-      .modal-close:hover { background: var(--stone-100); color: var(--ink); }
-
-      .modal-form {
-        padding: 20px 24px 24px;
-        display: grid;
-        gap: 14px;
-      }
-
-      .field label {
-        display: block;
-        margin-bottom: 5px;
-        font-size: 0.82rem;
-        font-weight: 600;
-        color: var(--stone-700);
-      }
-
-      .field input, .field select {
-        width: 100%;
-        padding: 12px 14px;
-        border-radius: 10px;
-        border: 1.5px solid var(--stone-200);
-        background: var(--stone-50);
-        font-family: inherit;
-        font-size: 0.92rem;
-        color: var(--ink);
-        transition: all 0.2s;
-        outline: none;
-        appearance: none;
-        -webkit-appearance: none;
-      }
-
-      .field select {
-        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2378716c' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: right 14px center;
-        padding-right: 36px;
-      }
-
-      .field input:focus, .field select:focus {
-        border-color: var(--amber-400);
-        box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.12);
-      }
-
-      .modal-submit {
-        width: 100%;
-        padding: 14px;
-        border-radius: 12px;
-        border: none;
-        font-family: inherit;
-        font-size: 0.95rem;
-        font-weight: 700;
-        cursor: pointer;
-        color: var(--stone-950);
-        background: var(--amber-400);
-        box-shadow: 0 4px 16px rgba(245, 158, 11, 0.2);
-        transition: all 0.2s;
-      }
-
-      .modal-submit:hover {
-        background: var(--amber-300);
-        transform: translateY(-1px);
-        box-shadow: 0 6px 22px rgba(245, 158, 11, 0.3);
-      }
-
-      .modal-submit:disabled {
-        opacity: 0.6;
-        cursor: wait;
-        transform: none;
-      }
-
-      .modal-footer {
-        padding: 0 24px 20px;
-        font-size: 0.78rem;
-        color: var(--stone-400);
-        text-align: center;
-        line-height: 1.4;
-      }
-
-      .modal-success {
-        display: none;
-        padding: 48px 32px;
-        text-align: center;
-      }
-
-      .modal-success.show { display: block; }
-      .modal-success .check-big {
-        width: 56px;
-        height: 56px;
-        border-radius: 999px;
-        background: rgba(34, 197, 94, 0.1);
-        display: grid;
-        place-items: center;
-        margin: 0 auto 16px;
-        font-size: 1.4rem;
-      }
-
-      .modal-success h3 {
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 1.2rem;
-        font-weight: 800;
-        color: var(--stone-950);
-      }
-
-      .modal-success p {
-        margin-top: 8px;
-        color: var(--stone-500);
-        font-size: 0.9rem;
-        line-height: 1.55;
-      }
-
-      .modal-success button {
-        margin-top: 18px;
-        padding: 12px 24px;
-        border-radius: 10px;
-        border: 1px solid var(--border);
-        background: white;
-        font-family: inherit;
-        font-size: 0.88rem;
-        font-weight: 600;
-        cursor: pointer;
-        color: var(--stone-700);
-        transition: all 0.2s;
-      }
-
-      .modal-success button:hover { background: var(--stone-50); }
-
-      /* ─── FAQ ─── */
-      .faq-grid { display: grid; gap: 12px; margin-top: 28px; }
-      .faq-item { border-radius: var(--r); background: white; border: 1px solid var(--border); box-shadow: var(--shadow-sm); overflow: hidden; transition: all 0.25s; }
-      .faq-item:hover { box-shadow: var(--shadow-md); }
-      .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; cursor: pointer; font-family: "Bricolage Grotesque", sans-serif; font-size: 1rem; font-weight: 700; color: var(--stone-900); user-select: none; -webkit-user-select: none; }
-      .faq-q:hover { color: var(--amber-600); }
-      .faq-arrow { flex-shrink: 0; width: 28px; height: 28px; border-radius: 8px; background: var(--stone-100); display: grid; place-items: center; transition: all 0.3s; font-size: 0.8rem; color: var(--stone-500); }
-      .faq-item.open .faq-arrow { background: var(--amber-100); color: var(--amber-600); transform: rotate(180deg); }
-      .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1), padding 0.3s; padding: 0 24px; }
-      .faq-item.open .faq-a { max-height: 600px; padding: 0 24px 22px; }
-      .faq-a p { color: var(--stone-600); line-height: 1.7; font-size: 0.92rem; }
-      .faq-a p + p { margin-top: 10px; }
-      .faq-a strong { color: var(--stone-800); }
-      .faq-local-tag { display: inline-block; margin-top: 10px; padding: 4px 10px; border-radius: 8px; background: var(--amber-100); color: var(--amber-600); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em; }
-
-      /* ─── FOOTER ─── */
-      .footer { padding: 0 0 24px; color: var(--stone-400); font-size: 0.84rem; }
-      .footer-top { display: grid; grid-template-columns: 1.2fr 1fr 0.8fr; gap: 24px; padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--border); }
-      .footer-brand strong { display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--stone-700); }
-      .footer-brand span { display: block; margin-top: 4px; font-size: 0.82rem; }
-      .footer-links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 0.82rem; }
-      .footer-links a { color: var(--stone-500); transition: color 0.2s; }
-      .footer-links a:hover { color: var(--stone-800); }
-      .footer-contact { text-align: right; }
-      .footer-contact a { display: block; font-weight: 700; font-size: 0.95rem; color: var(--green-600); margin-bottom: 4px; }
-      .footer-contact span { display: block; font-size: 0.8rem; }
-      .footer-line { display: flex; justify-content: space-between; gap: 16px; }
-
-
-
-      /* ─── PRIVACY ─── */
-      .privacy-box {
-        padding: 32px;
-        border-radius: var(--r-xl);
-        background: white;
-        border: 1px solid var(--border);
-      }
-      .privacy-content p { font-size: 0.88rem; color: var(--stone-600); line-height: 1.7; margin-top: 12px; }
-      .privacy-content strong { color: var(--stone-800); }
-
-      /* ─── REVEAL ─── */
-      .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), transform 0.55s cubic-bezier(0.22, 1, 0.36, 1); }
-      .reveal.vis { opacity: 1; transform: translateY(0); }
-      .rd1 { transition-delay: 0.08s; }
-      .rd2 { transition-delay: 0.16s; }
-      .rd3 { transition-delay: 0.24s; }
-
-      /* ─── RESPONSIVE ─── */
-      @media (max-width: 1040px) {
-        .gal-grid { grid-template-columns: 1fr; }
-        .gal-card.big { grid-row: auto; }
-        .gal-card.big .gal-img { min-height: 260px; }
-      }
-
-      @media (max-width: 760px) {
-        .nav { display: none; }
-        h1 { font-size: 1.8rem; }
-        .footer-line { flex-direction: column; }
-        .zone-box { padding: 24px; }
-        .final-cta-box { padding: 28px 20px; }
-        .sticky-mob { display: block; }
-        body { padding-bottom: 80px; }
-        .faq-q { padding: 16px 18px; font-size: 0.92rem; }
-        .faq-a { padding: 0 18px; }
-        .faq-item.open .faq-a { padding: 0 18px 18px; }
-        .hero-ctas { max-width: 100%; }
-        .hero-gallery { gap: 8px; }
-        .about-inner { flex-direction: column; align-items: center; text-align: center; }
-        .about-badges { justify-content: center; }
-        .about-card { padding: 24px; }
-        .reviews-grid { grid-template-columns: 1fr; }
-        .practical-grid { grid-template-columns: 1fr; }
-        .practical-card { padding: 22px; }
-        .footer-top { grid-template-columns: 1fr; gap: 16px; }
-        .footer-contact { text-align: left; }
-        .footer-line { flex-direction: column; }
-        .privacy-box { padding: 22px; }
-      }
-
-      @media (max-width: 480px) {
-        .hero-ctas-secondary .btn-secondary { font-size: 0.82rem; padding: 12px 10px; }
-        .final-btns-row { flex-direction: column; }
-      }
-
-      @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        20% { transform: translateX(-6px); }
-        40% { transform: translateX(6px); }
-        60% { transform: translateX(-4px); }
-        80% { transform: translateX(4px); }
-      }
-
-
-    </style>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5T7GTMLB');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Nettoyeurs Bressans — Nettoyage Toiture, Façade & Terrasse en Bresse</title>
+  <meta name="description" content="Artisan spécialiste du nettoyage de toiture, façade et terrasse autour de Louhans. Démoussage, traitement anti-mousse Dalep, nettoyage panneaux solaires. Devis gratuit en 24h.">
+  <meta name="keywords" content="nettoyage toiture Louhans, démoussage toit Bresse, nettoyage façade Saône-et-Loire, nettoyage terrasse 71, artisan nettoyage extérieur">
+  <link rel="canonical" href="https://lesnettoyeursbressans.fr/">
+  <meta property="og:title" content="Les Nettoyeurs Bressans — Nettoyage Extérieur Pro en Bresse">
+  <meta property="og:description" content="Votre artisan local pour le nettoyage de toiture, façade, terrasse et panneaux solaires. Rayon 60km autour de Louhans.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lesnettoyeursbressans.fr/">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Ads Global Site Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020213630"></script>
+  <script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());
+  gtag('config','AW-18020213630');
+  </script>
+  <!-- End Google Ads -->
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','2024211461476880');
+  fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.net/tr?id=2024211461476880&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T7GTMLB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <!-- URGENCY BAR -->
-    <div class="urgency-bar">
-      <span><span class="pulse"></span> Printemps = saison idéale pour le démoussage — Créneaux disponibles</span>
-    </div>
 
-    <!-- TOPBAR -->
-    <header class="topbar" id="topbar">
-      <div class="wrap topbar-inner">
-        <a class="brand" href="#accueil" aria-label="Les Nettoyeurs Bressans">
-          <img class="brand-logo" src="./logo.png" alt="Logo Les Nettoyeurs Bressans" />
-          <span class="brand-text">
-            <small>Louhans &amp; Bresse</small>
-            <strong>Les Nettoyeurs Bressans</strong>
-          </span>
+<!-- HEADER -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-icon">NB</div>
+      <div class="nav__logo-text">
+        Les Nettoyeurs Bressans
+        <span>Artisan · Louhans &amp; environs</span>
+      </div>
+    </a>
+    <div class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link active">Accueil</a>
+      <a href="nettoyage-toiture.html" class="nav__link">Toiture</a>
+      <a href="nettoyage-facade.html" class="nav__link">Façade</a>
+      <a href="nettoyage-terrasse.html" class="nav__link">Terrasse</a>
+      <a href="panneaux-solaires.html" class="nav__link">Solaire</a>
+      <a href="zone-intervention.html" class="nav__link">Zone</a>
+      <a href="devis.html" class="nav__link nav__cta">Devis gratuit</a>
+    </div>
+    <div class="nav__burger" id="navBurger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="nav__overlay" id="navOverlay"></div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__shapes">
+    <div class="hero__shape hero__shape--1"></div>
+    <div class="hero__shape hero__shape--2"></div>
+    <div class="hero__shape hero__shape--3"></div>
+  </div>
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge">Artisan local en Bresse</div>
+      <h1>Redonnez <em>de l'éclat</em> à votre toiture, façade et terrasse</h1>
+      <p>Nettoyage professionnel, démoussage et traitement anti-mousse longue durée. Intervention soignée dans un rayon de 60 km autour de Louhans.</p>
+      <div class="hero__buttons">
+        <a href="devis.html" class="btn btn--primary btn--lg">Demander un devis gratuit</a>
+        <a href="tel:+33668739456" class="btn btn--outline btn--lg">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          06 68 73 94 56
         </a>
-        <nav class="nav" aria-label="Navigation principale">
-          <a href="#services">Services</a>
-          <a href="#zone">Zone</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-          <a class="nav-cta" href="tel:0668739456" onclick="trackCTA('appel','nav'); gtag_report_conversion();">Appeler Kévin</a>
-        </nav>
       </div>
-    </header>
-
-    <main id="accueil">
-      <!-- HERO V2 — artisan accessible, crédible, pro -->
-      <section class="hero">
-        <div class="wrap">
-          <!-- Kévin + badges pro -->
-          <div class="hero-identity reveal">
-            <img class="hero-photo" src="./kevin.jpg" alt="Kévin" />
-            <div>
-              <strong class="hero-name">Kévin · Les Nettoyeurs Bressans</strong>
-              <span class="hero-loc"><span class="pulse"></span> Disponible · Louhans &amp; 60 km</span>
-            </div>
-          </div>
-
-          <h1 class="reveal rd1">Votre toiture ou façade a besoin d'un coup de propre ?</h1>
-          <p class="hero-price reveal rd1">Je me déplace gratuitement pour un devis. Démoussage, nettoyage, traitement longue durée — dès 8 €/m².</p>
-
-          <!-- Badge pro -->
-          <div class="hero-badges reveal rd1">
-            <span class="pro-badge">Résultat garanti 3-5 ans</span>
-            <span class="pro-badge">Devis gratuit sous 24h</span>
-            <span class="pro-badge">Entreprise locale</span>
-          </div>
-
-          <!-- Avant/Après en grand -->
-          <div class="hero-gallery reveal rd2">
-            <div class="hero-ba">
-              <img src="./hero-avant-apres-2.jpg" alt="Avant après nettoyage de toiture" />
-              <span class="ba-label">Avant / Après · Toiture</span>
-            </div>
-            <div class="hero-ba">
-              <img src="./hero-avant-apres-1.jpg" alt="Avant après nettoyage de façade" loading="lazy" />
-              <span class="ba-label">Avant / Après · Façade</span>
-            </div>
-          </div>
-
-          <!-- Urgence naturelle -->
-          <div class="hero-urgency reveal rd2">
-            Saison printemps — planning en cours de remplissage. Appelez pour réserver votre créneau.
-          </div>
-
-          <!-- CTA : numéro en clair + secondaires -->
-          <div class="hero-ctas reveal rd3">
-            <a class="btn btn-call-primary" href="tel:0668739456" onclick="trackCTA('appel','hero'); gtag_report_conversion();">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              06 68 73 94 56 — Devis gratuit
-            </a>
-            <div class="hero-ctas-secondary">
-              <button class="btn btn-secondary" onclick="openModal(); trackCTA('rappel_open','hero');">Me faire rappeler</button>
-              <a class="btn btn-secondary btn-secondary-wa" href="https://wa.me/33668739456?text=Bonjour%2C%20je%20souhaiterais%20un%20devis.%20Voici%20une%20photo%20%3A" target="_blank" rel="noopener" onclick="trackCTA('whatsapp','hero');">Envoyer une photo</a>
-            </div>
-          </div>
-
+      <div class="hero__trust">
+        <div class="hero__trust-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Assurance décennale
         </div>
-      </section>
-
-
-      <!-- GALLERY = NOS SERVICES -->
-      <section id="services" class="gallery-sec">
-        <div class="wrap">
-          <h2 class="stitle reveal" style="color:white;">Nos services</h2>
-          <p class="sdesc reveal">Chaque intervention transforme l'apparence du bien.</p>
-          <div class="gal-grid">
-            <div class="gal-card big reveal">
-              <div class="gal-img"><img src="./carousel-toiture.jpg" alt="Nettoyage toiture avant après" loading="lazy" /><div class="gal-lbl"><span>Toiture</span><h3>Démoussage &amp; nettoyage toiture</h3></div></div>
-            </div>
-            <div class="gal-card reveal rd1">
-              <div class="gal-img"><img src="./carousel-facade.jpg" alt="Nettoyage façade" loading="lazy" /><div class="gal-lbl"><span>Façade</span><h3>Nettoyage façade maison</h3></div></div>
-              <div class="gal-info">Un rendu propre et valorisant en quelques heures.</div>
-            </div>
-            <div class="gal-card reveal rd2">
-              <div class="gal-img"><img src="./carousel-terrasse.jpg" alt="Nettoyage terrasse" loading="lazy" /><div class="gal-lbl"><span>Terrasse</span><h3>Terrasse pierre nettoyée</h3></div></div>
-              <div class="gal-info">Idéal avant saison ou avant vente.</div>
-            </div>
-          </div>
+        <div class="hero__trust-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Devis gratuit sous 24h
         </div>
-      </section>
-
-      <!-- QUI EST KÉVIN + AVIS + INFOS PRATIQUES -->
-      <section id="contact-kevin">
-        <div class="wrap">
-
-          <!-- Qui est Kévin -->
-          <div class="about-card reveal">
-            <div class="about-inner">
-              <img class="about-photo" src="./kevin.jpg" alt="Kévin Autin, Les Nettoyeurs Bressans" loading="lazy" />
-              <div class="about-text">
-                <span class="stag">Qui est Kévin ?</span>
-                <h2 class="stitle" style="margin-top:10px;">Ex-maçon charpentier, reconverti dans le nettoyage extérieur</h2>
-                <p style="color:var(--stone-600);line-height:1.7;font-size:0.95rem;margin-top:8px;">Kévin, 27 ans, basé à Louhans. Après plusieurs années sur les chantiers comme ouvrier maçon et charpentier, il connaît le bâtiment de l'intérieur. Aujourd'hui il met cette expérience au service de l'entretien de votre toiture et de vos façades — avec le souci du travail bien fait et un vrai respect du support.</p>
-                <div class="about-badges">
-                  <span class="pro-badge">Connaissance du bâtiment</span>
-                  <span class="pro-badge">Louhans &amp; 60 km</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Avis clients -->
-          <div class="reviews-section reveal">
-            <span class="stag">Avis clients</span>
-            <h2 class="stitle">Ce que disent nos clients</h2>
-
-            <div class="reviews-grid">
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">On avait de la mousse sur toute la toiture depuis des années. Kévin est venu rapidement, le travail a été fait en une journée. Le toit est nickel et le traitement préventif nous rassure pour les prochaines années. Très bon rapport qualité-prix.</p>
-                <div class="review-author">
-                  <strong>Michel R.</strong>
-                  <span>Branges (71)</span>
-                </div>
-              </div>
-
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">Façade en crépi qui était toute noire côté nord. Kévin a tout nettoyé sans abîmer le crépi, résultat visible immédiatement. En plus il est ponctuel et sympa. Je recommande à tous ceux du coin.</p>
-                <div class="review-author">
-                  <strong>Françoise D.</strong>
-                  <span>Saint-Germain-du-Bois (71)</span>
-                </div>
-              </div>
-
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">J'ai fait faire toiture + terrasse en une seule intervention. Le forfait était intéressant et le résultat impeccable. On voit que c'est quelqu'un qui connaît le bâtiment, il fait attention aux tuiles et au support. Je le rappellerai.</p>
-                <div class="review-author">
-                  <strong>Philippe M.</strong>
-                  <span>Cuisery (71)</span>
-                </div>
-              </div>
-
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">Très réactif, devis reçu le jour même après avoir envoyé une photo par WhatsApp. Intervention propre et soignée sur notre terrasse en pierre. Le résultat parle de lui-même. Merci Kévin !</p>
-                <div class="review-author">
-                  <strong>Sandrine L.</strong>
-                  <span>Pont-de-Vaux (01)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Infos pratiques -->
-          <div class="practical-card reveal">
-            <div class="practical-grid">
-              <div class="practical-item">
-                <div class="practical-ico">📍</div>
-                <div>
-                  <strong>Adresse</strong>
-                  <span>Louhans (71500) — Intervention dans un rayon de 60 km</span>
-                </div>
-              </div>
-              <div class="practical-item">
-                <div class="practical-ico">🕐</div>
-                <div>
-                  <strong>Horaires</strong>
-                  <span>Lundi — Samedi, 8h à 21h</span>
-                </div>
-              </div>
-              <div class="practical-item">
-                <div class="practical-ico">📞</div>
-                <div>
-                  <strong>Téléphone</strong>
-                  <span><a href="tel:0668739456" onclick="trackCTA('appel','infos'); gtag_report_conversion();" style="color:var(--green-600);font-weight:700;text-decoration:none;">06 68 73 94 56</a></span>
-                </div>
-              </div>
-              <div class="practical-item">
-                <div class="practical-ico">💰</div>
-                <div>
-                  <strong>Devis</strong>
-                  <span>Gratuit, sous 24h — déplacement offert</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-
-
-      <!-- ZONE -->
-      <section id="zone">
-        <div class="wrap">
-          <div class="zone-box reveal">
-            <span class="stag">Zone d'intervention</span>
-            <h2 class="stitle">Louhans et dans un rayon de 60 km</h2>
-            <p class="sdesc">Déplacement et devis gratuits. Votre commune n'est pas listée ? Appelez, on intervient peut-être chez vous.</p>
-            <div class="ztags">
-              <span>Attignat</span><span>Bourg-en-Bresse</span><span>Branges</span><span>Bresse Vallons</span><span>Buellas</span><span>Ceyzériat</span><span>Chalon-sur-Saône</span><span>Champforgeuil</span><span>Charnay-lès-Mâcon</span><span>Châtenoy-le-Royal</span><span>Cousance</span><span>Crissey</span><span>Crêches-sur-Saône</span><span>Cuiseaux</span><span>Cuisery</span><span>Fontaines</span><span>Fragnes-La Loyère</span><span>Gergy</span><span>Givry</span><span>Hurigny</span><span>L'Abergement-Sainte-Colombe</span><span>La Roche-Vineuse</span><span>Lacrost</span><span>Lons-le-Saunier</span><span>Louhans</span><span>Lux</span><span>Mâcon</span><span>Marboz</span><span>Montagnat</span><span>Montpont-en-Bresse</span><span>Montrevel-en-Bresse</span><span>Orgelet</span><span>Oslon</span><span>Ouroux-sur-Saône</span><span>Péronnas</span><span>Perrigny</span><span>Pierre-de-Bresse</span><span>Polliat</span><span>Pont-de-Vaux</span><span>Pont-de-Veyle</span><span>Prissé</span><span>Replonges</span><span>Romenay</span><span>Saint-Amour</span><span>Saint-Denis-lès-Bourg</span><span>Saint-Étienne-du-Bois</span><span>Saint-Germain-du-Bois</span><span>Saint-Germain-du-Plain</span><span>Saint-Marcel</span><span>Saint-Rémy</span><span>Sancé</span><span>Sevrey</span><span>Sornay</span><span>Tournus</span><span>Varennes-le-Grand</span><span>Viriat</span><span>Épervans</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section id="faq">
-        <div class="wrap">
-          <span class="stag reveal">Questions fréquentes</span>
-          <h2 class="stitle reveal">Tout savoir sur le nettoyage toiture &amp; façade</h2>
-          <p class="sdesc reveal">Les réponses aux questions que se posent les particuliers avant de faire nettoyer leur toiture ou leur façade.</p>
-          <div class="faq-grid">
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Combien coûte un nettoyage de toiture en Bresse ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>Le prix d'un nettoyage de toiture dépend de la surface, de l'accessibilité et du niveau d'encrassement. En Bresse, pour une maison individuelle, il faut compter <strong>entre 8 et 15 € du m²</strong> pour un démoussage complet avec traitement anti-mousse écologique.</p><p>Un toit de 80 à 120 m² revient donc généralement entre 640 et 1 800 €. Ce tarif comprend le démoussage (brossage manuel ou basse pression selon le support), le nettoyage et l'application d'un produit préventif biodégradable. Le devis est gratuit et sans engagement. Bon à savoir : un forfait toiture + façade permet souvent de bénéficier d'une remise.</p><span class="faq-local-tag">📍 Louhans &amp; environs</span></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>À quelle fréquence faut-il démousser sa toiture ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>En Bresse, l'humidité favorise la pousse rapide des mousses et lichens sur les toits. Il est recommandé de faire <strong>démousser sa toiture tous les 3 à 5 ans</strong> selon l'exposition et l'environnement (arbres proches, orientation nord, zone humide).</p><p>Un démoussage régulier évite que les mousses ne soulèvent les tuiles, retiennent l'eau et accélèrent le vieillissement de la couverture. C'est un entretien préventif qui revient bien moins cher qu'une réfection de toiture.</p></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Nettoyage façade maison : quel prix et quel résultat attendre ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>Le nettoyage d'une façade de maison coûte en moyenne <strong>entre 8 et 15 € du m²</strong> selon le type de revêtement (crépi, pierre, brique) et le niveau de salissure. Pour une façade standard d'environ 80 m², comptez entre 640 et 1 200 €.</p><p>Le résultat est visible immédiatement : les traces noires, verdissures et dépôts de pollution disparaissent en quelques heures. Nous utilisons exclusivement des produits écologiques et des techniques basse pression pour ne pas endommager le support. Si vous combinez avec la toiture, un forfait avec remise est possible.</p><span class="faq-local-tag">📍 Intervention Louhans, Chalon, Tournus</span></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Peut-on nettoyer sa toiture soi-même au Kärcher ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>C'est fortement déconseillé. Un nettoyeur haute pression grand public utilisé sur une toiture présente deux risques majeurs : <strong>casser ou déplacer les tuiles</strong> avec une pression trop forte, et <strong>le risque de chute</strong> en travaillant en hauteur sans équipement adapté.</p><p>Chez Les Nettoyeurs Bressans, nous privilégions les techniques douces : basse pression adaptée au type de tuile, et <strong>brossage manuel sur les supports délicats</strong> (tuiles anciennes, ardoises fragiles). Nous utilisons des produits biodégradables — pas de javel qui blanchit en surface mais attaque le matériau en profondeur. Le traitement anti-mousse écologique que nous appliquons prolonge le résultat bien plus longtemps qu'un simple passage au Kärcher.</p></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Traces noires sur ma façade : d'où ça vient et comment les enlever ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>Les traces noires sur une façade sont généralement causées par des <strong>micro-organismes (algues, champignons)</strong> combinés à la pollution atmosphérique et à l'humidité. En Bresse, le climat humide accélère ce phénomène, surtout sur les façades exposées nord ou proches d'arbres.</p><p>Un nettoyage professionnel à basse pression avec un produit adapté au type de crépi ou de pierre élimine ces traces sans abîmer le support. Selon les cas, un traitement hydrofuge peut être appliqué pour retarder le retour des salissures.</p><span class="faq-local-tag">📍 Fréquent en Bresse bourguignonne</span></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Quelle est la meilleure période pour nettoyer sa toiture à Louhans ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>Les meilleures périodes pour un démoussage de toiture à Louhans et en Bresse sont <strong>le printemps (mars-mai) et l'automne (septembre-novembre)</strong>. Les températures modérées permettent au traitement anti-mousse de bien agir, et les conditions météo sont généralement favorables pour travailler en toiture.</p><p>Évitez le plein été (le produit sèche trop vite) et les périodes de gel. Idéalement, anticipez avant l'hiver pour protéger votre toit des dégâts liés au gel sur des tuiles déjà fragilisées par les mousses.</p></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Nettoyage toiture à Chalon-sur-Saône : intervenez-vous ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>Oui, nous intervenons régulièrement à <strong>Chalon-sur-Saône et dans toute l'agglomération chalonnaise</strong> pour le nettoyage et le démoussage de toiture. Chalon est à environ 30 minutes de notre base à Louhans.</p><p>Que vous ayez une maison individuelle à Chalon, Saint-Marcel, Châtenoy-le-Royal ou dans les villages alentours, nous nous déplaçons gratuitement pour établir un devis. Même principe : envoyez une photo de votre toit et recevez un chiffrage sous 24h.</p><span class="faq-local-tag">📍 Chalon-sur-Saône &amp; agglo</span></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Façade en crépi ou en pierre : la méthode est-elle la même ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>Non, chaque matériau demande une approche différente. Un <strong>crépi</strong> (enduit projeté) est plus fragile et se nettoie à basse pression avec un produit doux pour ne pas arracher le grain. Sur certains crépis très fragiles, nous privilégions le <strong>brossage manuel</strong> pour un résultat propre sans risque de dégradation.</p><p>Une <strong>façade en pierre</strong> supporte mieux la pression mais nécessite un traitement spécifique pour respecter la porosité naturelle. Dans tous les cas, nous utilisons exclusivement des produits biodégradables — jamais de javel qui blanchit en surface mais attaque le matériau en profondeur. C'est ce qui garantit un résultat durable.</p></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Combien de temps dure un nettoyage de toiture ou de façade ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>Pour une maison individuelle classique, comptez <strong>une demi-journée à une journée</strong> pour un nettoyage complet de toiture (démoussage + traitement). Un nettoyage de façade prend généralement entre 3 et 6 heures selon la surface.</p><p>Notre forfait toiture + façade permet de tout faire en une seule intervention : un seul déplacement, une mise en place unique, et souvent <strong>un tarif plus avantageux</strong> que deux prestations séparées. Le chantier se boucle en une journée dans la plupart des cas.</p></div></div>
-            <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span>Nettoyage toiture et façade à Lons-le-Saunier : vous déplacez-vous dans le Jura ?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><p>Oui, nous couvrons <strong>Lons-le-Saunier et la Bresse comtoise</strong> pour le nettoyage de toiture et de façade. Lons est à environ 40 minutes de Louhans, ce qui reste dans notre zone d'intervention habituelle.</p><p>Nous intervenons aussi dans les communes environnantes : Montaigu, Perrigny, Macornay, Pannessières et plus largement le secteur sud-Jura. Contactez-nous pour vérifier que votre commune est bien couverte — le devis et le déplacement sont gratuits.</p><span class="faq-local-tag">📍 Lons-le-Saunier &amp; Jura sud</span></div></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══ CTA FINAL — Appeler principal → Rappel + WhatsApp secondaires ═══ -->
-      <section class="final-cta" id="contact">
-        <div class="wrap">
-          <div class="final-cta-box reveal">
-            <h2 class="stitle">Un toit ou une façade à nettoyer ?</h2>
-            <p>Kévin se déplace gratuitement pour évaluer et vous faire un devis. Réponse en personne, pas de secrétariat.</p>
-            <div class="final-btns">
-              <a class="btn btn-call-primary" href="tel:0668739456" onclick="trackCTA('appel','footer'); gtag_report_conversion();">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                Appeler Kévin — Devis gratuit
-              </a>
-              <div class="final-btns-row">
-                <button class="final-btn-secondary" onclick="openModal(); trackCTA('rappel_open','footer');">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.05 5A5 5 0 0119 8.95M15.05 1A9 9 0 0123 8.94m-1 7.98v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                  Me faire rappeler
-                </button>
-                <a class="final-btn-secondary" href="https://wa.me/33668739456?text=Bonjour%2C%20je%20souhaiterais%20un%20devis.%20Voici%20une%20photo%20%3A" target="_blank" rel="noopener" onclick="trackCTA('whatsapp','footer');">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                  Envoyer photo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ═══ STICKY MOBILE — Appeler (vert, plus gros) + Rappeler ═══ -->
-    <div class="sticky-mob" id="stickyCta">
-      <div class="sticky-mob-inner">
-        <a class="sticky-call-btn" href="tel:0668739456" onclick="trackCTA('appel','sticky'); gtag_report_conversion();">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Appeler
-        </a>
-        <button class="sticky-rappel-btn" onclick="openModal(); trackCTA('rappel_open','sticky');">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.05 5A5 5 0 0119 8.95M15.05 1A9 9 0 0123 8.94m-1 7.98v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Me faire rappeler
-        </button>
-      </div>
-    </div>
-
-    <!-- CALLBACK MODAL -->
-    <div class="modal-overlay" id="callbackModal">
-      <div class="modal" role="dialog" aria-modal="true" aria-label="Formulaire de rappel">
-        <div id="modalForm">
-          <div class="modal-header">
-            <div>
-              <h3>Me faire rappeler</h3>
-              <p>Laissez vos coordonnées, Kévin vous rappelle gratuitement.</p>
-            </div>
-            <button class="modal-close" onclick="closeModal()" aria-label="Fermer">✕</button>
-          </div>
-          <div class="modal-form">
-            <div class="field"><label for="cb-name">Votre nom</label><input type="text" id="cb-name" placeholder="Ex : Jean Dupont" required /></div>
-            <div class="field"><label for="cb-phone">Votre numéro de téléphone</label><input type="tel" id="cb-phone" placeholder="06 XX XX XX XX" required /></div>
-            <div class="field"><label for="cb-time">Créneau qui vous arrange</label><select id="cb-time"><option value="Dès que possible">Dès que possible</option><option value="Matin (8h-12h)">Matin (8h-12h)</option><option value="Midi (12h-14h)">Midi (12h-14h)</option><option value="Après-midi (14h-18h)">Après-midi (14h-18h)</option><option value="Soir (18h-20h)">Soir (18h-20h)</option></select></div>
-            <button class="modal-submit" id="submitBtn" onclick="submitCallback()">Demander un rappel gratuit</button>
-          </div>
-          <div class="modal-footer">Vos informations restent confidentielles et sont uniquement utilisées pour vous rappeler.</div>
-        </div>
-        <div class="modal-success" id="modalSuccess">
-          <div class="check-big">✓</div>
-          <h3>Demande envoyée !</h3>
-          <p>Kévin vous rappellera sur le créneau choisi. À très vite.</p>
-          <button onclick="closeModal()">Fermer</button>
+        <div class="hero__trust-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Produits pro Dalep
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- POLITIQUE DE CONFIDENTIALITÉ -->
-    <section id="confidentialite" style="padding:40px 0;">
-      <div class="wrap">
-        <div class="privacy-box reveal">
-          <h2 class="stitle" style="font-size:1.4rem;">Politique de confidentialité</h2>
-          <div class="privacy-content">
-            <p><strong>Responsable du traitement :</strong> Kévin Autin — Les Nettoyeurs Bressans, Louhans (71500). SIRET 887 754 927 00010.</p>
-            <p><strong>Données collectées :</strong> Lorsque vous utilisez le formulaire de rappel, nous collectons votre nom, numéro de téléphone et créneau souhaité. Ces informations sont uniquement utilisées pour vous recontacter et établir un devis. Elles ne sont jamais transmises à des tiers ni utilisées à des fins commerciales autres que votre demande.</p>
-            <p><strong>Durée de conservation :</strong> Vos coordonnées de rappel sont conservées le temps nécessaire au traitement de votre demande (maximum 12 mois), puis supprimées.</p>
-            <p><strong>Vos droits :</strong> Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez-nous au 06 68 73 94 56 ou par email.</p>
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="tag">Nos prestations</span>
+      <h2>Un entretien complet pour l'extérieur de votre maison</h2>
+      <p class="lead lead--center">Toiture, façade, terrasse, panneaux solaires — chaque surface a ses spécificités. Nous adaptons nos techniques et nos produits pour un résultat durable et respectueux de vos matériaux.</p>
+    </div>
+    <div class="services-grid">
+      <a href="nettoyage-toiture.html" class="service-card fade-up">
+        <div class="service-card__icon">🏠</div>
+        <h3>Nettoyage &amp; démoussage toiture</h3>
+        <p>Grattage manuel, traitement curatif Dalep 2100, contrôle d'étanchéité et remise en place des tuiles déplacées. Sans karcher.</p>
+        <span class="service-card__link">En savoir plus →</span>
+      </a>
+      <a href="nettoyage-facade.html" class="service-card fade-up">
+        <div class="service-card__icon">🧱</div>
+        <h3>Nettoyage façade &amp; murets</h3>
+        <p>Nettoyage choc avec Net'Express Dalep ou traitement sur mesure pour les bâtiments historiques et zones protégées.</p>
+        <span class="service-card__link">En savoir plus →</span>
+      </a>
+      <a href="nettoyage-terrasse.html" class="service-card fade-up">
+        <div class="service-card__icon">🪨</div>
+        <h3>Nettoyage terrasse &amp; dallage</h3>
+        <p>Pierre, bois, composite, béton — un nettoyage adapté au support avec protection anti-mousse durable.</p>
+        <span class="service-card__link">En savoir plus →</span>
+      </a>
+      <a href="panneaux-solaires.html" class="service-card fade-up">
+        <div class="service-card__icon">☀️</div>
+        <h3>Nettoyage panneaux solaires</h3>
+        <p>Eau purifiée déminéralisée uniquement, sans produit chimique. Retrouvez un rendement optimal en toute sécurité.</p>
+        <span class="service-card__link">En savoir plus →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="about-row">
+      <div class="fade-up">
+        <span class="tag">Pourquoi nous choisir</span>
+        <h2>Un artisan local, des produits professionnels</h2>
+        <p>Chez Les Nettoyeurs Bressans, on ne passe pas un coup de karcher en espérant que ça tienne. Chaque intervention est pensée pour préserver vos matériaux et garantir un résultat qui dure dans le temps.</p>
+        <p>On utilise exclusivement des produits professionnels Dalep — référence dans le traitement des surfaces extérieures — et on adapte notre méthode à chaque support : tuile, ardoise, enduit, pierre, bois…</p>
+        <p>Bonus : quand on est sur votre toit, on en profite pour vérifier l'état de votre couverture et vous remettre un rapport avec les éventuels problèmes identifiés. Tuiles décalées ? On les recale gratuitement.</p>
+        <div style="margin-top:24px;">
+          <a href="devis.html" class="btn btn--primary">Obtenir un devis</a>
+        </div>
+      </div>
+      <div class="about-visual about-visual--placeholder fade-up">
+        <span>📷 Photo chantier à ajouter</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="tag">Notre méthode</span>
+      <h2>Comment se déroule une intervention</h2>
+      <p class="lead lead--center">De la prise de contact à la remise du chantier, voici les grandes étapes de notre processus pour un nettoyage de toiture réussi.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <h3>Diagnostic gratuit</h3>
+        <p>On se déplace chez vous pour évaluer l'état de vos surfaces et vous proposer un devis détaillé, sans engagement.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h3>Préparation &amp; protection</h3>
+        <p>Bâchage des zones sensibles, protection des végétaux, sécurisation du chantier avant toute intervention.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h3>Grattage &amp; nettoyage</h3>
+        <p>Grattage manuel de la mousse, nettoyage basse pression si nécessaire, nettoyage des chéneaux. Pas de karcher sur les toits.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h3>Traitement &amp; contrôle</h3>
+        <p>Pulvérisation du traitement Dalep 2100, contrôle de la couverture, remise en place des tuiles et rapport au propriétaire.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE/AFTER (placeholder — les vraies photos viendront) -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="tag">Résultats</span>
+      <h2>Avant / Après nos interventions</h2>
+      <p class="lead lead--center">Glissez le curseur pour voir la différence. Vos vraies photos de chantier viendront ici.</p>
+    </div>
+    <div style="margin-top:40px;" class="fade-up">
+      <!-- SLIDER — remplacer les backgrounds par des vraies images -->
+      <div class="ba-slider" style="background:#8B7355;">
+        <!-- Image APRÈS (fond) -->
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#A5D6A7 0%,#66BB6A 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:1.1rem;">
+          📷 Photo APRÈS (toiture propre)
+        </div>
+        <!-- Image AVANT (overlay) -->
+        <div class="ba-slider__overlay" style="width:50%;">
+          <div style="width:200%;height:100%;background:linear-gradient(135deg,#8B7355 0%,#6D5D4B 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:1.1rem;position:absolute;top:0;left:0;">
+            📷 Photo AVANT (toiture sale)
+          </div>
+        </div>
+        <div class="ba-slider__handle">
+          <div class="ba-slider__handle-btn">⟷</div>
+        </div>
+        <span class="ba-slider__label ba-slider__label--before">Avant</span>
+        <span class="ba-slider__label ba-slider__label--after">Après</span>
+      </div>
+    </div>
+    <p class="text-center" style="margin-top:24px;font-size:.9rem;color:var(--color-gray-500);">
+      <em>Remplacez ces placeholders par vos vraies photos avant/après dans le code.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ZONE -->
+
+<!-- AVIS CLIENTS -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="tag">Avis clients</span>
+      <h2>Ce que nos clients disent de nous</h2>
+      <p class="lead lead--center">La meilleure publicité, c'est le bouche-à-oreille. Voici quelques retours de propriétaires que nous avons accompagnés.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fade-up">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__text">« Travail impeccable sur notre toiture de 120 m². Kévin a pris le temps de tout m'expliquer, a remis en place deux tuiles qui bougeaient et m'a signalé un solin à refaire. Très pro, je recommande. »</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">GB</div>
+          <div>
+            <div class="review-card__name">Gérard B.</div>
+            <div class="review-card__detail">Nettoyage toiture · Louhans</div>
           </div>
         </div>
       </div>
-    </section>
-
-    <footer class="footer">
-      <div class="wrap">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <strong>Les Nettoyeurs Bressans</strong>
-            <span>Nettoyage toiture &amp; façade à Louhans et en Bresse</span>
+      <div class="review-card fade-up">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__text">« Notre façade était noire de pollution après 10 ans. Le résultat est bluffant, on dirait une maison neuve. Et le devis correspondait exactement à la facture, pas de surprise. »</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">MC</div>
+          <div>
+            <div class="review-card__name">Marie-Claire D.</div>
+            <div class="review-card__detail">Nettoyage façade · Tournus</div>
           </div>
-          <div class="footer-links">
-            <a href="#services">Services</a>
-            <a href="#zone">Zone</a>
-            <a href="#faq">FAQ</a>
-            <a href="#confidentialite">Confidentialité</a>
-          </div>
-          <div class="footer-contact">
-            <a href="tel:0668739456" onclick="trackCTA('appel','footer-bottom'); gtag_report_conversion();">06 68 73 94 56</a>
-            <span>Lun-Sam · 8h-21h</span>
-            <span>Louhans (71500)</span>
-          </div>
-        </div>
-        <div class="footer-line">
-          <span>© 2026 Les Nettoyeurs Bressans — SIRET 887 754 927 00010</span>
-          <a href="#confidentialite" style="color:var(--stone-400);">Politique de confidentialité</a>
         </div>
       </div>
-    </footer>
+      <div class="review-card fade-up">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__text">« Terrasse en pierre complètement verte, j'avais honte d'inviter du monde. Après le passage des Nettoyeurs Bressans, c'est le jour et la nuit. Et le traitement tient vraiment dans le temps. »</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">PL</div>
+          <div>
+            <div class="review-card__name">Philippe L.</div>
+            <div class="review-card__detail">Nettoyage terrasse · Chalon-sur-Saône</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center fade-up">
+      <div class="reviews-badge">
+        <div class="reviews-badge__stars">★★★★★</div>
+        <div class="reviews-badge__text"><strong>5/5</strong> sur Google · Avis vérifiés</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script>
-      // ─── Reveal ───
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach(e => {
-          if (e.isIntersecting) { e.target.classList.add("vis"); obs.unobserve(e.target); }
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+<!-- ZONE -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="tag">Zone d'intervention</span>
+      <h2>Nous intervenons dans un rayon de 60 km</h2>
+      <p class="lead lead--center">Basés à Louhans, nous couvrons la Bresse, le Chalonnais, le Jura et une partie de l'Ain.</p>
+    </div>
+    <div class="zone-visual fade-up" style="margin-top:40px;">
+      <div style="position:relative;z-index:1;">
+        <div class="zone-radius">
+          <div class="zone-radius__center"></div>
+          <span class="zone-radius__label">60 km</span>
+        </div>
+        <p style="color:rgba(255,255,255,.9);font-weight:600;font-size:1.1rem;margin-top:16px;">Louhans — 71500</p>
+        <div class="zone-cities">
+          <span class="zone-city">Chalon-sur-Saône</span>
+          <span class="zone-city">Lons-le-Saunier</span>
+          <span class="zone-city">Bourg-en-Bresse</span>
+          <span class="zone-city">Tournus</span>
+          <span class="zone-city">Mâcon</span>
+          <span class="zone-city">Dole</span>
+          <span class="zone-city">Pierre-de-Bresse</span>
+          <span class="zone-city">Beaurepaire-en-Bresse</span>
+          <span class="zone-city">Cuiseaux</span>
+          <span class="zone-city">Saint-Germain-du-Bois</span>
+          <span class="zone-city">Sennecey-le-Grand</span>
+          <span class="zone-city">Branges</span>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:24px;">
+      <a href="zone-intervention.html" class="btn btn--green">Voir la zone complète →</a>
+    </div>
+  </div>
+</section>
 
-      // ─── Topbar shadow ───
-      window.addEventListener("scroll", () => {
-        document.getElementById("topbar").classList.toggle("scrolled", scrollY > 16);
-      }, { passive: true });
+<!-- FAQ -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="tag">Questions fréquentes</span>
+      <h2>Tout savoir sur le nettoyage extérieur</h2>
+    </div>
+    <div class="faq-list fade-up">
+      <div class="faq-item">
+        <div class="faq-item__q">Pourquoi ne pas utiliser un karcher sur la toiture ?</div>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Le nettoyage haute pression fragilise les tuiles et les ardoises en creusant leur surface poreuse. L'eau s'infiltre ensuite plus facilement, ce qui accélère la dégradation. Nous privilégions le grattage manuel et la basse pression quand c'est nécessaire, associés à un traitement chimique professionnel qui fait le gros du travail en profondeur.
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__q">Combien de temps dure l'effet du traitement Dalep ?</div>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Le Dalep 2100 est un traitement curatif et préventif. L'effet se prolonge généralement entre 3 et 5 ans selon l'exposition de votre toiture (orientation, environnement boisé, climat). Un entretien régulier tous les 4-5 ans est idéal pour maintenir votre toiture en bon état.
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__q">Quelle est la meilleure période pour faire nettoyer sa toiture ?</div>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Le printemps et l'automne sont les périodes idéales. Il faut éviter les périodes de gel, de canicule et les fortes pluies. Nous intervenons généralement de mars à novembre, selon les conditions météo.
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__q">Le devis est-il vraiment gratuit et sans engagement ?</div>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Oui, à 100 %. On se déplace gratuitement chez vous pour évaluer l'état de vos surfaces, prendre les mesures et vous proposer un devis détaillé. Vous êtes libre d'accepter ou non, sans aucune pression.
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__q">Intervenez-vous aussi pour les professionnels et copropriétés ?</div>
+        <div class="faq-item__a"><div class="faq-item__a-inner">
+          Absolument. Nous intervenons pour les particuliers, les copropriétés, les mairies et les professionnels. N'hésitez pas à nous contacter pour discuter de votre projet.
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- CTA -->
+<section class="section">
+  <div class="cta-banner fade-up">
+    <h2>Prêt à redonner un coup de neuf à votre maison ?</h2>
+    <p>Contactez-nous pour un devis gratuit et sans engagement. On vous répond sous 24 heures.</p>
+    <a href="tel:+33668739456" class="cta-banner__phone">06 68 73 94 56</a>
+    <div class="cta-banner__buttons">
+      <a href="devis.html" class="btn btn--primary btn--lg">Demander un devis en ligne</a>
+      <a href="tel:+33668739456" class="btn btn--white btn--lg">Appeler maintenant</a>
+    </div>
+  </div>
+</section>
 
-      // ─── FAQ accordion ───
-      function toggleFaq(el) {
-        var item = el.parentElement;
-        var wasOpen = item.classList.contains("open");
-        document.querySelectorAll(".faq-item.open").forEach(function(i) { i.classList.remove("open"); });
-        if (!wasOpen) item.classList.add("open");
-      }
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="nav__logo">
+          <div class="nav__logo-icon">NB</div>
+          <div class="nav__logo-text" style="color:#fff;">
+            Les Nettoyeurs Bressans
+            <span>Artisan · Louhans</span>
+          </div>
+        </div>
+        <p>Votre artisan local pour le nettoyage de toiture, façade, terrasse et panneaux solaires en Bresse et ses environs.</p>
+        <p style="font-size:.8rem;margin-top:8px;">SIRET 887 754 927 00010<br>4 Allée des Ormes, 71500 Louhans</p>
+      </div>
+      <div>
+        <h4>Prestations</h4>
+        <a href="nettoyage-toiture.html" class="footer__link">Nettoyage toiture</a>
+        <a href="nettoyage-facade.html" class="footer__link">Nettoyage façade</a>
+        <a href="nettoyage-terrasse.html" class="footer__link">Nettoyage terrasse</a>
+        <a href="panneaux-solaires.html" class="footer__link">Panneaux solaires</a>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <a href="zone-intervention.html" class="footer__link">Zone d'intervention</a>
+        <a href="a-propos.html" class="footer__link">À propos</a>
+        <a href="devis.html" class="footer__link">Devis gratuit</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+33668739456" class="footer__link">06 68 73 94 56</a>
+        <a href="mailto:lesnettoyeursbressans@gmail.com" class="footer__link">lesnettoyeursbressans@gmail.com</a>
+        <p style="font-size:.85rem;margin-top:8px;">Lun – Sam : 8h – 19h</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Les Nettoyeurs Bressans. Tous droits réservés.</span>
+      <div class="footer__legal">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="mentions-legales.html#confidentialite">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-      // ─── Modal ───
-      function openModal() {
-        document.getElementById("callbackModal").classList.add("open");
-        document.body.style.overflow = "hidden";
-      }
+<!-- PHONE FLOAT -->
+<a href="tel:+33668739456" class="phone-float" aria-label="Appeler">📞</a>
 
-      function closeModal() {
-        document.getElementById("callbackModal").classList.remove("open");
-        document.body.style.overflow = "";
-        document.getElementById("modalForm").style.display = "";
-        document.getElementById("modalSuccess").classList.remove("show");
-      }
-
-      document.getElementById("callbackModal").addEventListener("click", function(e) {
-        if (e.target === this) closeModal();
-      });
-
-      document.addEventListener("keydown", function(e) {
-        if (e.key === "Escape") closeModal();
-      });
-
-      // ─── Submit to Google Sheets ───
-      const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwtWmpviwn-r7PRFpL--6kPzshwyB095Z7yAe21xAEgWepTwG3g3nohkPAQPI-LZgcE/exec";
-
-      async function submitCallback() {
-        const name = document.getElementById("cb-name").value.trim();
-        const phone = document.getElementById("cb-phone").value.trim();
-        const time = document.getElementById("cb-time").value;
-        const btn = document.getElementById("submitBtn");
-
-        if (!name || !phone) {
-          btn.style.animation = "none";
-          btn.offsetHeight;
-          btn.style.animation = "shake 0.4s ease";
-          return;
-        }
-
-        btn.disabled = true;
-        btn.textContent = "Envoi en cours…";
-
-        // ═══ TRACKING CONVERSION — Rappel soumis ═══
-        gtag_report_conversion();
-        trackCTA('rappel_submit', 'modal');
-
-        // Envoi vers Google Sheets
-        var params = new URLSearchParams();
-        params.append("data", JSON.stringify({
-          nom: name,
-          telephone: phone,
-          creneau: time,
-          date: new Date().toLocaleString("fr-FR")
-        }));
-        fetch(GOOGLE_SHEET_URL, {
-          method: "POST",
-          mode: "no-cors",
-          body: params
-        });
-
-        setTimeout(function() {
-          document.getElementById("modalForm").style.display = "none";
-          document.getElementById("modalSuccess").classList.add("show");
-          btn.disabled = false;
-          btn.textContent = "Demander un rappel gratuit";
-        }, 600);
-      }
-    </script>
-  </body>
+<script src="js/main.js"></script>
+</body>
 </html>
