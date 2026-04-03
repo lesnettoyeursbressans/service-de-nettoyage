@@ -13,7 +13,7 @@
   <title>Nettoyage &amp; Démoussage de Toiture en Bresse — Les Nettoyeurs Bressans</title>
   <meta name="description" content="Nettoyage de toiture professionnel sans karcher à Louhans et environs. Grattage manuel, traitement Dalep 2100, contrôle d'étanchéité. Devis gratuit.">
   <link rel="canonical" href="https://lesnettoyeursbressans.fr/nettoyage-toiture.html">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style">
   <!-- Google Ads Global Site Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18020213630"></script>
   <script>
@@ -49,18 +49,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- HEADER -->
 <header class="header scrolled" id="header">
   <nav class="nav container">
-    <a href="index.html" class="nav__logo">
+    <a href="index" class="nav__logo">
       <div class="nav__logo-icon">NB</div>
       <div class="nav__logo-text" style="color:var(--color-primary-dark);">Les Nettoyeurs Bressans<span>Artisan · Louhans &amp; environs</span></div>
     </a>
     <div class="nav__links" id="navLinks">
-      <a href="index.html" class="nav__link">Accueil</a>
-      <a href="nettoyage-toiture.html" class="nav__link active">Toiture</a>
-      <a href="nettoyage-facade.html" class="nav__link">Façade</a>
-      <a href="nettoyage-terrasse.html" class="nav__link">Terrasse</a>
-      <a href="panneaux-solaires.html" class="nav__link">Solaire</a>
-      <a href="zone-intervention.html" class="nav__link">Zone</a>
-      <a href="devis.html" class="nav__link nav__cta">Devis gratuit</a>
+      <a href="index" class="nav__link">Accueil</a>
+      <a href="nettoyage toiture" class="nav__link active">Toiture</a>
+      <a href="nettoyage facade" class="nav__link">Façade</a>
+      <a href="nettoyage terrasse" class="nav__link">Terrasse</a>
+      <a href="Panneaux solaires" class="nav__link">Solaire</a>
+      <a href="Zone intervention" class="nav__link">Zone</a>
+      <a href="devis" class="nav__link nav__cta">Devis gratuit</a>
     </div>
     <div class="nav__burger" id="navBurger"><span></span><span></span><span></span></div>
   </nav>
@@ -71,7 +71,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="page-hero">
   <div class="container">
     <div class="breadcrumb">
-      <a href="index.html">Accueil</a> <span>/</span> <span>Nettoyage toiture</span>
+      <a href="index">Accueil</a> <span>/</span> <span>Nettoyage toiture</span>
     </div>
     <h1>Nettoyage &amp; démoussage de toiture</h1>
     <p>Un toit propre, c'est un toit qui dure. Nous éliminons mousses, lichens et salissures avec des techniques douces et des produits professionnels, sans jamais fragiliser vos tuiles.</p>
@@ -159,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Tuiles fissurées, décalées, solins abîmés, faîtage fragilisé, gouttières obstruées — on regarde tout et on vous fait un retour complet.</p>
         <p>Si des tuiles sont simplement décalées, on les remet en place gratuitement dans le cadre de l'intervention. Pour les réparations plus importantes, on vous oriente vers un couvreur de confiance.</p>
         <div style="margin-top:24px;">
-          <a href="devis.html" class="btn btn--primary">Demander un devis toiture</a>
+          <a href="devis" class="btn btn--primary">Demander un devis toiture</a>
         </div>
       </div>
       <div class="about-visual about-visual--placeholder fade-up">
@@ -289,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Devis gratuit sous 24h, intervention soignée, produits pro, rapport de couverture inclus.</p>
     <a href="tel:+33668739456" class="cta-banner__phone">06 68 73 94 56</a>
     <div class="cta-banner__buttons">
-      <a href="devis.html" class="btn btn--primary btn--lg">Demander un devis</a>
+      <a href="devis" class="btn btn--primary btn--lg">Demander un devis</a>
       <a href="tel:+33668739456" class="btn btn--white btn--lg">Appeler</a>
     </div>
   </div>
@@ -304,14 +304,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Votre artisan local pour le nettoyage extérieur en Bresse.</p>
         <p style="font-size:.8rem;margin-top:8px;">SIRET 887 754 927 00010<br>4 Allée des Ormes, 71500 Louhans</p>
       </div>
-      <div><h4>Prestations</h4><a href="nettoyage-toiture.html" class="footer__link">Nettoyage toiture</a><a href="nettoyage-facade.html" class="footer__link">Nettoyage façade</a><a href="nettoyage-terrasse.html" class="footer__link">Nettoyage terrasse</a><a href="panneaux-solaires.html" class="footer__link">Panneaux solaires</a></div>
-      <div><h4>Informations</h4><a href="zone-intervention.html" class="footer__link">Zone d'intervention</a><a href="a-propos.html" class="footer__link">À propos</a><a href="devis.html" class="footer__link">Devis gratuit</a></div>
+      <div><h4>Prestations</h4><a href="nettoyage toiture" class="footer__link">Nettoyage toiture</a><a href="nettoyage facade" class="footer__link">Nettoyage façade</a><a href="nettoyage terrasse" class="footer__link">Nettoyage terrasse</a><a href="Panneaux solaires" class="footer__link">Panneaux solaires</a></div>
+      <div><h4>Informations</h4><a href="Zone intervention" class="footer__link">Zone d'intervention</a><a href="A propos" class="footer__link">À propos</a><a href="devis" class="footer__link">Devis gratuit</a></div>
       <div><h4>Contact</h4><a href="tel:+33668739456" class="footer__link">06 68 73 94 56</a><a href="mailto:lesnettoyeursbressans@gmail.com" class="footer__link">lesnettoyeursbressans@gmail.com</a><p style="font-size:.85rem;margin-top:8px;">Lun – Sam : 8h – 19h</p></div>
     </div>
-    <div class="footer__bottom"><span>© 2026 Les Nettoyeurs Bressans. Tous droits réservés.</span><div class="footer__legal"><a href="mentions-legales.html">Mentions légales</a><a href="mentions-legales.html#confidentialite">Confidentialité</a></div></div>
+    <div class="footer__bottom"><span>© 2026 Les Nettoyeurs Bressans. Tous droits réservés.</span><div class="footer__legal"><a href="Mention legales">Mentions légales</a><a href="Mention legales#confidentialite">Confidentialité</a></div></div>
   </div>
 </footer>
 <a href="tel:+33668739456" class="phone-float" aria-label="Appeler">📞</a>
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
